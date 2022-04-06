@@ -1,0 +1,5 @@
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+
+Files: third-party/inno-setup/*
+Copyright: 1997-2022 Jordan Russell. All rights reserved 2000-2022 Martijn Laan. All rights reserved.
+License: LicenseRef-inno-setup
