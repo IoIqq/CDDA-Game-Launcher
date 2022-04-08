@@ -1476,19 +1476,16 @@ class UpdateGroupBox(QGroupBox):
         asset_platform = self.base_asset['Platform']
         asset_graphics = self.base_asset['Graphics']
 
-        target_regex = re.compile(r'cataclysmdda-(?P<major>.+)-' +
-            re.escape(asset_platform) + r'-' +
-            re.escape(asset_graphics) + r'-' +
-            r'b?(?P<build>\d+)\.zip'
-            )
-        
-        new_asset_platform = self.new_base_asset['Platform']
-        new_asset_graphics = self.new_base_asset['Graphics']
-
-        new_target_regex = re.compile(
+        target_regex = re.compile(
             r'cdda-windows-' +
-            re.escape(new_asset_graphics) + r'-' +
-            re.escape(new_asset_platform) + r'-msvc-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-' +
+            r'b?(?P<build>[0-9\-]+)\.zip'
+            )
+        target_regex_msvc = re.compile(
+            r'cdda-windows-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-msvc-' +
             r'b?(?P<build>[0-9\-]+)\.zip'
             )
 
@@ -1508,7 +1505,7 @@ class UpdateGroupBox(QGroupBox):
                         and 'name' in x
                         and (
                             target_regex.search(x['name']) is not None or
-                            new_target_regex.search(x['name']) is not None )
+                            target_regex_msvc.search(x['name']) is not None )
                 )
                 asset = next(asset_iter, None)
 
@@ -2858,7 +2855,7 @@ class UpdateGroupBox(QGroupBox):
             self.download_last_bytes_read = bytes_read
             self.download_last_read = datetime.utcnow()
 
-    def start_lb_request(self, base_asset, new_base_asset):
+    def start_lb_request(self, base_asset):
         self.disable_controls(True)
         self.refresh_warning_label.hide()
         self.find_build_warning_label.hide()
@@ -2875,7 +2872,6 @@ class UpdateGroupBox(QGroupBox):
 
         url = cons.GITHUB_REST_API_URL + cons.CDDA_RELEASES
         self.base_asset = base_asset
-        self.new_base_asset = new_base_asset
 
         fetching_label = QLabel()
         fetching_label.setText(_('Fetching: {url}').format(url=url))
@@ -3036,19 +3032,17 @@ class UpdateGroupBox(QGroupBox):
         asset_platform = self.base_asset['Platform']
         asset_graphics = self.base_asset['Graphics']
 
-        target_regex = re.compile(r'cataclysmdda-(?P<major>.+)-' +
-            re.escape(asset_platform) + r'-' +
-            re.escape(asset_graphics) + r'-' +
-            r'b?(?P<build>\d+)\.zip'
-            )
-        
-        new_asset_platform = self.new_base_asset['Platform']
-        new_asset_graphics = self.new_base_asset['Graphics']
-
-        new_target_regex = re.compile(
+        target_regex = re.compile(
             r'cdda-windows-' +
-            re.escape(new_asset_graphics) + r'-' +
-            re.escape(new_asset_platform) + r'-msvc-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-' +
+            r'b?(?P<build>[0-9\-]+)\.zip'
+            )
+
+        target_regex_msvc = re.compile(
+            r'cdda-windows-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-msvc-' +
             r'b?(?P<build>[0-9\-]+)\.zip'
             )
 
@@ -3068,7 +3062,7 @@ class UpdateGroupBox(QGroupBox):
                            and 'name' in x
                            and (
                                target_regex.search(x['name']) is not None or
-                               new_target_regex.search(x['name']) is not None)
+                               target_regex_msvc.search(x['name']) is not None)
                     )
                     asset = next(asset_iter, None)
 
@@ -3235,9 +3229,8 @@ class UpdateGroupBox(QGroupBox):
             
         elif selected_branch is self.experimental_radio_button:
             release_asset = cons.BASE_ASSETS['Tiles'][selected_platform]
-            release_new_asset = cons.NEW_BASE_ASSETS['Tiles'][selected_platform]
 
-            self.start_lb_request(release_asset, release_new_asset)
+            self.start_lb_request( release_asset )
             self.refresh_changelog()
 
     def refresh_changelog(self):
