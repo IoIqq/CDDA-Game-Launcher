@@ -14,6 +14,7 @@ A [Cataclysm: Dark Days Ahead](https://cataclysmdda.org/) launcher with addition
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/DazedNConfused-/CDDA-Game-Launcher)
 ![GitHub all releases](https://img.shields.io/github/downloads/DazedNConfused-/CDDA-Game-Launcher/total)
 [![GitHub forks](https://img.shields.io/github/forks/DazedNConfused-/CDDA-Game-Launcher)](https://github.com/DazedNConfused-/CDDA-Game-Launcher/network)
+[![REUSE status](https://api.reuse.software/badge/github.com/DazedNConfused-/CDDA-Game-Launcher)](https://api.reuse.software/info/github.com/DazedNConfused-/CDDA-Game-Launcher)
 
 [Download here](https://github.com/DazedNConfused-/CDDA-Game-Launcher/releases).
 
