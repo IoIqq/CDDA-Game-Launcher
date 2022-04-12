@@ -15,10 +15,11 @@ import sys
 import tempfile
 import zipfile
 import random
+import requests
 
 from collections import deque
 from datetime import datetime, timedelta
-from io import BytesIO, TextIOWrapper
+from io import BytesIO, StringIO, TextIOWrapper
 from os import scandir
 from pathlib import Path
 from urllib.parse import urljoin
@@ -1476,19 +1477,16 @@ class UpdateGroupBox(QGroupBox):
         asset_platform = self.base_asset['Platform']
         asset_graphics = self.base_asset['Graphics']
 
-        target_regex = re.compile(r'cataclysmdda-(?P<major>.+)-' +
-            re.escape(asset_platform) + r'-' +
-            re.escape(asset_graphics) + r'-' +
-            r'b?(?P<build>\d+)\.zip'
-            )
-        
-        new_asset_platform = self.new_base_asset['Platform']
-        new_asset_graphics = self.new_base_asset['Graphics']
-
-        new_target_regex = re.compile(
+        target_regex = re.compile(
             r'cdda-windows-' +
-            re.escape(new_asset_graphics) + r'-' +
-            re.escape(new_asset_platform) + r'-msvc-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-' +
+            r'b?(?P<build>[0-9\-]+)\.zip'
+            )
+        target_regex_msvc = re.compile(
+            r'cdda-windows-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-msvc-' +
             r'b?(?P<build>[0-9\-]+)\.zip'
             )
 
@@ -1508,7 +1506,7 @@ class UpdateGroupBox(QGroupBox):
                         and 'name' in x
                         and (
                             target_regex.search(x['name']) is not None or
-                            new_target_regex.search(x['name']) is not None )
+                            target_regex_msvc.search(x['name']) is not None )
                 )
                 asset = next(asset_iter, None)
 
@@ -2858,7 +2856,7 @@ class UpdateGroupBox(QGroupBox):
             self.download_last_bytes_read = bytes_read
             self.download_last_read = datetime.utcnow()
 
-    def start_lb_request(self, base_asset, new_base_asset):
+    def start_lb_request(self, base_asset):
         self.disable_controls(True)
         self.refresh_warning_label.hide()
         self.find_build_warning_label.hide()
@@ -2875,7 +2873,6 @@ class UpdateGroupBox(QGroupBox):
 
         url = cons.GITHUB_REST_API_URL + cons.CDDA_RELEASES
         self.base_asset = base_asset
-        self.new_base_asset = new_base_asset
 
         fetching_label = QLabel()
         fetching_label.setText(_('Fetching: {url}').format(url=url))
@@ -3036,19 +3033,17 @@ class UpdateGroupBox(QGroupBox):
         asset_platform = self.base_asset['Platform']
         asset_graphics = self.base_asset['Graphics']
 
-        target_regex = re.compile(r'cataclysmdda-(?P<major>.+)-' +
-            re.escape(asset_platform) + r'-' +
-            re.escape(asset_graphics) + r'-' +
-            r'b?(?P<build>\d+)\.zip'
-            )
-        
-        new_asset_platform = self.new_base_asset['Platform']
-        new_asset_graphics = self.new_base_asset['Graphics']
-
-        new_target_regex = re.compile(
+        target_regex = re.compile(
             r'cdda-windows-' +
-            re.escape(new_asset_graphics) + r'-' +
-            re.escape(new_asset_platform) + r'-msvc-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-' +
+            r'b?(?P<build>[0-9\-]+)\.zip'
+            )
+
+        target_regex_msvc = re.compile(
+            r'cdda-windows-' +
+            re.escape(asset_graphics) + r'-' +
+            re.escape(asset_platform) + r'-msvc-' +
             r'b?(?P<build>[0-9\-]+)\.zip'
             )
 
@@ -3068,7 +3063,7 @@ class UpdateGroupBox(QGroupBox):
                            and 'name' in x
                            and (
                                target_regex.search(x['name']) is not None or
-                               new_target_regex.search(x['name']) is not None)
+                               target_regex_msvc.search(x['name']) is not None)
                     )
                     asset = next(asset_iter, None)
 
@@ -3235,13 +3230,63 @@ class UpdateGroupBox(QGroupBox):
             
         elif selected_branch is self.experimental_radio_button:
             release_asset = cons.BASE_ASSETS['Tiles'][selected_platform]
-            release_new_asset = cons.NEW_BASE_ASSETS['Tiles'][selected_platform]
 
-            self.start_lb_request(release_asset, release_new_asset)
+            self.start_lb_request( release_asset )
             self.refresh_changelog()
 
     def refresh_changelog(self):
-        self.changelog_content.setHtml(_('<h3>Changelog is not available for experimental</h3>'))
+        ### "((?<![\w#])(?=[\w#])|(?<=[\w#])(?![\w#]))" is like a \b
+        ### that accepts "#" as word char too.
+        ### regex used to match issues / PR IDs like "#43151"
+        id_regex = re.compile(r'((?<![\w#])(?=[\w#])|(?<=[\w#])(?![\w#]))'
+                              r'#(?P<id>\d+)\b')
+
+        ### Get the last 100 PR
+        url = cons.CHANGELOG_URL + '100'
+
+        changelog_data = requests.get(url).json()
+        changelog_html = StringIO()
+
+        date = str()
+
+        for entry in changelog_data["items"]:
+            if entry["state"] == "open":
+             continue
+
+            if date != entry['closed_at'][0:10]:
+                date = entry['closed_at'][0:10]
+                changelog_html.write('</ul>')
+                changelog_html.write(
+                    '<h3>{0}</h3>'
+                    .format(date)
+                )
+                changelog_html.write('<ul>')
+            changelog_html.write(
+                    '<h4>{0}</h4>'
+                    .format(entry['title'])
+                )
+            changelog_html.write('<ul>')
+            body = entry['body'].split('####')
+            if len(body)>2:
+                if body[0] == '':
+                    msg = body[2]
+                else:
+                    msg = body[3]
+                msg=msg[18:]
+            else:
+                msg = entry['title']
+            commitid = entry['node_id']
+            link_repl = rf'<a href="{cons.CDDA_ISSUE_URL_ROOT}\g<id>">#\g<id></a>'
+            msg = id_regex.sub(link_repl, msg)
+            commit_name = entry['number']
+            if commitid:
+                commit_url = entry['html_url']
+                changelog_html.write(f'<li>{msg} [<a href="{commit_url}">{commit_name}</a>]</li>')
+            else:
+                changelog_html.write(f'<li>{msg}</li>')
+            changelog_html.write('</ul>')
+
+        self.changelog_content.setHtml(changelog_html.getvalue())
 
     def branch_clicked(self, button):
         if button is self.stable_radio_button:

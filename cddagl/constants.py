@@ -21,6 +21,8 @@ CDDA_RELEASES = '/repos/CleverRaven/Cataclysm-DDA/releases'
 CDDA_RELEASE_BY_TAG = lambda tag: f'/repos/CleverRaven/Cataclysm-DDA/releases/tags/{tag}'
 CDDAGL_LATEST_RELEASE = '/repos/DazedNConfused-/CDDA-Game-Launcher/releases/latest'
 
+CHANGELOG_URL = 'https://api.github.com/search/issues?q=repo%3Acleverraven/Cataclysm-DDA+is%3Apr+is%3Amerged&per_page='
+
 NEW_ISSUE_URL = 'https://github.com/DazedNConfused-/CDDA-Game-Launcher/issues/new'
 
 CDDA_ISSUE_URL_ROOT = 'https://github.com/CleverRaven/Cataclysm-DDA/issues/'
@@ -40,29 +42,6 @@ FAKE_USER_AGENT = (b'Mozilla/5.0 (Windows NT 10.0; Win64; x64) '
 TEMP_PREFIX = 'cddagl'
 
 BASE_ASSETS = {
-    'Tiles': {
-        'x64': {
-            'Platform': 'Windows_x64',
-            'Graphics': 'Tiles'
-        },
-        'x86': {
-            'Platform': 'Windows',
-            'Graphics': 'Tiles'
-        }
-    },
-    'Console': {
-        'x64': {
-            'Platform': 'Windows_x64',
-            'Graphics': 'Curses'
-        },
-        'x86': {
-            'Platform': 'Windows',
-            'Graphics': 'Curses'
-        },
-    }
-}
-
-NEW_BASE_ASSETS = {
     'Tiles': {
         'x64': {
             'Platform': 'x64',
