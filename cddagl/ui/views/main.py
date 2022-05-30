@@ -1249,6 +1249,27 @@ class UpdateGroupBox(QGroupBox):
 
         layout_row = layout_row + 1
 
+        build_type_label = QLabel()
+        layout.addWidget(build_type_label, layout_row, 0, Qt.AlignRight)
+        self.build_type_label = build_type_label
+
+        build_type_button_group = QButtonGroup()
+        self.build_type_button_group = build_type_button_group
+
+        msvc_radio_button = QRadioButton()
+        layout.addWidget(msvc_radio_button, layout_row, 1)
+        self.msvc_radio_button = msvc_radio_button
+        build_type_button_group.addButton(msvc_radio_button)
+
+        build_type_button_group.buttonClicked.connect(self.build_type_clicked)
+
+        other_radio_button = QRadioButton()
+        layout.addWidget(other_radio_button, layout_row, 2)
+        self.other_radio_button = other_radio_button
+        build_type_button_group.addButton(other_radio_button)
+
+        layout_row = layout_row + 1
+
         available_builds_label = QLabel()
         layout.addWidget(available_builds_label, layout_row, 0, Qt.AlignRight)
         self.available_builds_label = available_builds_label
@@ -1335,6 +1356,9 @@ class UpdateGroupBox(QGroupBox):
         self.platform_label.setText(_('Platform:'))
         self.x64_radio_button.setText('{so} ({bit})'.format(so=_('Windows x64'), bit=_('64-bit')))
         self.x86_radio_button.setText('{so} ({bit})'.format(so=_('Windows x86'), bit=_('32-bit')))
+        self.build_type_label.setText(_('Build type:'))
+        self.msvc_radio_button.setText('msvc')
+        self.other_radio_button.setText('other')
         self.available_builds_label.setText(_('Available builds:'))
         self.find_build_label.setText(_('Find build #:'))
         self.find_build_button.setText(_('Add to list'))
@@ -1357,6 +1381,7 @@ class UpdateGroupBox(QGroupBox):
                 self.experimental_radio_button.setChecked(True)
 
             platform = get_config_value('platform')
+            build_type = get_config_value('build_type')
 
             if platform == 'Windows x64':
                 platform = 'x64'
@@ -1369,10 +1394,18 @@ class UpdateGroupBox(QGroupBox):
                 else:
                     platform = 'x86'
 
+            if build_type is None or build_type not in ('-msvc-','-'):
+                build_type = '-msvc-'
+
             if platform == 'x64':
                 self.x64_radio_button.setChecked(True)
             elif platform == 'x86':
                 self.x86_radio_button.setChecked(True)
+
+            if build_type == '-msvc-':
+                self.msvc_radio_button.setChecked(True)
+            elif build_type == '-':
+                self.other_radio_button.setChecked(True)
 
             self.show_hide_find_build()
 
@@ -1480,13 +1513,7 @@ class UpdateGroupBox(QGroupBox):
         target_regex = re.compile(
             r'cdda-windows-' +
             re.escape(asset_graphics) + r'-' +
-            re.escape(asset_platform) + r'-' +
-            r'b?(?P<build>[0-9\-]+)\.zip'
-            )
-        target_regex_msvc = re.compile(
-            r'cdda-windows-' +
-            re.escape(asset_graphics) + r'-' +
-            re.escape(asset_platform) + r'-msvc-' +
+            re.escape(asset_platform) + self.selected_build_type +
             r'b?(?P<build>[0-9\-]+)\.zip'
             )
 
@@ -1504,9 +1531,7 @@ class UpdateGroupBox(QGroupBox):
                     x for x in release['assets']
                     if 'browser_download_url' in x
                         and 'name' in x
-                        and (
-                            target_regex.search(x['name']) is not None or
-                            target_regex_msvc.search(x['name']) is not None )
+                        and target_regex.search(x['name']) is not None
                 )
                 asset = next(asset_iter, None)
 
@@ -1924,6 +1949,9 @@ class UpdateGroupBox(QGroupBox):
         self.x64_radio_button.setEnabled(False)
         self.x86_radio_button.setEnabled(False)
 
+        self.msvc_radio_button.setEnabled(False)
+        self.other_radio_button.setEnabled(False)
+
         self.previous_bc_enabled = self.builds_combo.isEnabled()
         self.builds_combo.setEnabled(False)
         self.refresh_builds_button.setEnabled(False)
@@ -1941,6 +1969,9 @@ class UpdateGroupBox(QGroupBox):
         if is_64_windows():
             self.x64_radio_button.setEnabled(True)
         self.x86_radio_button.setEnabled(True)
+
+        self.msvc_radio_button.setEnabled(True)
+        self.other_radio_button.setEnabled(True)
 
         self.refresh_builds_button.setEnabled(True)
         self.find_build_value.setEnabled(True)
@@ -2856,7 +2887,7 @@ class UpdateGroupBox(QGroupBox):
             self.download_last_bytes_read = bytes_read
             self.download_last_read = datetime.utcnow()
 
-    def start_lb_request(self, base_asset):
+    def start_lb_request(self, base_asset, selected_build_type):
         self.disable_controls(True)
         self.refresh_warning_label.hide()
         self.find_build_warning_label.hide()
@@ -2873,6 +2904,7 @@ class UpdateGroupBox(QGroupBox):
 
         url = cons.GITHUB_REST_API_URL + cons.CDDA_RELEASES
         self.base_asset = base_asset
+        self.selected_build_type = selected_build_type
 
         fetching_label = QLabel()
         fetching_label.setText(_('Fetching: {url}').format(url=url))
@@ -3036,14 +3068,7 @@ class UpdateGroupBox(QGroupBox):
         target_regex = re.compile(
             r'cdda-windows-' +
             re.escape(asset_graphics) + r'-' +
-            re.escape(asset_platform) + r'-' +
-            r'b?(?P<build>[0-9\-]+)\.zip'
-            )
-
-        target_regex_msvc = re.compile(
-            r'cdda-windows-' +
-            re.escape(asset_graphics) + r'-' +
-            re.escape(asset_platform) + r'-msvc-' +
+            re.escape(asset_platform) + self.selected_build_type +
             r'b?(?P<build>[0-9\-]+)\.zip'
             )
 
@@ -3061,9 +3086,7 @@ class UpdateGroupBox(QGroupBox):
                         x for x in release['assets']
                         if 'browser_download_url' in x
                            and 'name' in x
-                           and (
-                               target_regex.search(x['name']) is not None or
-                               target_regex_msvc.search(x['name']) is not None)
+                           and target_regex.search(x['name']) is not None
                     )
                     asset = next(asset_iter, None)
 
@@ -3170,10 +3193,18 @@ class UpdateGroupBox(QGroupBox):
 
         selected_platform = self.platform_button_group.checkedButton()
 
+        selected_build_type = self.build_type_button_group.checkedButton()
+
         if selected_platform is self.x64_radio_button:
             selected_platform = 'x64'
         elif selected_platform is self.x86_radio_button:
             selected_platform = 'x86'
+
+        if selected_build_type is self.msvc_radio_button:
+            selected_build_type = '-msvc-'
+        elif selected_build_type is self.other_radio_button:
+            selected_build_type = '-'
+
 
         if selected_branch is self.stable_radio_button:
             # Populate stable builds and stable changelog
@@ -3231,7 +3262,7 @@ class UpdateGroupBox(QGroupBox):
         elif selected_branch is self.experimental_radio_button:
             release_asset = cons.BASE_ASSETS['Tiles'][selected_platform]
 
-            self.start_lb_request( release_asset )
+            self.start_lb_request( release_asset, selected_build_type )
             self.refresh_changelog()
 
     def refresh_changelog(self):
@@ -3243,48 +3274,66 @@ class UpdateGroupBox(QGroupBox):
 
         ### Get the last 100 PR
         url = cons.CHANGELOG_URL + '100'
-
-        changelog_data = requests.get(url).json()
+        try:
+            changelog_data = requests.get(url).json()
+        except requests.ConnectionError:
+            self.changelog_content.setHtml(_('<h3>Can\'t reach changelog...</h3>'))
+            return
         changelog_html = StringIO()
 
-        date = str()
+        changelog_sorted = dict()
 
         for entry in changelog_data["items"]:
             if entry["state"] == "open":
-             continue
+                continue
 
-            if date != entry['closed_at'][0:10]:
-                date = entry['closed_at'][0:10]
-                changelog_html.write('</ul>')
-                changelog_html.write(
+            new_date = entry['closed_at'][0:10]
+            new_entry = changelog_entry(title =entry['title'],
+                                        body = entry['body'].split('####'),
+                                        node_id =entry['node_id'],
+                                        number=entry['number'],
+                                        html_url=entry['html_url']
+                                        )
+                                        
+            if new_date in changelog_sorted:
+                changelog_sorted[new_date].append(new_entry)
+            else:
+                changelog_sorted.update({new_date : [new_entry]})
+
+        for date in sorted(changelog_sorted):
+            changelog_html.write('</ul>')
+            changelog_html.write(
                     '<h3>{0}</h3>'
                     .format(date)
                 )
+            for sorted_entry in changelog_sorted[date]:
                 changelog_html.write('<ul>')
-            changelog_html.write(
+                changelog_html.write(
                     '<h4>{0}</h4>'
-                    .format(entry['title'])
+                    .format(sorted_entry.title)
                 )
-            changelog_html.write('<ul>')
-            body = entry['body'].split('####')
-            if len(body)>2:
-                if body[0] == '':
-                    msg = body[2]
+                changelog_html.write('<ul>')
+                body = sorted_entry.body
+                if len(body)>2:
+                    if body[0].rstrip() == '':
+                        msg = body[2]
+                    elif len(body)>3:
+                        msg = body[3]
+                    msg=msg[18:]
                 else:
-                    msg = body[3]
-                msg=msg[18:]
-            else:
-                msg = entry['title']
-            commitid = entry['node_id']
-            link_repl = rf'<a href="{cons.CDDA_ISSUE_URL_ROOT}\g<id>">#\g<id></a>'
-            msg = id_regex.sub(link_repl, msg)
-            commit_name = entry['number']
-            if commitid:
-                commit_url = entry['html_url']
-                changelog_html.write(f'<li>{msg} [<a href="{commit_url}">{commit_name}</a>]</li>')
-            else:
-                changelog_html.write(f'<li>{msg}</li>')
-            changelog_html.write('</ul>')
+                    msg = sorted_entry.title
+
+                commitid = sorted_entry.node_id
+                link_repl = rf'<a href="{cons.CDDA_ISSUE_URL_ROOT}\g<id>">#\g<id></a>'
+                msg = id_regex.sub(link_repl, msg)
+                commit_name = sorted_entry.number
+                if commitid:
+                    commit_url = sorted_entry.html_url
+                    changelog_html.write(f'<li>{msg} [<a href="{commit_url}">{commit_name}</a>]</li>')
+                else:
+                    changelog_html.write(f'<li>{msg}</li>')
+                changelog_html.write('</ul>')
+                changelog_html.write('</ul>')
 
         self.changelog_content.setHtml(changelog_html.getvalue())
 
@@ -3315,6 +3364,24 @@ class UpdateGroupBox(QGroupBox):
         set_config_value('platform', config_value)
 
         self.refresh_builds()
+
+    def build_type_clicked(self, button):
+        if button is self.msvc_radio_button:
+            config_value = '-msvc-'
+        elif button is self.other_radio_button:
+            config_value = '-'
+
+        set_config_value('build_type', config_value)
+
+        self.refresh_builds()
+
+class changelog_entry():
+    def __init__(self: str, title: str, body:str, node_id: str, number: str, html_url: str) -> None:
+        self.title = title
+        self.body = body
+        self.node_id = node_id
+        self.number = number
+        self.html_url = html_url
 
 
 # Recursively delete an entire directory tree while showing progress in a
