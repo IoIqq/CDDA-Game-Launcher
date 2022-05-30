@@ -63,6 +63,7 @@ target/
 
 # VS Code
 .vscode/*
+cddagl/.vs/*
 
 # PyCharm
 .idea/
