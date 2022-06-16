@@ -8,9 +8,6 @@ description: Suggest an idea for the Launcher
 labels: ["enhancement"]
 
 body:
-  - type: markdown
-    attributes:
-      value: |
   - type: textarea
     attributes:
       label: Is your feature request related to a problem? Please describe.
