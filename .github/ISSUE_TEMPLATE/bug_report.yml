@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 
 name: Bug Report
-description: Create a report to help improve the Laucnher
+description: Create a report to help improve the Launcher
 # title: ""
 labels: ["bug"]
 
