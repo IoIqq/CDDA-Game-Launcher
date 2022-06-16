@@ -1,8 +1,6 @@
-<!--
-SPDX-FileCopyrightText: 2015-2021 Rémy Roy
-
-SPDX-License-Identifier: MIT
--->
+# SPDX-FileCopyrightText: 2022 Gonzalo López <glopezvigliante@gmail.com>
+#
+# SPDX-License-Identifier: MIT
 
 name: Bug Report
 description: Create a report to help improve the Laucnher
