@@ -347,5 +347,16 @@
     "size": 1649025,
     "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/master.zip",
     "homepage": "https://github.com/chaosvolt/cdda-arcana-mod"
-  }
+  },
+  {
+    "type": "direct_download",
+    "mod_type": "SUPPLEMENTAL",
+    "ident": "MST_Extra",
+    "name": "MST_Extra_Mod for Cataclysm: Dark Days Ahead",
+    "description": "the official followup to the now-obsolete More Survival Tools mod, Adds assorted additional content and changes that improve quality of life when playing innawoods",
+    "author": "chaosvolt",
+    "size": 527112
+    "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
+    "homepage": "https://github.com/chaosvolt/MST_Extra_Mod"
+  },
 ]
