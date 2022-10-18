@@ -6,8 +6,6 @@ SPDX-License-Identifier: MIT
 
 # Building guide
 
-> This guide is **outdated**. A updated version should soon be added to replace this one.
-
 CDDA Game Launcher is developed using Python. In order to run or build the launcher, you will need to download a recent version of Python and install all the requirements.
 
 ## Requirements
@@ -35,7 +33,8 @@ The resulting launcher installer should be in the `dist\innosetup` directory.
 
 1. Download and install Python 3.9 from [python.org](https://www.python.org/downloads/release/python-3910/). The rest of this guide will assume that you are using the 64-bit (x64) version of Python 3.9.
    1. **_Optional but thoroughly recommended_**: Setup a [virtual environment](https://docs.python.org/3.9/library/venv.html). It will make your development experience immensely easier. 
-2. Install most requirements by typing the following `pip` command in your command line window: `pip install SQLAlchemy alembic PyQt5 PyInstaller html5lib cssselect arrow rarfile Babel pypiwin32 pywinutils Markdown Werkzeug` and press `↵ Enter`.
+2. Install most requirements by typing the following `pip` command in your command line window: `pip install SQLAlchemy alembic PyQt5 PyInstaller html5lib cssselect arrow rarfile Babel pypiwin32 pywinutils Markdown Werkzeug httpx markdown2 requests` and press `↵ Enter`.
+   3. Alternatively, install all the dependencies specified in `requirements.txt`.
 3. Install the `pylzma` package from [Christoph Gohlke's Unofficial Windows Binaries](http://www.lfd.uci.edu/~gohlke/pythonlibs/). `cp39` means CPython 3.9 and `amd64` means 64-bit and in Christoph Gohlke's packages naming convention. The package name you are looking for should be similar to `pylzma-0.5.0-cp39-cp39-win_amd64.whl`. To install `.whl` packages from Christoph Gohlke's Unofficial Windows Binaries page, you can use pip. In your command line window, type: `pip install [path to .whl]` and press `↵ Enter`.
    1. A local copy of a usable pylzma package can be found in `./third-party/pylzma/pylzma-0.5.0-cp39-cp39-win_amd64.whl`, so you can go ahead and `pip install` that one if you have Python 3.9 and a 64-bit Windows installation.
 4. Download the CDDA Game Launcher source code. If you have git installed, you can type the following command in your command line window: `git clone https://github.com/DazedNConfused-/CDDA-Game-Launcher.git`. You can also download the source code from [https://github.com/DazedNConfused-/CDDA-Game-Launcher/archive/master.zip](https://github.com/DazedNConfused-/CDDA-Game-Launcher/archive/master.zip). Make sure to extract the zip file somewhere before trying to run the code.
