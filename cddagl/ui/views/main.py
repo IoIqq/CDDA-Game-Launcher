@@ -3288,8 +3288,8 @@ class UpdateGroupBox(QGroupBox):
                 continue
 
             new_date = entry['closed_at'][0:10]
-            new_entry = changelog_entry(title =entry['title'],
-                                        body = entry['body'].split('####'),
+            new_entry = changelog_entry(title=entry['title'],
+                                        body = (entry['body'] or "").split('####'),
                                         node_id =entry['node_id'],
                                         number=entry['number'],
                                         html_url=entry['html_url']
