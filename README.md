@@ -8,8 +8,8 @@ SPDX-License-Identifier: MIT
 
 A [Cataclysm: Dark Days Ahead](https://cataclysmdda.org/) launcher with additional features.
 
-![GitHub Workflow Status (master)](https://img.shields.io/github/workflow/status/DazedNConfused-/CDDA-Game-Launcher/build/master?label=master)
-![GitHub Workflow Status (develop)](https://img.shields.io/github/workflow/status/DazedNConfused-/CDDA-Game-Launcher/build/develop?label=develop)
+![GitHub Workflow Status (master)](https://img.shields.io/github/actions/workflow/status/DazedNConfused-/CDDA-Game-Launcher/build.yml?branch=master)
+![GitHub Workflow Status (develop)](https://img.shields.io/github/actions/workflow/status/DazedNConfused-/CDDA-Game-Launcher/build.yml?branch=develop)
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/DazedNConfused-/CDDA-Game-Launcher)
 ![GitHub all releases](https://img.shields.io/github/downloads/DazedNConfused-/CDDA-Game-Launcher/total)
