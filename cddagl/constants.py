@@ -55,6 +55,16 @@ BASE_ASSETS = {
 }
 
 STABLE_ASSETS = {
+    '0.G': {
+        'name': '0.G Gaiman',
+        'number': '2023-03-01-0054',
+        'released_on': '2023-03-01T00:54:27Z',
+        'github_release': 'https://github.com/CleverRaven/Cataclysm-DDA/releases/tag/0.G/',
+        'Tiles': {
+            'x64': 'https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.G/cdda-windows-tiles-x64-2023-03-01-0054.zip',
+            'x86': 'https://github.com/CleverRaven/Cataclysm-DDA/releases/download/0.G/cdda-windows-tiles-x32-2023-03-01-0054.zip'
+        }
+    },
     '0.F-3': {
         'name': '0.F Frank-3',
         'number': '2021-11-27-1534',
@@ -158,6 +168,14 @@ STABLE_ASSETS = {
 }
 
 STABLE_CHANGELOG = '''
+<h3>0.G Gaiman</h3>
+
+<p>We are proud to announce that 0.G “Gaiman” stable release has arrived!  Two years have passed since the release of the stable version 0.F “Frank”, two years of unprecedented turmoil in the real world that delayed our planned release of the next stable. These two years have seen many IRL job changes among the dev team,  new contributors to CleverRaven, and a couple of babies joining members’ families.  The 0.G release is more than double the size of the 0.F release, a distinction that we keep trying and failing to avoid. Even more than previous stable versions, this release features a massive range of bugfixes, code and content additions, and new features. 10,293 new game entities were added, 11,643,312 lines of source code were inserted, and 5,022,361 lines were deleted.  This included several new language translations, multiple new tilesets; including some isometric tileset demos, and multiple new mods in addition to base game content and features.</p>
+<p>This cycle was started, tilting at our perennial windmill of a six to nine month release cycle.  Shortly thereafter, Covid locked down the world but not contributions to DDA! There are many incredible changes that have entered the game and several ancient issues that have been closed.  The skill system has been greatly expanded with many new proficiencies and many new ways to learn them, as well as the groundwork for practice-based skill improvement, including a skill rust system that doesn't suck because it caps effective skill loss and regenerates faster than regular skill gain. Appliance based stationary power grids now exist.  Turning vehicles now present complete walls that block out monsters, fields and more from crossing from the outside to the inside of the vehicle.  Map memory is now unlimited, so you will no longer forget places you haven’t been to recently.  Cardio has finally been modeled so that your endurance will increase if you spend your days running and working hard or exercising.  Perspiration is now modeled, your character running around the middle of summer in full plate mail won’t immediately overheat.  Now your character will perspire and thirst will increase until you are dehydrated at which point overheating will begin.  Hydrate yourselves accordingly!</p>
+<p>In addition to the above issue/request resolving features above, there are a number of new features that haven’t necessarily been on the roadmap for a long time but came to fruition during this experimental cycle.  The amount of UI based contributions has gone through the roof this cycle and created tons of options around how your fully customizable sidebar looks, the color theme for your UI is also fully customizable with multiple shipped options, along with updates and improvements to action explanations, tutorials and the github process itself, which while not visible to people who only play the game makes a huge difference in the quality and amount of contributions added to Cataclysm: Dark Days Ahead.  You can now passively purify water by boiling it by placing it in a fireproof container on a fire or near an extreme heat source. A new hobby tab in character creation allows you to choose traits and skills that go together that represent how you spent your time before the end of the world. Monster weak points now exist, allowing your strikes to critically hit. You can learn proficiencies that will increase your likelihood to critically hit these weak points by researching and dissecting monsters. Speaking of monsters, we’ve adjusted the aggression system so that some more intelligent monsters will recognize whether they were attacked by another monster or the player and will remain passive or gain hostility depending on who harmed them.  A lone zombie will no longer turn a pack of wild dogs permanently hostile to you.  Finally, Effect on Condition brings a scripting pseudo language to Cataclysm. Some of its key uses in 0.G have been the introduction of portal storms, NPC faction development over time, the ability to take over a follower after pc death, and random encounters in already explored maps.</p>
+<p>During this time modders have added a half dozen new in repo mods: Innawoods for the survival from scratch you crave, Backrooms which takes place in the neverending backrooms dimension, Massachusetts mod for people who desire geographic accuracy, Xedra Evolved a science fantasy mod with weird magic and vampirism, Tropicataclysm for your Cataclysm at a warmer latitude, and the Megafauna mod which targets an ancient epoch with creatures that outsize our modern equivalents, similar to Dinomod.  In addition to this Magiclysm, Dinomod, and Aftershock have received dozens of new PRs each to a scale that would be equal to or larger than paid DLC for a AAA game.</p>
+<p>We, the DDA team, have had a great time creating new content and worlds to explore and we hope that you enjoy them and if a mood takes you, that you join us in creating more in the future.  Thank you and a significantly larger, but still incomplete changelog can be found at <a href="https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/data/changelog.txt">https://github.com/CleverRaven/Cataclysm-DDA/blob/0.G/data/changelog.txt</a></p>
+
 <h3>0.F-3 Frank-3</h3>
 
 <p>Point release <strong>Frank-3</strong> includes following features and bugfixes backported to <a href="https://github.com/CleverRaven/Cataclysm-DDA/releases/tag/0.F">original Frank release</a>:</p>
@@ -568,7 +586,9 @@ STABLE_SHA256 = {
     '5da7ebd7ab07ebf755e445440210309eda0ae8f5924026d401b9eb5c52c5b6e7': '0.F-2',
     '6870353e6d142735dfd21dec1eaf6b39af088daf5eef27b02e53ebb1c9eca684': '0.F-2',
     '59404eeb88539b20c9ffbbcbe86a7e5c20267375975306245862c7fb731a5973': '0.F-3',
-    '3e0b15543015389c34ad679a931186a1264dbccb010b813f63b6caef2d158dc8': '0.F-3'
+    '3e0b15543015389c34ad679a931186a1264dbccb010b813f63b6caef2d158dc8': '0.F-3',
+    'f5587ee76ee6a120946d3d1d66446dfaa047a322d8c924926a9228d29856af2b': '0.G',
+    'cf0fb23edf1d9c0755e2543902f64562aaae7820f9f66f92164cff2ab9ea04cd': '0.G'
 }
 
 CONFIG_BRANCH_KEY = 'branch'
