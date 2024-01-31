@@ -3,8 +3,12 @@ SPDX-FileCopyrightText: 2015-2021 Rémy Roy
 
 SPDX-License-Identifier: MIT
 -->
+<div align="center">
 
 # CDDA Game Launcher
+[ English | [简体中文](README_zh.md) ]
+
+</div>
 
 A [Cataclysm: Dark Days Ahead](https://cataclysmdda.org/) launcher with additional features.
 
@@ -91,7 +95,7 @@ You might need to delete your configs file to work around this issue. That filen
 
 The base game is bundled with a good number of mods. You can view them more like modules that you can activate or ignore when creating a new world in game. These mods or modules can provide a different game experience by adding new items, buildings, mobs, by disabling some game mechanics or by changing how you play the game. They are a simple way of having a distinctive playthrough using the same game engine. The game is quite enjoyable without any of these additional mods or by using the default mods when creating a new world. You should probably avoid using additional mods if you are new to the game for your first playthrough to get familiar with the game mechanics. Once you are comfortable, after one or a few playthroughs, I suggest you check back the base game mods or even some external mods for your next world.
 
-### A mod in the repository is broken or is crashing my game when enabled. What can I do? ###
+### A mod in the repository is broken or is crashing my game when enabled. What can I do?
 
 It is frequent for game updates to break mods especially on the experimental branch. You could try to see if there is an update for that mod. You could try updating that mod by removing it and installing it again. You could try to contact the mod author and ask him to update his mod.
 

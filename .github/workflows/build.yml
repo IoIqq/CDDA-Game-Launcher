@@ -45,6 +45,8 @@ jobs:
       shell: bash -l {0}
       env:
         PYTHON_VERSION: ${{ matrix.PYTHON_VERSION }}
+        LC_ALL: C.UTF-8
+        LANG: C.UTF-8
       run: |
         which python
         python --version
