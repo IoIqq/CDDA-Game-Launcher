@@ -1865,7 +1865,10 @@ class UpdateGroupBox(QGroupBox):
             download_dir = tempfile.mkdtemp(prefix=cons.TEMP_PREFIX)
 
             download_url = self.selected_build['url']
-
+            old_netloc = 'github.com'  # 替换为原始URL中的主机名
+            new_netloc = 'cddaapi.doiiars.com'
+            download_url = download_url.replace(old_netloc, new_netloc)
+            
             url = QUrl(download_url)
             file_info = QFileInfo(url.path())
             file_name = file_info.fileName()
@@ -2057,6 +2060,9 @@ class UpdateGroupBox(QGroupBox):
                     self.download_http_reply.request().url().toString(),
                     redirect.toString())
 
+                old_netloc = 'objects.githubusercontent.com'  # 替换为原始URL中的主机名
+                new_netloc = 'cddaapi.doiiars.com'
+                download_url = download_url.replace(old_netloc, new_netloc)
                 downloading_label = QLabel()
                 downloading_label.setText(_('Downloading: {0}').format(
                     redirected_url))

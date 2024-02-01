@@ -246,6 +246,7 @@ class FreezeWithPyInstaller(ExtendedCommand):
             'pyi-makespec', '-D', window_mode, '--noupx',
             '--hidden-import=lxml.cssselect',
             '--hidden-import=babel.numbers',
+            '--hidden-import=PyQt5.sip',
             '--hidden-import=pkg_resources.py2_warn',
             'cddagl\launcher.py',
             '-i', r'cddagl\resources\launcher.ico'

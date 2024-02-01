@@ -12,6 +12,12 @@ from logging.handlers import RotatingFileHandler
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
 from babel.core import Locale
+try:
+    # new location for sip
+    # https://www.riverbankcomputing.com/static/Docs/PyQt5/incompatibilities.html#pyqt-v5-11
+    from PyQt5 import sip
+except ImportError:
+    import sip
 
 ### to avoid import errors when not setting PYTHONPATH
 if not getattr(sys, 'frozen', False):

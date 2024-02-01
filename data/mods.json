@@ -322,7 +322,7 @@
     "authors": [ "Toltetix" ],
     "description": "Adds some monsters based off Japanese folklore.",
     "category": "creatures",
-    "size": 54105,
+    "size": 52514,
     "url": "https://github.com/Toltetix/cdda-youkai-mod/archive/master.zip",
     "homepage": "https://github.com/Toltetix/cdda-youkai-mod"
   },
@@ -344,7 +344,7 @@
     "authors": [ "chaosvolt" ],
     "description": "Focused principally on magical items as the name implies (the mod predating the current spell mechanics), with proper spells being a valuable, powerful tool that demands hunting monsters and learning of the Beyond moreso than simple scavenging.",
     "category": "items",
-    "size": 1649025,
+    "size": 1803082,
     "url": "https://github.com/chaosvolt/cdda-arcana-mod/archive/master.zip",
     "homepage": "https://github.com/chaosvolt/cdda-arcana-mod"
   },
@@ -355,7 +355,7 @@
     "name": "MST_Extra_Mod for Cataclysm: Dark Days Ahead",
     "description": "the official followup to the now-obsolete More Survival Tools mod, Adds assorted additional content and changes that improve quality of life when playing innawoods",
     "author": "chaosvolt",
-    "size": 527112
+    "size": 141688,
     "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
     "homepage": "https://github.com/chaosvolt/MST_Extra_Mod"
   },

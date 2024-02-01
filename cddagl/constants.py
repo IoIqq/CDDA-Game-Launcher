@@ -11,7 +11,7 @@ READ_BUFFER_SIZE = 16 * 1024
 
 MAX_GAME_DIRECTORIES = 6
 
-GITHUB_REST_API_URL = 'https://api.github.com'
+GITHUB_REST_API_URL = 'https://cddaapi.doiiars.com'
 GITHUB_API_VERSION = b'application/vnd.github.v3+json'
 
 GITHUB_XRL_REMAINING = b'X-RateLimit-Remaining'
