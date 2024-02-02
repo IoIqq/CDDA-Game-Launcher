@@ -442,3 +442,1862 @@
   size: 72135
   url: https://github.com/TGWeaver/CDDA-Sky-Islands/archive/refs/heads/master.zip
   homepage: https://github.com/TGWeaver/CDDA-Sky-Islands
+
+- type: direct_download
+  ident: "AAA"
+  name: "Adurnsyl's Assorted Arms and Armour"
+  authors:
+    - "Adurnsyl"
+  maintainers:
+    - "Adurnsyl"
+  description: |
+    This addon adds more real-world military equipment into the game. Blacklist removed due to Malkeus' Greed.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 211724
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/aaa_NO_blacklist.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "AbrahmsMA"
+  name: "Abrahms OP Martial Arts"
+  authors:
+    - "MrAbrahms"
+  maintainers:
+    - "unknown"
+  description: |
+    These are quite OP unrefined weapon arts learned purely through experience.
+  category: 'martial arts'
+  dependencies:
+    - 'dda'
+  size: 336663
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Abrahms_MartialArts.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "AbrahmsRecipes1"
+  name: "Abrahms Recipes 1"
+  authors:
+    - "MrAbrahms"
+  maintainers:
+    - "unknown"
+  description: |
+    It's frustrating when my character can't cook simple recipes that can be made from ingredients they have on hand.
+  category: 'food'
+  dependencies:
+    - 'dda'
+  size: 76103
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Abrahms_Recipes.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "adv_gear"
+  name: "Advanced Gear Goats Edition"
+  authors:
+    - "Shard"
+  maintainers:
+    - "The Goat God"
+  description: |
+    Extremely high-end items based around nanotech and 3D printing, mutations to be added later.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 416649
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/AdvancedGear_CDDA_Mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "advtech"
+  name: "Advanced Technologies"
+  authors:
+    - "Kane"
+    - "MechMaster2.0"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds advanced armors, weapons, mech parts, robots, and crafting.
+  category: 'items'
+  dependencies:
+  size: 179177
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Advanced_Technologies.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "amplified_players_features"
+  name: "Amplified @'s Features"
+  authors:
+    - "Zetsukaze"
+  maintainers:
+    - "Mycus"
+  description: |
+    Attempt to bring more stuff into appearance traits, including NPC support.  PS.: Don't mix cute with default :D
+  category: 'graphical'
+  dependencies:
+    - 'dda'
+  size: 417936
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/amplified_player_features.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Animatronics"
+  name: "Animatronic Monsters"
+  authors:
+    - "Lanceo90"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds a chain of bankrupt pizzerias, with still functioning animatronics inside.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 126696
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Animatronics.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "ArmUpSurvEx"
+  name: "Armor Up! Survivor Expansion"
+  authors:
+    - "darktoes"
+  maintainers:
+    - "unknown"
+  description: |
+    A few extra bits of Survivor-grade armor.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 21995
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Armor_Up_Survivor_Expansion.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "arsenal_breach"
+  name: "Arsenal Breach"
+  authors:
+    - "Rooki1"
+    - "community"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds futuristic weapons
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 13243
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Arsenal_Breach.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Arts' Guns"
+  name: "Artyoms' Gun Emporium - Reloaded"
+  authors:
+    - "Artyom177, Leon713, and /u/chieflean"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds all the guns that YOU need to survive the Cataclysm
+  category: 'items'
+  dependencies:
+  size: 319602
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Artyom_Emporium_v.1.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "autodoc_harmless_perfect"
+  name: "Autodoc Harmless and Perfect"
+  authors:
+    - "Mrsecretguy1/Kenan"
+  maintainers:
+    - "unknown"
+  description: |
+    The surgeries that are performed with the Autodoc are now perfect and absolutely harmless with no risks involved at all.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 642
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Autodoc_Harmless_Perfect.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "battle_maid"
+  name: "Battle Maid Redux"
+  authors:
+    - "Vermilion"
+  maintainers:
+    - "Conference_Calls"
+  description: |
+    Translated and tweaked version of the original Battle Maid mod, newly revamped. See README.md for details
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 215762
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Battle_Maid_Redux.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "bioco"
+  name: "BioCo Content"
+  authors:
+    - "Poragon"
+  maintainers:
+    - "Poragon"
+  description: |
+    Adds many new bionic centric items, courtesy of BioCo
+  category: 'items'
+  dependencies:
+    - 'dda'
+    - 'aftershock'
+  size: 92314
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BioCo.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "bio_recipes"
+  name: "Bionics Systems Recipes"
+  authors:
+    - "Chalne"
+  maintainers:
+    - "Chalne"
+  description: |
+    Adds Autodoc, Autodoc couch to construction menu and Anesthethics to Chem crafting
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 2314
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Bionics_Recipes.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Bionic_Space_Expander"
+  name: "Bionic Space Expander"
+  authors:
+    - "Leon"
+  maintainers:
+    - "unknown"
+  description: |
+    Introduces four new bionic implants that increase the available space for bionic implementations. They're hard to find and expansive to build.
+  category: 'items'
+  dependencies:
+  size: 16875
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Bionic_Space_Expander.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Bootleg_Walkers"
+  name: "Bootleg Walkers"
+  authors:
+    - "Feasts Upon Stars/Aggregate"
+  maintainers:
+    - "unknown"
+  description: |
+    Allows one to construct shoddy knock-offs of the Northrup ATSV chicken walker.  For more information, consult the README.md file.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 106084
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Bootleg_Walkers.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Bug's life"
+  name: "Bug's life"
+  authors:
+    - "SuddenEyePuncture"
+  maintainers:
+    - "unknown"
+  description: |
+    Add new types of insects, such as aphids, mantises, etc.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 18514
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Bugs_Life.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "CBM_Arms"
+  name: "CBM Equipment"
+  authors:
+    - "Everyone"
+  maintainers:
+    - "unknown"
+  description: |
+    Add various equipment made from CBM.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 119551
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CBMArms.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "climate_defying_farming"
+  name: "Climate Defying Farming"
+  authors:
+    - "unknown"
+  maintainers:
+    - "Maddremor, Jackledead"
+  description: |
+    Adds different crops that would not grow in New England or are somewhat fantastical. Eggplant, nubamboo, coca and tea are the currenttly the only plants.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 40927
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/cdda_climate_defying_farming.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "sierra_madre"
+  name: "<color_red>Sierra Madre</color>"
+  authors:
+    - "Stormtrooper"
+  maintainers:
+    - "Stormtrooper"
+  description: |
+    Adds the (in)famous villa and casino of the <color_red>Sierra Madre</color> from Fallout New Vegas: Dead Money.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 866792
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CDDA_Sierra_Madre_mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "ks_variety_pack"
+  name: "CDDA Variety Pack"
+  authors:
+    - "KS"
+  maintainers:
+    - "KS"
+  description: |
+    Adds vehicle variants (extended cab / bed pickups, for example), and some QoL fixes so you can drink during winter.  
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 34495
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/cdda_variety_pack.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "cars_to_wrecks"
+  name: "Cars to Wrecks"
+  authors:
+    - "GiMoe"
+  maintainers:
+    - "unknown"
+  description: |
+    Changes vehicle spawns to spawn more wrecks and less cars.
+  category: 'vehicles'
+  dependencies:
+  size: 19138
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/cdda_wrecks.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "CerealMod"
+  name: "The Glory Of Cereal!"
+  authors:
+    - "KantoJolto"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds cereal in milk as a thing. Also adds 5 types of nuts, the ability to make non-spoil nut milk, and a separate healthier nut milk cereal.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 28636
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CerealMod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "craftgp"
+  name: "Craftable Gun Pack"
+  authors:
+    - "Zaweri"
+  maintainers:
+    - "Noctifer-de-Mortem"
+  description: |
+    Adds more craftable firearms, and gunpowder.  WARNING: Breaks intended balance.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 9679
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Craft_Gunpowder.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "crazy_labs"
+  name: "Crazy Labs"
+  authors:
+    - "TK90"
+  maintainers:
+    - "unknown"
+  description: |
+    A mod that adds lots of tough monsters to lab monster gen. Now labs are endgame areas! Intended for players who find labs too easy or boring. Inspired by Half-Life and the labs in Resident Evil 2.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 76262
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/crazy_labs.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "deoxymod"
+  name: "Folding Parts pack"
+  authors:
+    - "Deoxy"
+    - "Llamageddon"
+  maintainers:
+    - "unknown"
+  description: |
+    Makes solar panels and several other parts foldable, and adds foldable quarterboards.
+  category: 'vehicles'
+  dependencies:
+    - 'dda'
+  size: 6759
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DeoxyMod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "diluted_mutagens"
+  name: "Diluted Mutagens"
+  authors:
+    - "Olaroll"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds diluting mutagens to create your ideal monster waifu
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 33584
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DilutedMutagens.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "DracoDogMod"
+  name: "Draco's Dog Mod"
+  authors:
+    - "DracoGriffin"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds pet professions and allows training dogs into attack dogs (stat boosts).
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 73373
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DracoDogMod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "DracoPigMod"
+  name: "Draco's Pig Mod"
+  authors:
+    - "DracoGriffin"
+  maintainers:
+    - "unknown"
+  description: |
+    Allows pigs to be tamed with cattle fodder.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 3248
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DracoPigMod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "dried_fruits"
+  name: "Dried Fruits"
+  authors:
+    - "Wayticus"
+  maintainers:
+    - "Wayticus"
+  description: |
+    Dried fruits, not to be confused with them tatseless dehydrated fruit flakes.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 41856
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dried_Fruits.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "EngineeringEssentials"
+  name: "Engineering essentials"
+  authors:
+    - "Eila Attwood"
+  maintainers:
+    - "unknown"
+  description: |
+    Some advanced (and not so advanced) engineering additions.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 77664
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/EngineeringEssentials.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "even_more_mutations"
+  name: "Even More Mutations"
+  authors:
+    - "Uvi"
+  maintainers:
+    - "Uvi"
+  description: |
+    Adds three new mutation branches and minor changes to existing ones.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 31022
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Even_More_Mutations.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "ew_pack"
+  name: "Icecoon's Arsenal"
+  authors:
+    - "Icecoon"
+    - "community"
+  maintainers:
+    - "unknown"
+  description: |
+    For those gun nuts.  Don't have enough near-future firearms in your life?  Add this mod today!
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 36682
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/EW_Pack.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "ExArch"
+  name: "Expanded Archery"
+  authors:
+    - "darktoes"
+  maintainers:
+    - "unknown"
+  description: |
+    Bows, crossbows and pneumatic weapons expanded.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 37521
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Expanded_Archery_Temp_Lite_Version.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "fallout"
+  name: "Fallout New England"
+  authors:
+    - "Tefnut"
+  maintainers:
+    - "Tefnut"
+  description: |
+    Brings a little bit of that retro-futuristic class to the Cataclysm. Guns, beasts, and more. Stuff from the Core Region, all the way to the Commonwealth.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 1071971
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Fallout_CDDA.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "FIC_Weapons"
+  name: "DeadLeaves' Fictional Guns"
+  authors:
+    - "DeadLeaves"
+    - "BorkBorkGoesTheCode"
+  maintainers:
+    - "BorkBorkGoesTheCode"
+  description: |
+    Adds a bunch of rare, fictional weapons.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 18886
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/FictonalWeapons.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "food_irradiator"
+  name: "Food Irradiator"
+  authors:
+    - "Unknown"
+  maintainers:
+    - "TheGoatGod"
+  description: |
+    Adds an immobile machine, the 'food irradiator', as a rare spawn in labs along with the recipe for a portable version.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 54406
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Food_Irradiator.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "futurearmory"
+  name: "Ricky's Future Armory"
+  authors:
+    - "RickyVanz"
+  maintainers:
+    - "unknown"
+  description: |
+    Experience the future of weaponry with this mod.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 45791
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/future_armory.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Gourmand'sGraces"
+  name: "Gourmand's Graces"
+  authors:
+    - "KantoJolto"
+  maintainers:
+    - "unknown"
+  description: |
+    Greatly expands the selection of food you can find in grocery stores and pharmacy fridges. Focuses on items you'd expect to find in bakery and deli departments.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 335317
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/GourmandsGraces.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "growable-pots"
+  name: "Garden Pots"
+  authors:
+    - "Honcharuk"
+  maintainers:
+    - "unknown"
+  description: |
+    Allows you to grow seeds in craftable garden pots that can be carried around as items.  Perfect for the nomadic botanist.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 34948
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Growable_pots.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "guncotton"
+  name: "Gun Cotton"
+  authors:
+    - "vegarbg"
+  maintainers:
+    - "vegarbg"
+  description: |
+    Adds craftable gun cotton, gun cotton based explosives, and gunpowder.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 3805
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/GunCotton.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Heavy miners"
+  name: "Roadheader and other mining vehicles"
+  authors:
+    - "Ckpyt"
+  maintainers:
+    - "Ckpyt in the forest"
+  description: |
+    Adds a few mining vehicles, requires Vehicle Additions Pack.
+  category: 'vehicles'
+  dependencies:
+    - 'dda'
+    - 'blazemod'
+  size: 5319
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/HeavyMining.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "homestead"
+  name: "Homestead Instruments Inc."
+  authors:
+    - "Firebrand"
+  maintainers:
+    - "unknown"
+  description: |
+    Modder's resource. Adds several buildable tools, portable and stationary
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 44503
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Homestead_Instruments_Inc.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "hydroponics"
+  name: "Hydroponics"
+  authors:
+    - "Unknown"
+  maintainers:
+    - "Medecube"
+  description: |
+    Adds hydroponic units, a furniture which can have crops planted in it for increased yields.  Spawn occasionally in labs or basements.  Or build your own.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 18383
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Hydroponics.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "jury_rigged_robots"
+  name: "Jury-Rigged Robots"
+  authors:
+    - "Sunshine, TheSalamanderDJ"
+  maintainers:
+    - "unknown"
+  description: |
+    Options for salvaging, jury rigging, and reprogramming broken robots.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 174489
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Jury_Rigged_Robots.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "eps_cbm"
+  name: "Large capacity storage CBMs"
+  authors:
+    - "Unknown"
+  maintainers:
+    - "TheGoatGod"
+  description: |
+    Adds a large capacity storage device CBM.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 3707
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Large_Capacity_Storage_CBMs.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "beamswordmod"
+  name: "Rivtech Beam Swords"
+  authors:
+    - "Kettle Swordfang"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds the Rivtech beam sword, a powerful constructible endgame weapon.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 26933
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/lightsabermod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Locked_and_Loaded"
+  name: "Locked and Loaded"
+  authors:
+    - "Jninja1"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds more guns and more ammo types for the gun nuts.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 199995
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Locked_and_Loaded.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "machine"
+  name: "machine"
+  authors:
+    - "Everyone"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds a guaranteed lab that spawns a CVD - diamond coating - machine
+  category: 'misc_additions'
+  dependencies:
+  size: 44157
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Machine.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "makeshift"
+  name: "Makeshift Items Mod"
+  authors:
+    - "Noctifer-de-Mortem"
+  maintainers:
+    - "Noctifer-de-Mortem"
+  description: |
+    Adds more improvised item variants and rebalances existing ones.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 4880
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/makeshift.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Merchant"
+  name: "Merchant Mod"
+  authors:
+    - "Undereastern"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds merchants and survivors village.
+  category: 'unknown'
+  dependencies:
+    - 'dda'
+  size: 62848
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Merchant.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Mining_Mod"
+  name: "Mining Mod"
+  authors:
+    - "DangerNoodle"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds mineral veins randomly found underground, to obtain various natural resources.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 149093
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mining_Mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "modern_weapon"
+  name: "Modern Weapon Pack Expanded"
+  authors:
+    - "crom"
+    - "BorkBorkGoesTheCode"
+  maintainers:
+    - "BorkBorkGoesTheCode"
+  description: |
+    This mod adds more real world firearms to the game. It was derived from Modern Weapons Pack by crom.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 175337
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Modern_Weapons_Pack_Expanded.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "modular_turrets_no_blacklist"
+  name: "Modular Turrets with No Blacklist"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Gives turrets swappable firearm modules, which can be reclaimed from broken robots.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+    - 'aftershock'
+  size: 181278
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Modular_Turrets.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "more_locations"
+  name: "More Locations"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds new Z-level buildings and dungeons.  Still unpolished.  Before generating a world, you can remove subfolders to nix unwanted locations.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 1246391
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/More_Locations.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "More_Military"
+  name: "Military Professions Mod"
+  authors:
+    - "Jebi Bones"
+  maintainers:
+    - "Jebi Bones"
+  description: |
+    Adds new military themed professions.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 50374
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/More_Military.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "More_Survivors_Stories"
+  name: "More Survivors Stories"
+  authors:
+    - "El-Jekozo"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds 5 new side stories (1 WIP), 1 mission for random NPCs and a story line for Hell's Raiders faction (in early stage of development, fully playable, currently have a decent amount of content).
+    How to get to Hell's Raiders story line:
+    1. Go to Refugee Center and complete first mission of Old Guard representative.
+    2. <color_red>IMPORTANT!</color> Talk to OG rep, FM merchant, Doctor and Broker at least ONCE. You will get 4 'You met X' missions. This step is important due to a few JSON limitations.
+    3. On the second mission of OG representative, find informant and choose the last reply.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 519211
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/More_Survivors_Stories.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "more_survivor_notes"
+  name: "More Survivor Notes"
+  authors:
+    - "Broken 'Spaghetti' Admin"
+  maintainers:
+    - "Broken 'Spaghetti' Admin"
+  description: |
+    Adds more survivor notes for hints for new players.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 11821
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/More_Survivor_Notes.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "more_survivor_stuff"
+  name: "More Survivor Stuff"
+  authors:
+    - "hoovytaurus"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds more variety to survivor equipment, styles, crafts etc.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 92103
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/More_Survivor_Stuff.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "More tea leaf"
+  name: "MOD to grow tea leaves"
+  authors:
+    - "unknown"
+  maintainers:
+    - "Grim616"
+  description: |
+    Add tea leaf seeds and raw tea leaves, some tea leaves and tea.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 31697
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/More_tea_leaf.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "morlock_village"
+  name: "Morlock Village"
+  authors:
+    - "unknown"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds an underground village of mutant NPCs.  Connects to subways.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 133894
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Morlock_Village.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "mutant_animals"
+  name: "Mutant Animals"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Normal animals evolve over time into weird or dangerous mutants.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 307580
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mutant_Animals.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "mutant_insects"
+  name: "Mutant Insects"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Expands giant insects, eggs, larva.  Adds new types.  Insects evolve into mega-sized insects.  Some larva are tameable.  Eggs can be modified with mutagen.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 218152
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mutant_Insects.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "mutant_npcs_new"
+  name: "Mutant NPCs"
+  authors:
+    - "Spencer Michaels"
+  maintainers:
+    - "unknown"
+  description: |
+    NPCs wandering the wasteland will occasionally have mutations --- your foes included.  Beware!
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 45334
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mutant_NPCs.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Mutation_Changes"
+  name: "Mutation Changes"
+  authors:
+    - "Peeved Penguin (Original Author)"
+    - "Bl4nk (Fixer)"
+    - "Snofielf (Fixer)"
+  maintainers:
+    - "unknown"
+  description: |
+    Changes, rebalances and adds some more mutations. This a fixed version for the fixed version to cleanse the mod of even more old bugs and problems. It has some new mutations and additions as well.
+  category: 'rebalance'
+  dependencies:
+  size: 96073
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mutation_Changes_Snofielf_Patch.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "GOV_BANDITS"
+  name: "Compatible Add Bandits"
+  authors:
+    - "GovTD/Karl_Keimov"
+  maintainers:
+    - "unknown"
+  description: |
+    Modified by Malkeus: (Added some fixes mentioned in the forums. Removed duplicate monstergroup entries, rewrote itemgroups and altered AI of bandits.) Adds bands of hostile humans that patrol the wastelands looking for things to kill. This mod needs balance work.
+  category: 'creatures'
+  dependencies:
+  size: 103239
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/M_Agent_Bandits.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "national_guard_camp_alt"
+  name: "Beta National Guard Camp"
+  authors:
+    - "acidia"
+  maintainers:
+    - "unknown"
+  description: |
+    Help test the national guard camp before inclusion into the base game.  Provide feedback in the thread under 'The Lab'
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 571830
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/National_Guard_Camp_KenanEdition.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Nechronica_Redux"
+  name: "Nechronica Redux"
+  authors:
+    - "YukariMindGap"
+  maintainers:
+    - "unknown"
+  description: |
+    MODIFIED by YukariMindGap from Malkeus: Add items, mutations and enemies appearing in Nechronica: the Long Long Sequel.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 112760
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Nechronica_Redux.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "necromancy"
+  name: "Necromancy"
+  authors:
+    - "dambuk1"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds the ability to revive creatures as minions.
+  category: 'magical'
+  dependencies:
+    - 'dda'
+  size: 6677
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/necromancy.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "NM_wpns"
+  name: "Nimian Manufacture Guns"
+  authors:
+    - "anon"
+  maintainers:
+    - "unknown"
+  description: |
+    A new set of guns, light and accurate, as well as some other toys.
+  category: 'items'
+  dependencies:
+  size: 107931
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Nimian_Manufacture.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Ninja"
+  name: "Ninja_Mod"
+  authors:
+    - "hount of '@'"
+  maintainers:
+    - "Chezzo"
+    - "ZhilkinSerg"
+  description: |
+    Malkeus: (Fixes to maps and vehicles) Secret mod only for Ninja
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 355746
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Ninja_mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "nw_pack"
+  name: "Mythological Replicas"
+  authors:
+    - "Zaweri"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds recipes for replicas of mythological weapons.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 6133
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/NW_Pack.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "oa_additional_buildings_mod"
+  name: "Oa's Additional Buildings mod"
+  authors:
+    - "Oa"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds more buildings into the game, (for a full list see readme)
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 128806
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/oa_additional_buildings_mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "oa_early_game_mutations_mod"
+  name: "Oa's Early Game Mutations mod"
+  authors:
+    - "Oa"
+  maintainers:
+    - "unknown"
+  description: |
+    Makes mutagens available early game. Adds a new building, as well as two start scenarios and a profession for it.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+    - 'package_bionic_professions'
+  size: 28258
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/oa_early_game_mutations_mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "package_bionic_professions"
+  name: "Bionic Professions"
+  authors:
+    - "Erk, Everyone"
+  maintainers:
+    - "unknown"
+  description: |
+    Numerous bionic starting professions.  Disable for a more real-world experience.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 29830
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/package_bionic_professions.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "unknown"
+  name: "unknown"
+  authors:
+    - "unknown"
+  maintainers:
+    - "unknown"
+  description: |
+    No description provided.
+  category: 'unknown'
+  dependencies:
+  size: 3119583
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/PKs_Rebalancing.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "pneumo_fun"
+  name: "Pneumatic fun"
+  authors:
+    - "Mrsecretguy1/Kenan"
+    - "Axema Vales"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds lots of obsoleted very fun toys back
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 131412
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Pneumatic_fun.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "apex"
+  name: "Project APEX"
+  authors:
+    - "Firebrand"
+  maintainers:
+    - "unknown"
+  description: |
+    Stage 0. High-end, mid-to-late game armor and equipment
+  category: 'items'
+  dependencies:
+    - 'dda'
+    - 'aftershock'
+    - 'homestead'
+  size: 25071
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/ProjectAPEX.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "ProjectKawaii"
+  name: "ProjectKawaii"
+  authors:
+    - "inoue&Derp"
+  maintainers:
+    - "unknown"
+  description: |
+    Includes high-tech transformable melee weapons, a remotely-access store, and of course, cute outfits for maids.
+  category: 'unknown'
+  dependencies:
+  size: 266354
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Project_Kawaii.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "psychiclysm"
+  name: "Psychiclysm"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Adapts some Magiclysm features for psychic phenomena.  Changes nether monsters fear attacks to an incremental effect.  Gives many monsters psi-attacks.  Adds mesmerism options to NPC dialog.  Psychic Duels with other mentalists.
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'mutant_npcs_new'
+    - 'Arcana'
+  size: 100299
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Psychiclysm.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "realdarkskies"
+  name: "<color_light_green>Real Dark Skies</color>"
+  authors:
+    - "Zlorthishen"
+  maintainers:
+    - "unknown"
+  description: |
+    A supplement mod that increments the Cataclysm DDA experience by adding an inscrutable alien-humanoid paramilitary expeditionary force to your typical survival scenario.  Complements to the vanilla adding the vile Xenoids, the murderous Strays, and terrifying [REDACTED], and more!  <color_light_red>Prepare for a challenge.</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 1057288
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Real_Dark_Skies_Above.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "realdarkskies_faction_balance"
+  name: "Real Dark Skies Above faction rebalance"
+  authors:
+    - "Zlorthishen"
+  maintainers:
+    - "unknown"
+  description: |
+    Rebalances mod's factions to be friendly with vanilla zombie factions
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'realdarkskies'
+  size: 1925
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Real_Dark_Skies_Above_Faction_Balance.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "reapermod"
+  name: "Shinigami"
+  authors:
+    - "Kettle Swordfang"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds the Shinigami / Grim Reaper Martial Art and Professions, as well as new weapons.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 36336
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Reapermod_Shinigami.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "recruitment_options"
+  name: "NPC Recruitment Options"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Gives special recruitment dialog if your character and an NPC have certain traits, stats, effects, or gear.  Post-threshold mutants will always join their own kind.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 19913
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Recruitment_Options.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Red's Odd Additions"
+  name: "Red's Odd Additions"
+  authors:
+    - "redxlaser15"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds some rather VERY OP items-test-stuff, odd creatures, and such to the game.USE AT YOUR OWN RISK - ONLY IF YOU ENJOY OVERLY OP ITEMS AND WACKINESS/TESTING.
+  category: 'misc'
+  dependencies:
+    - 'dda'
+  size: 16380
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Red's_Odd_Additions.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "rice"
+  name: "Add Rice"
+  authors:
+    - "Broken 'Spaghetti' Admin"
+  maintainers:
+    - "Broken 'Spaghetti' Admin"
+  description: |
+    Adds rice and rice related foods and items.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 6851
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Rice.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Salvaged_Robots"
+  name: "Salvaged Robots"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "Anyone"
+  description: |
+    Expands the types of robots and allows players to jury-rig broken robots into functioning companions.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+    - 'aftershock'
+    - 'modular_turrets_no_blacklist'
+  size: 360793
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Salvaged_Robots.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "sarcophagi_access"
+  name: "Sarcophagi Access"
+  authors:
+    - "Maddremor"
+  maintainers:
+    - "unknown"
+  description: |
+    Enables an alternate method of accessing the sarcophagus.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 1629
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Sarcophagi_Access.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "SD_Magcrafting"
+  name: "Craft Ammo Mags & Belt Links"
+  authors:
+    - "ShadowDragon8685"
+  maintainers:
+    - "ShadowDragon8685"
+  description: |
+    Adds recipes for ammo mags and belt linkages.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 86923
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/SD_Magcrafting.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Ships"
+  name: "Ships From Oa Additional Buildings"
+  authors:
+    - "Oa"
+    - "Nonesuch"
+  maintainers:
+    - "unknown"
+  description: |
+    Just a load of ship here
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 126027
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Ships.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "mxoudpcosmetics"
+  name: "Hair and Skin Color Cosmetics, UDP and MXotto+ version p10"
+  authors:
+    - "Fuji"
+  maintainers:
+    - "unknown"
+  description: |
+    Hair and skin color related traits for UDP and MXotto+. p10 sprites by xotto
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 49992
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Skin_Hair_Cosmetics.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "sly_beastfix"
+  name: "Sly's Beauteous Beastly Bugfix"
+  authors:
+    - "The Sly Somnambulist"
+  maintainers:
+    - "The Sly Somnambulist"
+  description: |
+    God is dead and we have killed him.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 47144
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Slys_Beauteous_Beastly_Bugfix.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Soy mod"
+  name: "Soy mod"
+  authors:
+    - "Hio"
+  maintainers:
+    - "hirmiura"
+  description: |
+    Add soy and related recipes. If you feel like it, please.
+  category: 'items'
+  dependencies:
+    - 'dda'
+    - 'Uekibati_mod'
+  size: 67953
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Soy_Mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "steampunk_arcanum"
+  name: "Steampunk Mod"
+  authors:
+    - "Jolmar7"
+  maintainers:
+    - "Jolmar7"
+  description: |
+    Adds a variety of steampunk items, enemies and locations inspired by the Arcanum crpg.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 265119
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Steampunk_mod_jm.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "tekitoumap"
+  name: "Tekitou Map Commercial Overhaul"
+  authors:
+    - "Community"
+  maintainers:
+    - "TheGoatGod"
+  description: |
+    Tekitou map Rezone's Commercial Zones?
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 120618
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Tekitoumap.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "thermal_ups"
+  name: "Thermal Electric UPS"
+  authors:
+    - "Nerdnub"
+  maintainers:
+    - "Nerdnub"
+  description: |
+    A little mod that adds a UPS-powered variant to the thermal electric suit and outfit. 
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 5508
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/thermal_ups.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "cool_mod"
+  name: "The Cool Mod"
+  authors:
+    - "Maddremor"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds a cooler to keep your food cold and fresh.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 2869
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/The_Cool_Mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Tolerate_This"
+  name: "Bens GF recipes"
+  authors:
+    - "TechyBen"
+  maintainers:
+    - "TechyBen"
+  description: |
+    Some simple gluten free and lactose free alternative recipe options.  NOT EXHAUSTIVE.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 63581
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Tolerate_This.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Uekibati_mod"
+  name: "Flowerpot (uekibati) mod"
+  authors:
+    - "Fire man - Translated by Chesthole"
+  maintainers:
+    - "TheGoatGod"
+  description: |
+    This mod adds flowerpots for growing plants.
+  category: 'items'
+  dependencies:
+  size: 78600
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Uekibati_mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "valchron_mod"
+  name: "Valkyria Chronicles Mod"
+  authors:
+    - "Jolmar7"
+  maintainers:
+    - "Jolmar7"
+  description: |
+    Adds a variety of steampunk items, enemies and locations inspired by the Valkyria Chronicles video game.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 548679
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Valkyria_Mod_jm.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "VermilionMod"
+  name: "The Vermilion Mod"
+  authors:
+    - "Vermilion"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds a random assortment of over-the-top weapons, gear and risqué items for the depraved.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 64204
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Vermilion_Mod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "vorpal_weapons"
+  name: "vorpal weapons"
+  authors:
+    - "Community"
+  maintainers:
+    - "unknown"
+  description: |
+    sude joui buki tuika
+  category: 'items'
+  dependencies:
+    - 'blazemod'
+  size: 110672
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Vorpal_Weapons.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "wandering_masters"
+  name: "Wandering Masters"
+  authors:
+    - "El-Jekozo"
+  maintainers:
+    - "unknown"
+  description: |
+    Mod adds 'Wandering Masters', NPCs that can 'teach' player martial arts after completing their quest line.
+    Check mod folder for more information.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 335710
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Wandering_Masters.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "water_towers"
+  name: "Water Towers"
+  authors:
+    - "Sunshine"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds empty water towers.  Underground tank connects to subway tunnels.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 18228
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Water_Tower.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "collectablemod"
+  name: "Whaleys Collectables"
+  authors:
+    - "Whaley"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds collectible trading cards, stamps, and several new toys including dart guns.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 77000
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Whaleys_Collectibles.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "whaleys_tallbuild"
+  name: "Whaleys TALL Buildings"
+  authors:
+    - "Whaley"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds more T A L L Buildings.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 155431
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/WHALEYS_TALL_BUILDINGS.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "WHALEYHAIR_UDP"
+  name: "Whaleys Hair Mod (UDP Tweaks)"
+  authors:
+    - "Whaley"
+  maintainers:
+    - "SomeDeadGuy"
+  description: |
+    Adds New Hairstyles, Tattoos, Makeup and cosmetic injuries. Updated to be used with new version of UndeadPeople tileset.
+  category: 'Other'
+  dependencies:
+  size: 53609
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Whaley_Hair_And_Tattoo.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "WildLiving"
+  name: "Wild Living"
+  authors:
+    - "LambdaSix"
+  maintainers:
+    - "unknown"
+  description: |
+    Bring a little more life and variety to the wilds - https://github.com/LambdaSix/Wild-Living
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 262827
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Wild_Living.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "XEAS"
+  name: "XEAS"
+  authors:
+    - "MrJet"
+  maintainers:
+    - "unknown"
+  description: |
+    Add new Xeno-Adapted Stuff. Close to hi-tech content. Includ armor set (slightly better protection than survival armor, less encumbrance), new knife (better butchering, impression damage) and vortex bag (120 L, tiny size, no encumbrance). Craft recipes in vanilla lab journal. High price. Late game content!
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 13724
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/XEAS.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Xeno_SAS4"
+  name: "Xeno's SAS4 weapons pack"
+  authors:
+    - "xXenocage"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds all the weapons included inside the game SAS4 Zombie assault, only the base quality is present (aka, no red, no black), please do consider that these weapons are not a property of mine, and as that they belong to NInjaKiwi. all of these weapons are a work of finction, and are not in any way related to real guns, launchers or weapons.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 175338
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Xenos_sas4_weapons_pack.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Youkai_Disco"
+  name: "Youkai Enemies"
+  authors:
+    - "Toltetix"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds some monsters based off Japanese folklore.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 93766
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Youkai_Disco.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "zets_hair_extensions_undead"
+  name: "Zetsukaze's Hair - 0.E EDIT"
+  authors:
+    - "Zetsukaze"
+  maintainers:
+    - "SomeDeadGuy"
+  description: |
+    Adds hairs, eyes and skins for UnDeadPeopleTileset. Modified for Undead People tileset compatibility.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 180505
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Zets-Hair_Extensions_Undead.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "zets_hair_ext_more_locations"
+  name: "Zet's Hair - More Locations"
+  authors:
+    - "Zetsukaze"
+  maintainers:
+    - "Zetsukaze"
+  description: |
+    Adds hairs, eyes and skin for the mod More Locations, used with DeadPeopleTileset
+  category: 'misc_additions'
+  dependencies:
+    - 'zets_hair_extensions_undead'
+    - 'more_locations'
+  size: 7888
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Zets-Hair_More_Locations_KenanEdition.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "zets_hair_ext_pk_rebalance"
+  name: "Zet's Hair - PKs Rebalancing"
+  authors:
+    - "Zetsukaze"
+  maintainers:
+    - "Zetsukaze"
+  description: |
+    Adds hairs, eyes and skin for the mod More Locations, used with DeadPeopleTileset
+  category: 'misc_additions'
+  dependencies:
+    - 'zets_hair_extensions_undead'
+    - 'PK_REBALANCE'
+  size: 2402
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Zets-Hair_PKs_Rebalancing_KenanEdition.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "ZSFIXED_cddaxp"
+  name: "ZSFIXED_C:DDA Extra Professions & Gears"
+  authors:
+    - "Marte"
+  maintainers:
+    - "ZhilkinSerg"
+  description: |
+    Adds a new set of professions and relative gears.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 214677
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/ZSFixed_CDDAXP.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
