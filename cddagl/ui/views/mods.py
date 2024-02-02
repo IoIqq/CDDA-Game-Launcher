@@ -1086,6 +1086,16 @@ class ModsTab(QTabWidget):
                     authors = ', '.join(authors)
                     self.author_le.setText(authors)
             self.description_le.setText(selected_info.get('description', ''))
+            self.description_le.setToolTip(selected_info.get('description', ''))
+            self.description_le.setStyleSheet(
+            "QToolTip {"
+            "    font-size: 14px;"  # 设置字体大小
+            "    background-color: yellow;"  # 设置背景颜色
+            "    color: black;"  # 设置文本颜色
+            "    border: 1px solid gray;"  # 设置边框
+            "}"
+            )
+            
             self.category_le.setText(selected_info.get('category', ''))
             self.version_le.setText(selected_info.get('version', _('Unknown')))
 

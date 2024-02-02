@@ -130,6 +130,97 @@ def start_ui(locale, single_instance):
     load_gettext_locale(get_locale_path(), locale)
 
     main_app = QApplication(sys.argv)
+    
+    main_app.setStyleSheet("""
+        /* QWidget通用样式 */
+        QWidget {
+            background-color: #fff; /* 白色背景 */
+            color: #333333; /* 深灰色文本 */
+        }
+        
+        /* QLineEdit样式 */
+        QLineEdit {
+            background-color: #f3f3f3; /* 浅灰色背景 */
+            border: 1px solid #cccccc; /* 浅灰色边框 */
+            border-radius: 4px; /* 圆角 */
+            padding: 5px; /* 设置内边距 */
+        }
+        
+        /* QPushButton样式 */
+        QPushButton {
+            background-color: #3498db; /* 主题色 */
+            color: #ffffff; /* 文本颜色 */
+            font-size: 16px; /* 字体大小 */
+            border: none; /* 去掉边框 */
+            border-radius: 5px; /* 圆角 */
+            padding: 10px 20px; /* 设置内边距 */
+        }
+        
+        QPushButton:hover {
+            background-color: #2980b9; /* 悬停时的背景颜色 */
+            color: #ffffff; /* 悬停时的文本颜色 */
+        }
+        
+        QPushButton:pressed {
+            background-color: #1f618d; /* 鼠标按下时的背景颜色 */
+        }
+        
+        /* QLabel样式 */
+        QLabel {
+            font-family: PingFangSC-Regular, sans-serif, Microsoft YaHei, SimHei, Tahoma !important;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+        
+        /* QProgressBar样式 */
+        QProgressBar {
+            background-color: #f3f3f3; /* 进度条背景色 */
+            border: 1px solid #cccccc; /* 边框 */
+            border-radius: 4px; /* 圆角 */
+        }
+        
+        /* QTextBrowser和QTextBrowser内部链接样式 */
+        QTextBrowser {
+            background-color: #fff; /* 白色背景 */
+            color: #333333; /* 文本颜色 */
+        }
+        
+        QTextBrowser a {
+            color: #3498db; /* 链接文本颜色 */
+            text-decoration: none;
+            cursor: pointer;
+        }
+        
+        QTextBrowser a:hover {
+            text-decoration: underline; /* 悬停时下划线 */
+        }
+        
+        /* QListView样式 */
+        QListView {
+            background-color: #fff; /* 白色背景 */
+        }
+        
+        QListView::item {
+            background-color: #f3f3f3; /* 项的背景色 */
+            padding: 5px; /* 设置内边距 */
+        }
+        
+        QListView::item:hover {
+            background-color: #3498db; /* 悬停时的背景色 */
+            color: #ffffff; /* 悬停时的文本颜色 */
+        }
+        
+        /* QTextEdit样式 */
+        QTextEdit {
+            background-color: #f3f3f3; /* 浅灰色背景 */
+            border: 1px solid #cccccc; /* 边框 */
+            border-radius: 4px; /* 圆角 */
+            padding: 5px; /* 设置内边距 */
+        }
+    }
+    """)
+    
     main_app.setWindowIcon(QIcon(get_resource_path('launcher.ico')))
 
     main_app.single_instance = single_instance
