@@ -15,15 +15,15 @@ SPDX-License-Identifier: MIT
 
 带有额外功能的 [Cataclysm: Dark Days Ahead](https://cataclysmdda.org/) 游戏启动器。
 
-![GitHub 工作流状态（master 分支）](https://img.shields.io/github/actions/workflow/status/DazedNConfused-/CDDA-Game-Launcher/build.yml?branch=master)
-![GitHub 工作流状态（develop 分支）](https://img.shields.io/github/actions/workflow/status/DazedNConfused-/CDDA-Game-Launcher/build.yml?branch=develop)
+![GitHub 工作流状态（master 分支）](https://img.shields.io/github/actions/workflow/status/DoiiarX/CDDA-Game-Launcher/build.yml?branch=master)
+![GitHub 工作流状态（develop 分支）](https://img.shields.io/github/actions/workflow/status/DoiiarX/CDDA-Game-Launcher/build.yml?branch=develop)
 
-![GitHub 发布（按日期最新）](https://img.shields.io/github/v/release/DazedNConfused-/CDDA-Game-Launcher)
-![GitHub 所有发布版本](https://img.shields.io/github/downloads/DazedNConfused-/CDDA-Game-Launcher/total)
-[![GitHub 分叉](https://img.shields.io/github/forks/DazedNConfused-/CDDA-Game-Launcher)](https://github.com/DazedNConfused-/CDDA-Game-Launcher/network)
-[![REUSE 状态](https://api.reuse.software/badge/github.com/DazedNConfused-/CDDA-Game-Launcher)](https://api.reuse.software/info/github.com/DazedNConfused-/CDDA-Game-Launcher)
+![GitHub 发布（按日期最新）](https://img.shields.io/github/v/release/DoiiarX/CDDA-Game-Launcher)
+![GitHub 所有发布版本](https://img.shields.io/github/downloads/DoiiarX/CDDA-Game-Launcher/total)
+[![GitHub 分叉](https://img.shields.io/github/forks/DoiiarX/CDDA-Game-Launcher)](https://github.com/DoiiarX/CDDA-Game-Launcher/network)
+[![REUSE 状态](https://api.reuse.software/badge/github.com/DoiiarX/CDDA-Game-Launcher)](https://api.reuse.software/info/github.com/DoiiarX/CDDA-Game-Launcher)
 
-[在此下载](https://github.com/DazedNConfused-/CDDA-Game-Launcher/releases)。
+[在此下载](https://github.com/DoiiarX/CDDA-Game-Launcher/releases)。
 
 ## ~~不再~~维护
 
@@ -76,7 +76,7 @@ SPDX-License-Identifier: MIT
 
 较差的杀毒软件会将启动器检测为威胁，并阻止其执行或删除启动器。一个简单的解决办法是将启动器二进制文件添加到您的杀毒软件白名单中，或在检测到时选择信任此二进制文件的操作。
 
-如果您感到偏执，您可以自己检查源代码并从源代码构建启动器。即使这样，您仍然可能会收到误报。作为软件开发人员，我们对此几乎无能为力。我们有[一份很好的构建指南](https://github.com/DazedNConfused-/CDDA-Game-Launcher/blob/master/BUILDING.md)供那些想要从源代码构建启动器的人参考。
+如果您感到偏执，您可以自己检查源代码并从源代码构建启动器。即使这样，您仍然可能会收到误报。作为软件开发人员，我们对此几乎无能为力。我们有[一份很好的构建指南](https://github.com/DoiiarX/CDDA-Game-Launcher/blob/master/BUILDING.md)供那些想要从源代码构建启动器的人参考。
 
 许多人都想知道为什么杀毒软件会将启动器识别为威胁。已经有很多猜测试图找出这一问题的根本原因。最好的方法是询问那些杀毒软件开发商。不幸的是，出于许多充分的理由，他们不太可能作出回应。我们也可以对此进行几天的推测。我们目前最好的推测是因为我们使用了一个名为 PyInstaller 的组件[通常被标记为威胁](https://github.com/pyinstaller/pyinstaller/issues/4633)。现在，如果您想看看这个兔子洞有多深，您可以继续搜索或推测为什么 PyInstaller 本身通常被标记为威胁。留给读者做这项研究。
 
@@ -88,11 +88,11 @@ SPDX-License-Identifier: MIT
 
 ### 如何更新到新版本的游戏启动器？
 
-启动器将在启动时自动检查更新版本。如果找到了，启动器会提示您更新。您始终可以在 [github 上下载最新版本](https://github.com/DazedNConfused-/CDDA-Game-Launcher/releases)。使用便携版的用户将必须手动下载和手动更新启动器。从帮助菜单中，您还可以检查新的更新。
+启动器将在启动时自动检查更新版本。如果找到了，启动器会提示您更新。您始终可以在 [github 上下载最新版本](https://github.com/DoiiarX/CDDA-Game-Launcher/releases)。使用便携版的用户将必须手动下载和手动更新启动器。从帮助菜单中，您还可以检查新的更新。
 
 ### 启动器启动时一直崩溃。我该怎么办？
 
-您可能需要删除配置文件以解决此问题。该文件名为 `configs.db`，位于 `%LOCALAPPDATA%\CDDA Game Launcher\`。一些用户报告并遇到了不相关的启动问题。在某些情况下，运行启动器的调试版本以获取更多日志可能有助于定位问题。[在此创建问题](https://github.com/DazedNConfused-/CDDA-Game-Launcher/issues)可能是解决问题的方法。
+您可能需要删除配置文件以解决此问题。该文件名为 `configs.db`，位于 `%LOCALAPPDATA%\CDDA Game Launcher\`。一些用户报告并遇到了不相关的启动问题。在某些情况下，运行启动器的调试版本以获取更多日志可能有助于定位问题。[在此创建问题](https://github.com/DoiiarX/CDDA-Game-Launcher/issues)可能是解决问题的方法。
 
 ### 我刚安装了游戏，它已经有了一大堆模组。有问题吗？
 
@@ -104,15 +104,15 @@ SPDX-License-Identifier: MIT
 
 为不断扩展和变化的基础游戏维护外部模组可能是一项艰巨的任务。确保有良好工作模组的唯一确定和*官方*方法是将它们包含在基础游戏中。如果您关心可靠的游戏体验，您应该考虑仅使用基础游戏模组，并考虑使用稳定分支。
 
-如果您发现存储库中的模组明显被遗弃且不再工作，请[打开一个问题](https://github.com/DazedNConfused-/CDDA-Game-Launcher/issues)，以便将其移除。
+如果您发现存储库中的模组明显被遗弃且不再工作，请[打开一个问题](https://github.com/DoiiarX/CDDA-Game-Launcher/issues)，以便将其移除。
 
 ### 您会制作 Linux 或 macOS 版本吗？
 
-很可能不会。您可以查看[Linux 问题](https://github.com/DazedNConfused-/CDDA-Game-Launcher/issues/329)和[Mac 问题](https://github.com/DazedNConfused-/CDDA-Game-Launcher/issues/73)了解更多信息。
+很可能不会。您可以查看[Linux 问题](https://github.com/DoiiarX/CDDA-Game-Launcher/issues/329)和[Mac 问题](https://github.com/DoiiarX/CDDA-Game-Launcher/issues/73)了解更多信息。
 
 ### 它不起作用？您能帮我吗？
 
-在 [Github 上提交您的问题](https://github.com/DazedNConfused-/CDDA-Game-Launcher/issues)。尝试[有效地报告错误](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html)。
+在 [Github 上提交您的问题](https://github.com/DoiiarX/CDDA-Game-Launcher/issues)。尝试[有效地报告错误](http://www.chiark.greenend.org.uk/~sgtatham/bugs.html)。
 
 ## 构建
 
