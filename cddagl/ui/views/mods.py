@@ -1149,7 +1149,7 @@ class ModsTab(QTabWidget):
             selection_model = self.repository_lv.selectionModel()
             if selection_model is not None and selection_model.hasSelection():
                 selected = selection_model.currentIndex()
-                selected_info = self.repo_soundpacks[selected.row()]
+                selected_info = self.repo_mods[selected.row()]
 
                 if selected_info is self.current_repo_info:
                     self.size_le.setText(sizeof_fmt(content_length))
