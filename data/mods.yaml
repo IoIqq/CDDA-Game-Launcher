@@ -2680,3 +2680,1345 @@
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/World_On_Fire.zip"
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
 
+##########################################################
+###                      CDDA-0G1-windows              ###
+##########################################################
+- type: direct_download
+  ident: "wukeizhuihuanfu"
+  name: "无累赘环服"
+  authors: 
+    - "无名的猫"
+  maintainers: 
+    - unknown
+  description: |
+    你他妈不会自己把累赘改0?反正你的要求hub服都满足就差一个累赘，此mod专为沙口阿空制作
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 10101
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/0累赘hub环服.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "reasonable_price"
+  name: "7.62 M67 价格平衡"
+  authors: 
+    - "RCS"
+  maintainers: 
+    - N/A
+  description: |
+    平衡 7.62x39mm M67 系列弹药的价格
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 812
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/7.62 M67 价格平衡.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "aftershock"
+  name: "Aftershock"
+  authors: 
+    - "Esther"
+    - "Coolthulu"
+    - "Maleclypse"
+    - "Candlebury"
+    - "Mom_Bun"
+  maintainers: 
+    - Maleclypse
+    - Candlebury
+    - Mom_Bun
+    - Drew4484
+  description: |
+    Moving towards a survival horror full conversion mod set in a mostly abandoned extrasolar colony far from Earth hundreds of years from today.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 2053502
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Aftershock.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "aftershock_exoplanet"
+  name: "Aftershock: Exoplanet"
+  authors: 
+    - "Maleclypse"
+    - "Candlebury"
+    - "Mom_Bun"
+  maintainers: 
+    - Maleclypse
+    - Candlebury
+    - Mom_Bun
+  description: |
+    An experimental implementation of Aftershock's exoplanet region, not recommended for actual playthroughs.  Adds no new content by itself, and requires the main mod to function correctly.
+  category: 'total_conversion'
+  dependencies:
+    - 'dda'
+    - 'aftershock'
+  size: 35482
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/aftershock_exoplanet.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "alt_map_key"
+  name: "Alternative Map Key"
+  authors: 
+    - "Sunshine"
+  maintainers: 
+    - unknown
+  description: |
+    Changes the overmap to be more readable.  Buildings are color coded by type and use initial letter of their names instead of ^v<>.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 183031
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/alt_map_key.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "ammonia"
+  name: "一种基于硝酸铵和氢氧化钠的氨水制备工艺"
+  authors: 
+    - "冰洁雪糕"
+  maintainers: 
+    - li-adams
+  description: |
+    一种基于硝酸铵和氢氧化钠的氨水制备工艺，增加了一个自动学会的氨水制作配方。
+  category: 'recipes'
+  dependencies:
+    - 'dda'
+  size: 1209
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/ammonia.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "backrooms"
+  name: "The Backrooms"
+  authors: 
+    - "TGW"
+  maintainers: 
+    - unknown
+  description: |
+    A strange place between dimensions traps you.  Can you survive among endless halls of yellowed carpet and harshly humming fluorescents?
+    
+    Replaces all normal worldgen: no wilderness, no rivers, no cities, no farms, no sky.  Just endless, winding indoor halls of mildewy carpeting, faded drywall, desolate breakrooms and abandoned boardrooms.
+    
+    Recommended city size is 0.  Play Now!  (Default Scenario) is not supported.
+  category: 'total_conversion'
+  dependencies:
+    - 'dda'
+  size: 257638
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Backrooms.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "blazeindustries"
+  name: "Blaze Industries"
+  authors: 
+    - "Blaze-whatdoyoumeanitsalreadytaken"
+  maintainers: 
+    - N/A
+  description: |
+    Introduces the fictional corporation Blaze Industries, bringing advanced vehicle modification to the consumer.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 202556
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BlazeIndustries.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "cbm_slots"
+  name: "Bionic Slots"
+  authors: 
+    - "anothersimulacrum"
+  maintainers: 
+    - unknown
+  description: |
+    Enables the bionic slots system, which limits the number of CBMs you can install in each bodypart.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 458
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/cbm_slots.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "classic_zombies"
+  name: "Dark Days of the Dead"
+  authors: 
+    - "Hirmuolio"
+    - "I-am-Erk"
+  maintainers: 
+    - I-am-Erk
+  description: |
+    Turns the game into a classic Romero zombie game.  You must destroy the brain.  Getting bitten is fatal.  However, zombies don't evolve, and when they're down, they're down.  Removes the sci-fi and interdimensional aspects of CDDA.
+  category: 'total_conversion'
+  dependencies:
+    - 'dda'
+  size: 94284
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/classic_zombies.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Companion_Control"
+  name: "<color_light_green>多角色控制</color>"
+  authors: 
+    - "青青子衿"
+  maintainers: 
+    - 青青子衿
+  description: |
+    通过对话切换至同伴视角对其进行控制.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 601
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Companion_Control.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "crazy_cataclysm"
+  name: "Crazy Cataclysm"
+  authors: 
+    - "Kevin"
+  maintainers: 
+    - unknown
+  description: |
+    Want a little crazy in your Cataclysm?  Try this one.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 120179
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CrazyCataclysm.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "darkskies"
+  name: "Dark Skies Above"
+  authors: 
+    - "ephemeral_storyteller"
+    - "mlangsdorf"
+  maintainers: 
+    - unknown
+  description: |
+    A total conversion that shifts the Cataclysm towards an alien occupation survival scenario.  THIS MOD WILL BREAK INTENDED FUNCTIONALITY OF OTHER MODS!  USE OTHER MODS AT YOUR OWN RISK.
+  category: 'total_conversion'
+  dependencies:
+    - 'dda'
+  size: 316935
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dark-Skies-Above.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "dda"
+  name: "Dark Days Ahead"
+  authors: 
+    - "unknown"
+  maintainers: 
+    - unknown
+  description: |
+    Core content for Cataclysm-DDA
+  category: 'content'
+  dependencies:
+  size: 218
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/dda.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "deadly_bites"
+  name: "Deadly Zombie Virus"
+  authors: 
+    - "dseguin"
+  maintainers: 
+    - unknown
+  description: |
+    Bites from zombies have a chance to inflict a permanent fatal illness.  Find and consume antivirals to stave off the disease.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 9802
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/deadly_bites.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "desertpack"
+  name: "Desert Region"
+  authors: 
+    - "Dpwb"
+    - "DracoGriffin"
+  maintainers: 
+    - LovamkKicsiGazsii
+  description: |
+    A testbed/WIP mod to showcase regional_map_settings JSON changes.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 232592
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/desert_region.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "DinoMod"
+  name: "DinoMod"
+  authors: 
+    - "unknown"
+  maintainers: 
+    - ephemeralstoryteller
+    - damien
+    - LyleSy
+  description: |
+    Adds dinosaurs.  Some rideable, others less friendly.  Life will find a way.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 1843572
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DinoMod.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "dronesystem"
+  name: "追加 - 観測ドローンシステム"
+  authors: 
+    - "SCAREDGAY"
+  maintainers: 
+    - CDDAJP_Discode_TEAM
+  description: |
+    周囲の地形を明らかにする観測ドローンシステムを追加します。
+  category: 'unknown'
+  dependencies:
+  size: 8943
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/dronesystem.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "sch_easy_proficiency"
+  name: "专长速成"
+  authors: 
+    - "li-adams"
+  maintainers: 
+    - unknown
+  description: |
+    非mod专长速成，适用于0.G稳定版
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 58847
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/easy_proficiency.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Stamina_band"
+  name: "耐力手环"
+  authors: 
+    - "Surflurer"
+  maintainers: 
+    - Surflurer
+  description: |
+    在制造菜单的"其他->FITNESS"路径下，使用一个金属废料制造该手环以查看耐力。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 2283
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/extended_fitness_band.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "extra_mut_scens"
+  name: "Extra Mutated Scenarios"
+  authors: 
+    - "Saicchi"
+  maintainers: 
+    - unknown
+  description: |
+    Extra scenarios with all possible mutation traits and thresholds.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 16383
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/extra_mut_scen.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "generic_guns"
+  name: "Generic Guns"
+  authors: 
+    - "Tonkatsu"
+  maintainers: 
+    - Tonkatsu
+  description: |
+    Replaces guns and ammo with generic types.  Warning: can cause issues with other gun mods.
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 447680
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Generic_Guns.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Graphical_Overmap"
+  name: "Graphical Overmap"
+  authors: 
+    - "Larwick"
+  maintainers: 
+    - Larwick
+  description: |
+    Gives the overmap a graphical overhaul.  Please refer to readme for installation.
+  category: 'graphical'
+  dependencies:
+    - 'dda'
+  size: 561644
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Graphical_Overmap.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Graphical_Overmap_Magiclysm"
+  name: "Graphical Overmap Magiclysm"
+  authors: 
+    - "Nphyx"
+  maintainers: 
+    - Nphyx
+  description: |
+    Magiclysm support for Graphical Overmap.
+  category: 'graphical'
+  dependencies:
+    - 'dda'
+    - 'Graphical_Overmap'
+    - 'magiclysm'
+  size: 8526
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Graphical_Overmap_Magiclysm.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Henshin"
+  name: "变身 - Henshin -"
+  authors: 
+    - "Musue暮雪"
+  maintainers: 
+    - unknown
+  description: |
+    面向特摄粉丝和中后期玩家的异界内容补充包，理论上不会与别的模组冲突，但仍推荐在最后加载。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 180317
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Henshin.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "innawood"
+  name: "Innawood"
+  authors: 
+    - "Lightwave"
+  maintainers: 
+    - Lightwave
+  description: |
+    An untouched land that mankind has yet to reach.  Disables most traces of civilization for that 'innawood' experience.  Recommend size of cities be set to 0.
+  category: 'total_conversion'
+  dependencies:
+    - 'dda'
+  size: 540786
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/innawood.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "MA"
+  name: "Massachusetts"
+  authors: 
+    - "ZhilkinSerg"
+  maintainers: 
+    - ZhilkinSerg
+  description: |
+    Cataclysm in one state.
+  category: 'total_conversion'
+  dependencies:
+    - 'dda'
+  size: 9247661
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MA.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "magiclysm"
+  name: "Magiclysm"
+  authors: 
+    - "KorGgenT"
+    - "GuardianDll"
+    - "Aptronym"
+    - "LaVeyanFiend"
+  maintainers: 
+    - KorGgenT
+  description: |
+    Cataclysm but with magic spells!
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 2254990
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Magiclysm.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "magiclysm_more_rings"
+  name: "大魔法无限戒指佩戴"
+  authors: 
+    - "li-adams"
+  maintainers: 
+    - unknown
+  description: |
+    My precious~~~现在你可以想戴多少戒指就戴多少了
+  category: 'magical'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 22827
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Magiclysm_more_rings.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "MAKE_CBM_EASY_AGAIN"
+  name: "让CBM再次易得"
+  authors: 
+    - "滑稽sama"
+  maintainers: 
+    - unknown
+  description: |
+    用0.F-3的数据。
+  category: 'unknown'
+  dependencies:
+  size: 22633
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MAKE_CBM_EASY_AGAIN.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "megafauna"
+  name: "Megafauna"
+  authors: 
+    - "merrygin"
+  maintainers: 
+    - merrygin
+  description: |
+    Adds extinct pleistocene megafauna to the game, replacing modern day and introduced animals.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 168479
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Megafauna.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "military_professions"
+  name: "Military Profession Pack"
+  authors: 
+    - "unknown"
+  maintainers: 
+    - unknown
+  description: |
+    Numerous military themed professions
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 26725
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Military_Professions.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "MMA"
+  name: "Mythical Martial Arts"
+  authors: 
+    - "Photoloss"
+  maintainers: 
+    - Hymore246
+  description: |
+    A collection of fictional, mythologically inspired or otherwise unrealistic martial arts.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 61917
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MMA.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "more_magiclysm_spell_mastery"
+  name: "更加魔法的大魔法：法术专精"
+  authors: 
+    - "云涛黯漫"
+  maintainers: 
+    - 云涛黯漫
+  description: |
+    大灾变有大魔法！以官方大魔法mod为基础的系列拓展包。这是基础法术包，为8个学派添加法术专精拓展内容
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 87892
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/more_magiclysm_spell_mastery.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "more_magiclysm_tailor_kit"
+  name: "更加魔法的大魔法：附魔裁缝"
+  authors: 
+    - "云涛黯漫"
+  maintainers: 
+    - 云涛黯漫
+  description: |
+    恢复裁缝助手和魔法裁缝助手的修改衣物高级功能，并添加更多可用的材质原料。
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 15748
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/more_magiclysm_tailor_kit.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "MREplus"
+  name: "MRE简化"
+  authors: 
+    - "小鸟游星野/NF404HK416/BTSU-Edelweiss"
+  maintainers: 
+    - 小鸟游星野/NF404HK416
+  description: |
+    为掉落的MRE进行简化，使得尸体里不再出现这么多MRE包装内含隐藏物品6个。
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 2043
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MRE修改.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Mutant_Evolution"
+  name: "<color_red>变异进化</color>"
+  authors: 
+    - "青青子衿"
+  maintainers: 
+    - 青青子衿
+  description: |
+    @和NPC食用变异肉可以强化身体,身体强化到达阈值后通过吸收变异晶体来突破当前的属性上限.注意!短时间食用过多的变异肉和晶体将会导致中毒或身体崩坏.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 94960
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mutant_Evolution.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Mythos"
+  name: "[WIP] Mythos Mod - No Zombies"
+  authors: 
+    - "mythosmod"
+  maintainers: 
+    - unknown
+  description: |
+    Removes all the zombies (including fungus zombies), cyborgs and robots from the game - a very work-in-progress start to a more Lovecraftian-focused version of Cataclysm set in the 1920s, with 99.9% of the population mysteriously disappearing at midnight of day 0.  Players will take on the roles of investigators in a variety of professions battling the denizens of the shadows to recover and rebuild society.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 136959
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mythos.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "my_sweet_cataclysm"
+  name: "My Sweet Cataclysm"
+  authors: 
+    - "Fris0uman"
+  maintainers: 
+    - unknown
+  description: |
+    In the wake of the Cataclysm, sweets and snacks are coming to life.  You could be one of them and walk through the Cataclysm as a human shaped piece of sugar with your pet necco wafer, or you could just hunt them for some sweet treats.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 189512
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/My_Sweet_Cataclysm.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Nechronica_SS"
+  name: "永远的后日谈（重制版）"
+  authors: 
+    - "Yunde"
+  maintainers: 
+    - unknown
+  description: |
+    由YukariMindGap从Malkeus的原作品修改而成：增加了出现在永远的后日谈：the Long, Long Sequel中的物品，变异和敌人。
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 155260
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/NechronicaSS.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "No_degradation"
+  name: "取消车辆部件耐久上限"
+  authors: 
+    - "Surflurer"
+  maintainers: 
+    - Surflurer
+  description: |
+    为不喜欢或不熟悉新版本修车系统的人设计。移除了车辆部件的耐久上限，如今可以把几乎所有可维修部件修满了。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 106276
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_degradation.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "no_fungal_growth"
+  name: "No Fungal Growth"
+  authors: 
+    - "eltank"
+  maintainers: 
+    - unknown
+  description: |
+    Removes the exponential growth ability of fungaloids.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 525
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/no_fungal_growth.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "No_Fungi"
+  name: "No Fungal Monsters"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    Removes fungal monsters and regions from the game.
+  category: 'monster_exclude'
+  dependencies:
+    - 'dda'
+  size: 11178
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_Fungi.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "no_hope"
+  name: "No Hope"
+  authors: 
+    - "Night_Pryanik"
+  maintainers: 
+    - Night_Pryanik
+  description: |
+    - Significantly reduced amount of places with guaranteed loot spawns.
+    - Loot spawn in buildings is drastically reduced, especially for food, tools, guns etc.
+    - Most buildings are destroyed, vandalized, or looted.
+    - Most cars are destroyed or at least damaged.  Intact cars are nearly impossible to find.
+    - Fuel is much harder to find, almost all cars have no fuel in tanks.
+    - Marauders, looters, and bandits everywhere.
+    
+    See extended description in README.md.
+    
+    To get the mod author's intended playing experience, consider:
+    - Enabling wandering hordes.
+    - Setting item spawn scaling factor to 0.5 or lower.
+    - Setting spawn rate scaling factor to 1.5 or higher.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 2699433
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_Hope.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "no_npc_food"
+  name: "Disable NPC Needs"
+  authors: 
+    - "Coolthulhu"
+  maintainers: 
+    - Coolthulhu
+  description: |
+    Makes NPCs not require food, water or rest.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 413
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_NPC_Food.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "No_Rail_Stations"
+  name: "No Rail Stations"
+  authors: 
+    - "Inglonias"
+  maintainers: 
+    - unknown
+  description: |
+    Removes above-ground rail stations from the game.
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 2275
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_Rail_Stations.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Only_Wildlife"
+  name: "No Monsters"
+  authors: 
+    - "Kodi Arfer"
+  maintainers: 
+    - unknown
+  description: |
+    Removes all monsters from the game, save for those in the WILDLIFE category.
+  category: 'monster_exclude'
+  dependencies:
+    - 'dda'
+  size: 403
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Only_Wildlife.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "package_bionic_professions"
+  name: "Bionic Professions"
+  authors: 
+    - "Erk/Everyone"
+  maintainers: 
+    - unknown
+  description: |
+    Numerous bionic starting professions.  Disable for a more real-world experience.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 35385
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/package_bionic_professions.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "personal_portal_storms"
+  name: "Portal Storms Ignore NPCs"
+  authors: 
+    - "BombasticSlacks"
+  maintainers: 
+    - BombasticSlacks
+  description: |
+    Makes Portal Storm enemies only attack the player.  Without this critical NPCs can die to Portal Storm enemies in very unfair ways.  More work needs to be done on AI and faction base security before it will be safe to disable this.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 1262
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Personal_Portal_Storms.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Rummaging"
+  name: "Rummaging"
+  authors: 
+    - "Aunt_Su | 苏大妈#7831"
+  maintainers: 
+    - unknown
+  description: |
+    Some furniture containers need to open the door to scavenge, to enhance the thrill of scavenging.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 12212
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Rummaging.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "ruralbiome"
+  name: "Rural-Only Mapgen"
+  authors: 
+    - "I-am-Erk"
+  maintainers: 
+    - unknown
+  description: |
+    Play in the boonies: nothing but farms, forests, and villages.  Recommended city size set to 1 and spacing set to 8.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 23268
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/rural_biome.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "sees_player_hitbutton"
+  name: "sees-player icon, HitButton_iso"
+  authors: 
+    - "esotericist"
+    - "AnthonBerg"
+  maintainers: 
+    - unknown
+  description: |
+    Adds indicator icon if a creature sees the player.  Designed for the HitButton isometric tileset.
+  category: 'graphical'
+  dependencies:
+    - 'dda'
+  size: 5651
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/sees_player_hitbutton.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "sees_player_retro"
+  name: "sees-player, run, crouch, bleed icons, retrodays"
+  authors: 
+    - "esotericist"
+    - "dranitski"
+  maintainers: 
+    - unknown
+  description: |
+    Adds indicator icon if a creature sees the player.  Adds status icons for run, crouch, prone, bleeding, light on top of player tile.
+  category: 'graphical'
+  dependencies:
+    - 'dda'
+  size: 1813
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/sees_player_retro.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "speedydex"
+  name: "SpeedyDex"
+  authors: 
+    - "KorGgenT"
+  maintainers: 
+    - KorGgenT
+  description: |
+    Higher dex increases your speed.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 507
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/speedydex.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "standard_combat_test"
+  name: "Standard combat test suite"
+  authors: 
+    - "Venera3"
+  maintainers: 
+    - Venera3
+  description: |
+    A set of standard character loadouts to facilitate objective monster testing.  Disables all but the test scenarios.
+  category: 'misc'
+  dependencies:
+    - 'dda'
+  size: 7632
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Standard_Combat_Tests.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "StatsThroughSkills"
+  name: "Stats Through Skills"
+  authors: 
+    - "Ryan "DeNarr" Saige"
+    - "Kevin Granade"
+  maintainers: 
+    - unknown
+  description: |
+    Allows stats to raise via skill progression.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 1112
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/StatsThroughSkills.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "stats_through_kills"
+  name: "Stats Through Kills"
+  authors: 
+    - "KorGgenT"
+  maintainers: 
+    - KorGgenT
+  description: |
+    You gain XP from kills that you can spend on increasing your stats.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 451
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/stats_through_kills.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Tamable_Wildlife"
+  name: "Tamable Wildlife"
+  authors: 
+    - "Termineitor244"
+  maintainers: 
+    - Termineitor244
+  description: |
+    Makes a lot of docile, but generally untamable wildlife, tamable.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 39249
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Tamable_Wildlife.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "test_data"
+  name: "TESTING DATA"
+  authors: 
+    - "unknown"
+  maintainers: 
+    - unknown
+  description: |
+    Adds mockup items, recipes, and other content for use by automated tests.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 374397
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/TEST_DATA.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "translate_dialogue"
+  name: "Translate Complex Dialogue"
+  authors: 
+    - "I-am-Erk"
+  maintainers: 
+    - unknown
+  description: |
+    Adds a translation for some of the weirder dialogue in game.  Keeps the original flavour dialogue visible.
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 30090
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/translate-dialogue.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "tropicata"
+  name: "TropiCataclysm"
+  authors: 
+    - "Xaritscin"
+  maintainers: 
+    - unknown
+  description: |
+    Changes the setting from New England to an undescribed region in the tropics, initially based out of Desert Region mod.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 355227
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/TropiCataclysm.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "VOICEROID_mod"
+  name: "追加 - VOICEROID"
+  authors: 
+    - "shaba"
+  maintainers: 
+    - unknown
+  description: |
+    可以将角色的容貌变更为VOICEROID、音街鳗Talk_Ex、CeVIO、Gynoid Talk、Galaco Talk的形象角色。
+  category: 'unknown'
+  dependencies:
+    - 'dda'
+  size: 635339
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/VOICEROID+Ex_mod.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "xedra_evolved"
+  name: "Xedra Evolved"
+  authors: 
+    - "Maleclypse"
+  maintainers: 
+    - Maleclypse
+  description: |
+    A content mod for Agent Mulder in the apocalypse.  Imagines what if Xedra had more time before the Cataclysm occurred.  Contains monsters of various types, new professions and locations, new uses for existing skills plus the new deduction skill, new magic systems, and content of every type that a multidimensional Cataclysm has to offer.  This is a heavily science fantasy mod where you are as likely to encounter supernatural monsters, as you are to encounter UFOs and Sasquatch and Chupacabra.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 533319
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Xedra_Evolved.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "bingxiangchucun"
+  name: "冰箱储存"
+  authors: 
+    - "蹦跶的咸鱼"
+  maintainers: 
+    - unknown
+  description: |
+    大幅增加冰箱、迷你冰箱以及迷你冰柜的存储量。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 4388
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/冰箱存储.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "shaoe"
+  name: "吃个烧鹅先"
+  authors: 
+    - "猫猫"
+  maintainers: 
+    - unknown
+  description: |
+    肚子好饿，吃个烧鹅先吧
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 3699
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/吃个烧鹅先.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "12.3ln_Reload"
+  name: "12.3ln复装弹"
+  authors: 
+    - "SJ"
+  maintainers: 
+    - unknown
+  description: |
+    因为在0.G版12.3ln弹是无法复装的，这是不应该的，所以我制作了这个mod
+  category: 'other'
+  dependencies:
+    - 'dda'
+  size: 5307
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/复装12.3ln弹（适用0.g）.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "damofaquxiaoduili"
+  name: "大魔法取消魔法对立"
+  authors: 
+    - "蹦跶的咸鱼"
+  maintainers: 
+    - unknown
+  description: |
+    提取自kenan包合集“大魔法数值翻倍”,因此不要与“大魔法数值翻倍”一同使用。
+  category: 'magical'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 24822
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/大魔法取消魔法对立.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "SMG50"
+  name: "幸存者.50冲锋枪"
+  authors: 
+    - "SJ"
+  maintainers: 
+    - unknown
+  description: |
+    来自巴西的神奇枪械
+  category: 'unknown'
+  dependencies:
+    - 'dda'
+    - 'Cata++'
+  size: 11147
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/幸存者.50冲锋枪.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Primer_production_is_simplified"
+  name: "底火制作简化"
+  authors: 
+    - "zrezw"
+  maintainers: 
+    - unknown
+  description: |
+    修改了一些制作配方，可以用氧化剂粉替代雷汞和叠氮化铅，使用氨水替代液氨的氧化剂粉配方。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 6514
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/底火制作简化.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "coffee_异次元垃圾桶"
+  name: "咖啡的<color_magenta>异次元垃圾桶</color>"
+  authors: 
+    - "速食咖啡"
+  maintainers: 
+    - 速食咖啡
+  description: |
+    建筑基地的时候总有成堆的土或垃圾堆在地上得一点点往外搬？带上这个mod就能解决！
+    mod内增加了一个用缝衣线制成的异次元垃圾桶，能将任何放入其中的物品销毁
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 2507
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/异次元垃圾桶.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "无名背包"
+  name: "无名猫的变态背包"
+  authors: 
+    - "无名的猫"
+  maintainers: 
+    - unknown
+  description: |
+    背包极其变态，不建议使用，内容为可以将物品压缩成奇点，且绝对保险且重量压缩到奇点的终极无敌超大但戴起来很小的背包和水壶。制作时长几分钟，但我却保留了此mod所有经典的地方，首先够大，那些放入物品后的特性也保留，一大堆口袋也是，我保留了所有原有的特性，并且加上了属于我这个人非常经典的特色，便是报错，本mod我故意保留了一个报错，因为这样你才能知道，你玩的是猫猫的mod。铁咩，你为什么要下这个失去特色没有报错的版本!一点也不经典
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 11501
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/无名猫仓鼠背包（超级大包0.2将水壶累赘删除）.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "wmmdgeshidj"
+  name: "无名猫的各式道具"
+  authors: 
+    - "无名的猫"
+  maintainers: 
+    - unknown
+  description: |
+    这个mod集成了猫猫的各种奇怪的玩意，都挺变态的。这里有各种商店，火药商店可以拆了子弹将内部火药做为货币，而弹壳商店也一样，回收旧弹壳作为货币
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 101292
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/无名猫的各式道具（OG■0.2.1）.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "CBM_items+"
+  name: "更多CBM"
+  authors: 
+    - "诗篇,维护：SH ghost"
+  maintainers: 
+    - 诗篇,维护：SH ghost
+  description: |
+    比较特殊，可能会有点强大。
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 29967
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/更多CBM.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "ttbc"
+  name: "枪支贴图补充"
+  authors: 
+    - "SJ"
+  maintainers: 
+    - unknown
+  description: |
+    一些没有贴图的枪支的贴图补件包（这已经不止枪械了吧！）
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 22723
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/枪支贴图补件包.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "hanjiejianhua"
+  name: "焊接简化"
+  authors: 
+    - "蹦跶的咸鱼"
+  maintainers: 
+    - unknown
+  description: |
+    将焊条、焊丝制造所需求的原料进行简化。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 3530
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/焊接简化.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "SEX"
+  name: "爱欲如水"
+  authors: 
+    - "Arias"
+  maintainers: 
+    - Arias
+  description: |
+    爱与欲望与大灾变。
+  category: 'unknown'
+  dependencies:
+    - 'dda'
+  size: 120494
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/爱欲如水ver0.2.4(0.G稳定版).zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "taiyangnengqianghua"
+  name: "让太阳能再次伟大（车载太阳能强化）"
+  authors: 
+    - "蹦跶的咸鱼"
+  maintainers: 
+    - unknown
+  description: |
+    增加了4倍车载太阳能发电量，理论（我蒙的）上还原了太阳能削弱前的数值。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 4615
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/让太阳能再次伟大.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "huocangkuorong"
+  name: "货舱扩容"
+  authors: 
+    - "蹦跶的咸鱼"
+  maintainers: 
+    - unknown
+  description: |
+    在保持载重量不变的情况下，增加货舱了的存储量。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 1582
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/货仓扩容.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "place_cooler"
+  name: "车载冷却器可放置"
+  authors: 
+    - "RCS"
+  maintainers: 
+    - N/A
+  description: |
+    放置车载冷却器为家电，无需载具消音器排热。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 1167
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/车载冷却器可放置.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "reinstallable_autodoc"
+  name: "可重新安装的全自动医疗仪"
+  authors: 
+    - "RCS"
+  maintainers: 
+    - N/A
+  description: |
+    使游戏中的全自动医疗仪和手术台可整体拆卸并重新安装
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 6020
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/重新安装全自动医疗仪.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'
+
+- type: direct_download
+  ident: "Hammer_and_sickle"
+  name: "锤子与镰刀"
+  authors: 
+    - "SJ"
+  maintainers: 
+    - unknown
+  description: |
+    让赤旗插遍新英格兰吧，同志
+  category: 'unknown'
+  dependencies:
+    - 'dda'
+  size: 3382
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/锤子镰刀.zip"
+  homepage: 'QQ群：757292693CDDA【新世界基地】'

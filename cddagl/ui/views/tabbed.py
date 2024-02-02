@@ -231,6 +231,10 @@ class TabbedWindow(QMainWindow):
         version_text = latest_release['tag_name']
         if version_text.startswith('v'):
             version_text = version_text[1:]
+        elif version_text.startswith('yaml_v'):
+            version_text = version_text[6:]
+        elif version_text.startswith('fastcn_v'):
+            version_text = version_text[8:]
         latest_version = LooseVersion(version_text)
 
         if latest_version is None:
