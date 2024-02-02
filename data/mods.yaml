@@ -443,6 +443,10 @@
   url: https://github.com/TGWeaver/CDDA-Sky-Islands/archive/refs/heads/master.zip
   homepage: https://github.com/TGWeaver/CDDA-Sky-Islands
 
+##########################################################
+###        Kenan-Structured-Modpack\Archived-Mods      ###
+##########################################################
+
 - type: direct_download
   ident: "AAA"
   name: "Adurnsyl's Assorted Arms and Armour"
@@ -2299,5 +2303,380 @@
     - 'dda'
   size: 214677
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/ZSFixed_CDDAXP.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+##########################################################
+### Kenan-Structured-Modpack\High-Maintenance-Huge-Mods###
+##########################################################
+- type: direct_download
+  ident: "BL9_100monres"
+  name: "<color_light_blue>BL9-100%-monster-resilience-version</color>"
+  authors:
+    - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+  maintainers:
+    - "unknown"
+  description: |
+    
+    <color_yellow>Gigantic sci-fi action adventure expansion mod </color>
+    
+     <color_light_cyan> Huge exotic locations - The Tainted Medieval Castle, Huge Abandoned Industrial Facilities, The Secret Organization's Militarized Island, Lush and Fortified Biomes, Aliens' Mobile Bases (15 custom structures ranging from gigantic to huge!)</color>,<color_red> vile and horribly mutated dangerous monsters, mutants, aliens, advanced aliens</color>
+     <color_light_blue> New custom modern and hi-tech weapons (ballistics too!) along with armor of different tiers. Tiers of artifacts (a lot of them!) that buff skills, stats. Deep lore system in a form of scattered intel, journals </color>
+     <color_light_blue> Adds locations, items and monsters with lore inspired by iconic Resident Evil series made by Capcom along with Half Life series as well</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 3320404
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BL9-100%_monster_resilience_version.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "BL9_140monres"
+  name: "<color_light_blue>BL9-140%-monster-resilience-version</color>"
+  authors:
+    - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+  maintainers:
+    - "unknown"
+  description: |
+    
+    <color_yellow>Gigantic sci-fi action adventure expansion mod </color>
+    
+     <color_light_cyan> Huge exotic locations - The Tainted Medieval Castle, Huge Abandoned Industrial Facilities, The Secret Organization's Militarized Island, Lush and Fortified Biomes, Aliens' Mobile Bases (15 custom structures ranging from gigantic to huge!)</color>,<color_red> vile and horribly mutated dangerous monsters, mutants, aliens, advanced aliens</color>
+     <color_light_blue> New custom modern and hi-tech weapons (ballistics too!) along with armor of different tiers. Tiers of artifacts (a lot of them!) that buff skills, stats. Deep lore system in a form of scattered intel, journals </color>
+     <color_light_blue> Adds locations, items and monsters with lore inspired by iconic Resident Evil series made by Capcom along with Half Life series as well</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 3318638
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BL9-140%_monster_resilience_version.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "BL9_175monres"
+  name: "<color_light_blue>BL9-175%-monster-resilience-version</color>"
+  authors:
+    - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+  maintainers:
+    - "unknown"
+  description: |
+    
+    <color_yellow>Gigantic sci-fi action adventure expansion mod </color>
+    
+     <color_light_cyan> Huge exotic locations - The Tainted Medieval Castle, Huge Abandoned Industrial Facilities, The Secret Organization's Militarized Island, Lush and Fortified Biomes, Aliens' Mobile Bases (15 custom structures ranging from gigantic to huge!)</color>,<color_red> vile and horribly mutated dangerous monsters, mutants, aliens, advanced aliens</color>
+     <color_light_blue> New custom modern and hi-tech weapons (ballistics too!) along with armor of different tiers. Tiers of artifacts (a lot of them!) that buff skills, stats. Deep lore system in a form of scattered intel, journals </color>
+     <color_light_blue> Adds locations, items and monsters with lore inspired by iconic Resident Evil series made by Capcom along with Half Life series as well</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 3318628
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BL9-175%_monster_resilience_version.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "blazeindustries"
+  name: "Blaze Industries"
+  authors:
+    - "Blaze-whatdoyoumeanitsalreadytaken"
+  maintainers:
+    - "Soup-de-Loop"
+  description: |
+    Introduces the fictional corporation Blaze Industries, bringing advanced vehicle modification to the consumer.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 130582
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BlazeIndustries.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "blazemod"
+  name: "Blazemod - Vehicle Additions Pack"
+  authors:
+    - "Blaze-whatdoyoumeanitsalreadytaken"
+  maintainers:
+    - "SouP"
+  description: |
+    Please see the included README.txt in the mod folder for how to install this mod correctly, and for any other issues.
+  category: 'vehicles'
+  dependencies:
+    - 'dda'
+  size: 965612
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/blazemod.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "culinary_days_ahead"
+  name: "Culinary Days Ahead"
+  authors:
+    - "Eirenex"
+    - "fatalmojo"
+  maintainers:
+    - "unknown"
+  description: |
+    Surviving the dragon way
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 13330
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CulinaryDaysAhead.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Dino_Mad_Science"
+  name: "Dino_Mad_Science"
+  authors:
+    - "Jackledead"
+  maintainers:
+    - "Jackledead"
+  description: |
+    Total overhaul, replaces most zombies with dinosaurs and zombie dinosaurs.  Rebalances CDDA to focus on the Dinoclysm.  Scientists are responsible for a dino-outbreak and their vaccine against it turned them into zombies, can you survive long enough to piece together their plans and reverse what they started before it is too late?
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'DinoMod'
+  size: 259906
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dino_Mad_Science.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "sch_easy_containers"
+  name: "Easy Containers"
+  authors:
+    - "Saicchi"
+  maintainers:
+    - "unknown"
+  description: |
+    Makes containers behave more like 0.E containers.  Single pocket with infinite item length and infinite weight limit.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 444532
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/easy_containers.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "sch_easy_proficiency"
+  name: "Easy Proficiency"
+  authors:
+    - "Saicchi"
+  maintainers:
+    - "unknown"
+  description: |
+    Makes proficiencies in the base game instantaneous to learn.  Proficiency requirements still apply.
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 16514
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/easy_proficiency.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "unknown"
+  name: "WEARY_RECOVERY_MULT"
+  authors:
+    - "unknown"
+  maintainers:
+    - "unknown"
+  description: |
+    No description provided.
+  category: 'unknown'
+  dependencies:
+  size: 810
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Lighter_Weariness.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "magicrevamp"
+  name: "Magiclysm Revamp and Additions"
+  authors:
+    - "Mrsecretguy1/Kenan, Chaosvolt, Aptronym"
+  maintainers:
+    - "unknown"
+  description: |
+    Revamps and improves Magiclysm inreasing max level and max stats of spells by 1.5X, attunements - by 8 levels, makes classes and attunements mutually inclusive
+  category: 'magical'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 274715
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MagicRevampAdditions.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "bow_opness"
+  name: "Make bows great again"
+  authors:
+    - "Mrsecretguy1/Kenan"
+    - "Axema Vales"
+  maintainers:
+    - "unknown"
+  description: |
+    Rebalances vanilla bows and crossbows and makes them strong again like in pre-nerf times.
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 51558
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Make_Bows_Great_Again.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "demon_spider_a"
+  name: "Miscellaneous Magiclysm Expansions"
+  authors:
+    - "Minecrafter: Next Generation"
+  maintainers:
+    - "Minecrafter: Next Generation"
+  description: |
+    Major and/or minor expansions to the Magiclysm modification.
+  category: 'magical'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 181629
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Miscellaneous_Magiclysm_Expansions.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "MMA_Mods_Extension"
+  name: "<color_yellow>Mythical Martial Arts - Mods Extension</color>"
+  authors:
+    - "Photoloss"
+    - "Psychodata"
+    - "Caring-Goat-Deity"
+  maintainers:
+    - "Hymore246"
+  description: |
+    Adds MMA martial arts support for weapons from various mods <color_light_red>NOTE, you MUST have the mods below enabled, otherwise it will throw a NEGLIGIBLE (ignorable) error</color>
+    
+    <color_light_green>Currently supported mods: Magiclysm, Aftershock, BL9, Cata++, Battle Maid, CBM Equipment, Real Dark Skies, Ninja_Mod, Project Kawaii, Nechronica Redux, vorpal weapons, The Vermilion Mod</color>
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+    - 'MMA'
+  size: 32230
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MMA_Mods_Extension.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "unknown"
+  name: "CBM_SLOTS_ENABLED"
+  authors:
+    - "unknown"
+  maintainers:
+    - "unknown"
+  description: |
+    No description provided.
+  category: 'unknown'
+  dependencies:
+  size: 453
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/no_cbm_slots.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "Pix's Shit"
+  name: "Pixel's Various Fuckery"
+  authors:
+    - "pixel and Eirenex"
+  maintainers:
+    - "unknown"
+  description: |
+    Adds additional unique post-threshold mutations, various recipes for weapons.  Slightly risqué but safe for work, no worse than vibrators and gimp suits!@#
+  category: 'items'
+  dependencies:
+  size: 18563
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/pixels_fuckery.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "secronom"
+  name: "<color_light_red>Secronom</color>"
+  authors:
+    - "Axema Vales"
+  maintainers:
+    - "Kenan"
+  description: |
+    <color_red>Brings your Cataclysm experience into a hellish nightmare…</color>
+    <color_dark_gray>◆ Not recommended for new players ◆</color>
+    
+    <color_light_cyan>Note that this mod is currently in <color_light_green>stable</color> state. If you encounter a bug or a recent CDDA update has caused an error, feel free to notify the maintainer by creating an issue on its GitHub repository or by sending a DM on Discord.</color>
+    
+    <color_light_cyan>Add <color_yellow>Secronom+</color> for extended content (WIP).</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 5423813
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/secronom.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "secronom_lore_expansion"
+  name: "<color_light_red>Secronom+ Lore Expansion</color>"
+  authors:
+    - "Axema Vales"
+    - "SzQ"
+  maintainers:
+    - "Kenan"
+  description: |
+    <color_cyan>An expansion mod for secronom. (WIP)</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'secronom'
+  size: 1352079
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/secronom_lore_expansion.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "vamp_stuff"
+  name: "Vampiric Stuff"
+  authors:
+    - "Axema Vales"
+  maintainers:
+    - "unknown"
+  description: |
+    
+    <color_red>Adds night creatures, new items, monsters and locations.</color>
+    <color_light_red>More on interactions with npcs and quests, providing a subtle RPG playstyle.
+    
+    <color_light_cyan>Note that this mod is currently in <color_light_green>stable</color> state. Bugs rarely appears, but if you encounter one or a recent CDDA update has caused an error, feel free to notify the author by creating an issue on its GitHub repository or sending a PM on Discord.</color>
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 708893
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/vamp_stuff.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "vamp_stuff+arcana"
+  name: "Vampiric Stuff + Arcana Mod Extension"
+  authors:
+    - "Axema Vales"
+    - "Chaosvolt"
+  maintainers:
+    - "unknown"
+  description: |
+    Links Vampiric Stuff and Arcana for various new contents and features.
+  category: 'misc_additions'
+  dependencies:
+    - 'vamp_stuff'
+    - 'Arcana'
+    - 'dda'
+  size: 128319
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/vamp_stuff_arcana.zip"
+  homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
+
+- type: direct_download
+  ident: "World_on_fire"
+  name: "World on Fire"
+  authors:
+    - "Trivega & Community"
+  maintainers:
+    - "Trivega"
+  description: |
+    A monster pack that adds several fire type monsters to the game.
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 82841
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/World_On_Fire.zip"
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
 
