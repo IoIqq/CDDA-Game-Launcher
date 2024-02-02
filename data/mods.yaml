@@ -1,5 +1,5 @@
 # mods.yaml 模板
-# 
+
 # - type: direct_download  # 可选项: direct_download, github_release, github_repo, gitlab_repo, custom
 #   ident: unique_mod_identifier  # 您的mod的唯一标识符
 #   name: Mod Name  # 您的mod的名称
@@ -17,6 +17,60 @@
 #   size: 12345  # 您的mod的文件大小，以字节为单位
 #   url: https://github.com/your_username/your_mod_repo/archive/master.zip  # 您的mod的下载链接
 #   homepage: https://link_to_your_mod_homepage.com  # 您的mod的主页链接
+
+- type: direct_download
+  ident: Agriculture_Expand
+  name: 农业拓展A6b(0.F-3)
+  authors:
+    - 代码--JXMs
+    - 贴图--苏大妈, JXMs
+  maintainers:
+    - JXMs
+  description: Ver Alpha6b. 本mod包含水培、渔业、养蜂、堆肥、林业-果树增产等内容，计划增加林业、粮食交易NPC、菜肴拓展、农牧渔自动化生产、基因工程等。
+  category: misc_additions
+  dependencies:
+    - dda
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/%E5%86%9C%E4%B8%9A%E6%8B%93%E5%B1%95A6b(0.F-3).zip
+  homepage: https://tieba.baidu.com/p/8073154761
+
+- type: direct_download
+  ident: Transfer_Crystal
+  name: 传送水晶
+  authors:
+    - 青青子衿
+  maintainers:
+    - 青青子衿
+  description: 开局给玩家添加一个可用于传送的道具，最多可同时记录三个位置信标。每次传送冷却12小时，每次传送都有几率损坏道具，通过击杀延达罗斯猎犬有几率掉落。
+  category: misc_additions
+  dependencies:
+    - dda
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/%E4%BC%A0%E9%80%81%E6%B0%B4%E6%99%B6v1.04(0.G%E5%AE%9E%E9%AA%8C%E7%89%8824-1-30).zip
+  homepage: https://tieba.baidu.com/p/8538242543
+
+- type: direct_download
+  ident: VOICEROID_mod
+  name: 追加 - VOICEROID
+  authors:
+    - shaba
+  description: 可以将角色的容貌变更为VOICEROID、音街鳗Talk_Ex、CeVIO、Gynoid Talk、Galaco Talk和VOICEVOX的角色。
+  category: content
+  dependencies:
+    - dda
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/VOICEROID%2BEx_mod(0.G_QS%E6%B1%89%E5%8C%96).zip
+  homepage: https://tieba.baidu.com/p/8589628258
+
+- type: direct_download
+  ident: self_sorcerer
+  name: 术士（Sorcerer）
+  authors: 
+    - 不该有名字
+  description: 加入类似DND的术士的分级分次的每日法术次数法术。
+  category: rebalance
+  dependencies: 
+    - dda
+    - magiclysm
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/%E6%9C%AF%E5%A3%AB%EF%BC%88sorcerer%EF%BC%89.zip
+  homepage: https://tieba.baidu.com/p/8698361552
 
 - type: direct_download
   mod_type: SUPPLEMENTAL
