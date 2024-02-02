@@ -4,6 +4,7 @@
 
 import html
 import json
+import yaml
 import logging
 import os
 import random
@@ -287,12 +288,12 @@ class SoundpacksTab(QTabWidget):
         self.repository_lv.selectionModel().currentChanged.connect(
             self.repository_selection)
 
-        json_file = get_data_path('soundpacks.json')
+        yaml_file = get_data_path('soundpacks.yaml')
 
-        if os.path.isfile(json_file):
-            with open(json_file, 'r', encoding='utf8') as f:
+        if os.path.isfile(yaml_file):
+            with open(yaml_file, 'r', encoding='utf8') as f:
                 try:
-                    values = json.load(f)
+                    values = yaml.safe_load(f)
                     if isinstance(values, list):
                         values.sort(key=lambda x: x['name'])
                         self.repo_soundpacks = values
@@ -300,12 +301,11 @@ class SoundpacksTab(QTabWidget):
                         self.repo_soundpacks_model.insertRows(
                             self.repo_soundpacks_model.rowCount(),
                             len(self.repo_soundpacks))
-                        for index, soundpack_info in enumerate(
-                            self.repo_soundpacks):
+                        for index, soundpack_info in enumerate(self.repo_soundpacks):
                             self.repo_soundpacks_model.setData(
                                 self.repo_soundpacks_model.index(index),
                                 soundpack_info['viewname'])
-                except ValueError:
+                except yaml.YAMLError:
                     pass
 
     def install_new(self):
