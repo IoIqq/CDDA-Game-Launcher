@@ -74,6 +74,12 @@ class ModsTab(QTabWidget):
         self.tp_layout = tp_layout
 
         installed_gb = QGroupBox()
+        installed_gb.setMinimumHeight(400)
+        installed_gb.setStyleSheet('''QListView {
+            background-color: #fff;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            min-height: 280px;
+        }''')
         tp_layout.addWidget(installed_gb)
         self.installed_gb = installed_gb
 
@@ -102,12 +108,36 @@ class ModsTab(QTabWidget):
         self.disable_existing_button = disable_existing_button
 
         delete_existing_button = QPushButton()
+        delete_existing_button.setStyleSheet('''QPushButton {
+            background-color: #c0392b; /* 暗红色 */
+            color: white;
+            font-size: 15px;
+            min-height: 15px;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            outline: none;
+        }
+        QPushButton:hover {
+            background-color: #e74c3c;
+        }
+        QPushButton:pressed {
+            background-color: #a93226;
+        }
+        ''')
         delete_existing_button.clicked.connect(self.delete_existing)
         delete_existing_button.setEnabled(False)
         ib_layout.addWidget(delete_existing_button)
         self.delete_existing_button = delete_existing_button
 
         repository_gb = QGroupBox()
+        repository_gb.setMinimumHeight(400)
+        repository_gb.setStyleSheet('''QListView {
+            background-color: #fff;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            min-height: 280px;
+        }''')
         tp_layout.addWidget(repository_gb)
         self.repository_gb = repository_gb
 
@@ -137,11 +167,18 @@ class ModsTab(QTabWidget):
         self.top_part = top_part
 
         details_gb = QGroupBox()
+        details_gb.setMinimumHeight(400)
+        details_gb.setStyleSheet('''QListView {
+            background-color: #fff;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            min-height: 280px;
+        }''')
         layout.addWidget(details_gb)
         self.details_gb = details_gb
 
         details_gb_layout = QGridLayout()
 
+        # 名称 + 作者
         name_label = QLabel()
         details_gb_layout.addWidget(name_label, 0, 0, Qt.AlignRight)
         self.name_label = name_label
@@ -151,6 +188,16 @@ class ModsTab(QTabWidget):
         details_gb_layout.addWidget(name_le, 0, 1)
         self.name_le = name_le
 
+        author_label = QLabel()
+        details_gb_layout.addWidget(author_label, 0, 2, Qt.AlignRight)
+        self.author_label = author_label
+
+        author_le = QLineEdit()
+        author_le.setReadOnly(True)
+        details_gb_layout.addWidget(author_le, 0, 3)
+        self.author_le = author_le
+        
+        # 鉴别 + 类别
         ident_label = QLabel()
         details_gb_layout.addWidget(ident_label, 1, 0, Qt.AlignRight)
         self.ident_label = ident_label
@@ -160,53 +207,47 @@ class ModsTab(QTabWidget):
         details_gb_layout.addWidget(ident_le, 1, 1)
         self.ident_le = ident_le
 
-        author_label = QLabel()
-        details_gb_layout.addWidget(author_label, 2, 0, Qt.AlignRight)
-        self.author_label = author_label
-
-        author_le = QLineEdit()
-        author_le.setReadOnly(True)
-        details_gb_layout.addWidget(author_le, 2, 1)
-        self.author_le = author_le
-
-        description_label = QLabel()
-        details_gb_layout.addWidget(description_label, 3, 0, Qt.AlignRight)
-        self.description_label = description_label
-
-        description_le = QLineEdit()
-        description_le.setReadOnly(True)
-        details_gb_layout.addWidget(description_le, 3, 1)
-        self.description_le = description_le
-
         category_label = QLabel()
-        details_gb_layout.addWidget(category_label, 4, 0, Qt.AlignRight)
+        details_gb_layout.addWidget(category_label, 1, 2, Qt.AlignRight)
         self.category_label = category_label
 
         category_le = QLineEdit()
         category_le.setReadOnly(True)
-        details_gb_layout.addWidget(category_le, 4, 1)
+        details_gb_layout.addWidget(category_le, 1, 3)
         self.category_le = category_le
+        
+        # 描述
+        description_label = QLabel()
+        details_gb_layout.addWidget(description_label, 2, 0, 1, 1, Qt.AlignRight)
+        self.description_label = description_label
 
+        description_le = QLineEdit()
+        description_le.setReadOnly(True)
+        details_gb_layout.addWidget(description_le, 2, 1, 2, 3)
+        self.description_le = description_le
+
+        # 链接 + 尺寸
         path_label = QLabel()
-        details_gb_layout.addWidget(path_label, 5, 0, Qt.AlignRight)
+        details_gb_layout.addWidget(path_label, 4, 0, Qt.AlignRight)
         self.path_label = path_label
 
         path_le = QLineEdit()
         path_le.setReadOnly(True)
-        details_gb_layout.addWidget(path_le, 5, 1)
+        details_gb_layout.addWidget(path_le, 4, 1)
         self.path_le = path_le
 
         size_label = QLabel()
-        details_gb_layout.addWidget(size_label, 6, 0, Qt.AlignRight)
+        details_gb_layout.addWidget(size_label, 4, 2, Qt.AlignRight)
         self.size_label = size_label
 
         size_le = QLineEdit()
         size_le.setReadOnly(True)
-        details_gb_layout.addWidget(size_le, 6, 1)
+        details_gb_layout.addWidget(size_le, 4, 3)
         self.size_le = size_le
 
+        # 主页 + 版本
         homepage_label = QLabel()
-        details_gb_layout.addWidget(homepage_label, 7, 0, Qt.AlignRight)
+        details_gb_layout.addWidget(homepage_label, 5, 0, Qt.AlignRight)
         self.homepage_label = homepage_label
 
         homepage_tb = QTextBrowser()
@@ -215,16 +256,16 @@ class ModsTab(QTabWidget):
         homepage_tb.setMaximumHeight(23)
         homepage_tb.setLineWrapMode(QTextEdit.NoWrap)
         homepage_tb.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        details_gb_layout.addWidget(homepage_tb, 7, 1)
+        details_gb_layout.addWidget(homepage_tb, 5, 1)
         self.homepage_tb = homepage_tb
 
         version_label = QLabel()
-        details_gb_layout.addWidget(version_label, 8, 0, Qt.AlignRight)
+        details_gb_layout.addWidget(version_label, 5, 2, Qt.AlignRight)
         self.version_label = version_label
 
         version_le = QLineEdit()
         version_le.setReadOnly(True)
-        details_gb_layout.addWidget(version_le, 8, 1)
+        details_gb_layout.addWidget(version_le, 5, 3)
         self.version_le = version_le
 
         details_gb.setLayout(details_gb_layout)
@@ -1037,6 +1078,8 @@ class ModsTab(QTabWidget):
                     authors = ', '.join(authors)
                     self.author_le.setText(authors)
             self.description_le.setText(selected_info.get('description', ''))
+            self.description_le.setCursorPosition(0)
+            self.description_le.setToolTip(selected_info.get('description', ''))
             self.category_le.setText(selected_info.get('category', ''))
             self.path_label.setText(_('Path:'))
             self.path_le.setText(selected_info['path'])
@@ -1086,15 +1129,8 @@ class ModsTab(QTabWidget):
                     authors = ', '.join(authors)
                     self.author_le.setText(authors)
             self.description_le.setText(selected_info.get('description', ''))
+            self.description_le.setCursorPosition(0)
             self.description_le.setToolTip(selected_info.get('description', ''))
-            self.description_le.setStyleSheet(
-            "QToolTip {"
-            "    font-size: 14px;"  # 设置字体大小
-            "    background-color: yellow;"  # 设置背景颜色
-            "    color: black;"  # 设置文本颜色
-            "    border: 1px solid gray;"  # 设置边框
-            "}"
-            )
             
             self.category_le.setText(selected_info.get('category', ''))
             self.version_le.setText(selected_info.get('version', _('Unknown')))

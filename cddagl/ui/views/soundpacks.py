@@ -71,6 +71,12 @@ class SoundpacksTab(QTabWidget):
         self.tp_layout = tp_layout
 
         installed_gb = QGroupBox()
+        installed_gb.setMinimumHeight(400)
+        installed_gb.setStyleSheet('''QListView {
+            background-color: #fff;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            min-height: 280px;
+        }''')
         tp_layout.addWidget(installed_gb)
         self.installed_gb = installed_gb
 
@@ -99,12 +105,36 @@ class SoundpacksTab(QTabWidget):
         self.disable_existing_button = disable_existing_button
 
         delete_existing_button = QPushButton()
+        delete_existing_button.setStyleSheet('''QPushButton {
+            background-color: #c0392b; /* 暗红色 */
+            color: white;
+            font-size: 15px;
+            min-height: 15px;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            outline: none;
+        }
+        QPushButton:hover {
+            background-color: #e74c3c;
+        }
+        QPushButton:pressed {
+            background-color: #a93226;
+        }
+        ''')
         delete_existing_button.clicked.connect(self.delete_existing)
         delete_existing_button.setEnabled(False)
         ib_layout.addWidget(delete_existing_button)
         self.delete_existing_button = delete_existing_button
 
         repository_gb = QGroupBox()
+        repository_gb.setMinimumHeight(400)
+        repository_gb.setStyleSheet('''QListView {
+            background-color: #fff;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            min-height: 280px;
+        }''')
         tp_layout.addWidget(repository_gb)
         self.repository_gb = repository_gb
 
@@ -134,6 +164,12 @@ class SoundpacksTab(QTabWidget):
         self.top_part = top_part
 
         details_gb = QGroupBox()
+        details_gb.setMinimumHeight(400)
+        details_gb.setStyleSheet('''QListView {
+            background-color: #fff;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            min-height: 280px;
+        }''')
         layout.addWidget(details_gb)
         self.details_gb = details_gb
 

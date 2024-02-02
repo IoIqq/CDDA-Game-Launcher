@@ -77,6 +77,24 @@ class BackupsTab(QTabWidget):
                     self.backups_table.setColumnWidth(index, value)
 
         restore_button = QPushButton()
+        restore_button.setStyleSheet('''QPushButton#restoreButton {
+            background-color: #27ae60; /* 绿色 */
+            color: white;
+            font-size: 15px;
+            min-height: 15px;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            outline: none;
+        }
+        QPushButton#restoreButton:hover {
+            background-color: #2ecc71;
+        }
+        QPushButton#restoreButton:pressed {
+            background-color: #229954;
+        }
+        ''')
         restore_button.clicked.connect(self.restore_button_clicked)
         restore_button.setEnabled(False)
         current_backups_gb_layout.addWidget(restore_button, 1, 0)
@@ -89,6 +107,24 @@ class BackupsTab(QTabWidget):
         self.refresh_list_button = refresh_list_button
 
         delete_button = QPushButton()
+        delete_button.setStyleSheet('''QPushButton {
+            background-color: #c0392b; /* 暗红色 */
+            color: white;
+            font-size: 15px;
+            min-height: 15px;
+            font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+            border-radius: 5px;
+            padding: 10px 20px;
+            margin: 10px 10px;
+            outline: none;
+        }
+        QPushButton:hover {
+            background-color: #e74c3c;
+        }
+        QPushButton:pressed {
+            background-color: #a93226;
+        }
+        ''')
         delete_button.clicked.connect(self.delete_button_clicked)
         delete_button.setEnabled(False)
         current_backups_gb_layout.addWidget(delete_button, 1, 2)

@@ -762,7 +762,7 @@ msgstr "目录"
 #: cddagl/ui/views/main.py:221 cddagl/ui/views/mods.py:269
 #, fuzzy
 msgid "Version:"
-msgstr "版本"
+msgstr "版本:"
 
 #: cddagl/ui/views/main.py:222
 #, fuzzy
@@ -987,7 +987,7 @@ msgstr "可用的版本"
 
 #: cddagl/ui/views/main.py:1363
 msgid "Find build #:"
-msgstr "查找版本号："
+msgstr "查找版本号"
 
 #: cddagl/ui/views/main.py:1364
 msgid "Add to list"
@@ -1376,7 +1376,7 @@ msgstr "细节"
 #: cddagl/ui/views/mods.py:256
 #, fuzzy
 msgid "Ident:"
-msgstr "鉴别"
+msgstr "ID:"
 
 #: cddagl/ui/views/mods.py:257
 msgid "Author:"
