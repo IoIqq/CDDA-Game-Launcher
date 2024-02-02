@@ -4,6 +4,7 @@
 
 import html
 import json
+import yaml
 import logging
 import os
 import random
@@ -329,12 +330,12 @@ class ModsTab(QTabWidget):
         self.repository_lv.selectionModel().currentChanged.connect(
             self.repository_selection)
 
-        json_file = get_data_path('mods.json')
+        yaml_file = get_data_path('mods.yaml')  # 修改为YAML文件
 
-        if os.path.isfile(json_file):
-            with open(json_file, 'r', encoding='utf8') as f:
+        if os.path.isfile(yaml_file):
+            with open(yaml_file, 'r', encoding='utf8') as f:  # 修改为打开YAML文件
                 try:
-                    values = json.load(f)
+                    values = yaml.safe_load(f)  # 使用PyYAML解析YAML文件
                     if isinstance(values, list):
                         values.sort(key=lambda x: x['name'])
                         self.repo_mods = values
@@ -347,7 +348,7 @@ class ModsTab(QTabWidget):
                             self.repo_mods_model.setData(
                                 self.repo_mods_model.index(index),
                                 mod_info['name'])
-                except ValueError:
+                except yaml.YAMLError:
                     pass
 
     def install_new(self):

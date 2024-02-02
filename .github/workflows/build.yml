@@ -73,8 +73,8 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: fastcn_v${{ env.VERSION }}
-        release_name: Release fastcn_v${{ env.VERSION }}
+        tag_name: yaml_v${{ env.VERSION }}
+        release_name: Release yaml_v${{ env.VERSION }}
         draft: false
         prerelease: true
 
