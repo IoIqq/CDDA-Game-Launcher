@@ -359,4 +359,15 @@
     "url": "https://github.com/chaosvolt/MST_Extra_Mod/archive/refs/heads/master.zip",
     "homepage": "https://github.com/chaosvolt/MST_Extra_Mod"
   },
+  {
+    "type": "direct_download",
+    "ident": "skyisland",
+    "name": "Sky Islands",
+    "description": "A raid-based gameplay overhaul mod for CDDA, inspired by games like Escape from Tarkov and Dark & Darker.",
+    "author": "TGWeaver",
+    "category": "total_conversion",
+    "size": 72135,
+    "url": "https://github.com/TGWeaver/CDDA-Sky-Islands/archive/refs/heads/master.zip",
+    "homepage": "https://github.com/TGWeaver/CDDA-Sky-Islands"
+  }
 ]
