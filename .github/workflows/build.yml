@@ -73,10 +73,10 @@ jobs:
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        tag_name: v${{ env.VERSION }}
-        release_name: Release v${{ env.VERSION }}
+        tag_name: fastcn_v${{ env.VERSION }}
+        release_name: Release fastcn_v${{ env.VERSION }}
         draft: false
-        prerelease: false
+        prerelease: true
 
     - name: Upload Portable Asset
       uses: actions/upload-release-asset@v1
