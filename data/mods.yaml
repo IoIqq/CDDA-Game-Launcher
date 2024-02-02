@@ -450,10 +450,10 @@
 - type: direct_download
   ident: "AAA"
   name: "Adurnsyl's Assorted Arms and Armour"
-  authors:
+  authors: 
     - "Adurnsyl"
-  maintainers:
-    - "Adurnsyl"
+  maintainers: 
+    - Adurnsyl
   description: |
     This addon adds more real-world military equipment into the game. Blacklist removed due to Malkeus' Greed.
   category: 'items'
@@ -466,10 +466,10 @@
 - type: direct_download
   ident: "AbrahmsMA"
   name: "Abrahms OP Martial Arts"
-  authors:
+  authors: 
     - "MrAbrahms"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     These are quite OP unrefined weapon arts learned purely through experience.
   category: 'martial arts'
@@ -482,10 +482,10 @@
 - type: direct_download
   ident: "AbrahmsRecipes1"
   name: "Abrahms Recipes 1"
-  authors:
+  authors: 
     - "MrAbrahms"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     It's frustrating when my character can't cook simple recipes that can be made from ingredients they have on hand.
   category: 'food'
@@ -498,10 +498,10 @@
 - type: direct_download
   ident: "adv_gear"
   name: "Advanced Gear Goats Edition"
-  authors:
+  authors: 
     - "Shard"
-  maintainers:
-    - "The Goat God"
+  maintainers: 
+    - The Goat God
   description: |
     Extremely high-end items based around nanotech and 3D printing, mutations to be added later.
   category: 'items'
@@ -514,11 +514,11 @@
 - type: direct_download
   ident: "advtech"
   name: "Advanced Technologies"
-  authors:
+  authors: 
     - "Kane"
     - "MechMaster2.0"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds advanced armors, weapons, mech parts, robots, and crafting.
   category: 'items'
@@ -530,10 +530,10 @@
 - type: direct_download
   ident: "amplified_players_features"
   name: "Amplified @'s Features"
-  authors:
+  authors: 
     - "Zetsukaze"
-  maintainers:
-    - "Mycus"
+  maintainers: 
+    - Mycus
   description: |
     Attempt to bring more stuff into appearance traits, including NPC support.  PS.: Don't mix cute with default :D
   category: 'graphical'
@@ -546,10 +546,10 @@
 - type: direct_download
   ident: "Animatronics"
   name: "Animatronic Monsters"
-  authors:
+  authors: 
     - "Lanceo90"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds a chain of bankrupt pizzerias, with still functioning animatronics inside.
   category: 'buildings'
@@ -562,10 +562,10 @@
 - type: direct_download
   ident: "ArmUpSurvEx"
   name: "Armor Up! Survivor Expansion"
-  authors:
+  authors: 
     - "darktoes"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     A few extra bits of Survivor-grade armor.
   category: 'items'
@@ -578,11 +578,11 @@
 - type: direct_download
   ident: "arsenal_breach"
   name: "Arsenal Breach"
-  authors:
+  authors: 
     - "Rooki1"
     - "community"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds futuristic weapons
   category: 'items'
@@ -595,10 +595,10 @@
 - type: direct_download
   ident: "Arts' Guns"
   name: "Artyoms' Gun Emporium - Reloaded"
-  authors:
+  authors: 
     - "Artyom177, Leon713, and /u/chieflean"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds all the guns that YOU need to survive the Cataclysm
   category: 'items'
@@ -610,10 +610,10 @@
 - type: direct_download
   ident: "autodoc_harmless_perfect"
   name: "Autodoc Harmless and Perfect"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     The surgeries that are performed with the Autodoc are now perfect and absolutely harmless with no risks involved at all.
   category: 'rebalance'
@@ -626,10 +626,10 @@
 - type: direct_download
   ident: "battle_maid"
   name: "Battle Maid Redux"
-  authors:
+  authors: 
     - "Vermilion"
-  maintainers:
-    - "Conference_Calls"
+  maintainers: 
+    - Conference_Calls
   description: |
     Translated and tweaked version of the original Battle Maid mod, newly revamped. See README.md for details
   category: 'content'
@@ -642,10 +642,10 @@
 - type: direct_download
   ident: "bioco"
   name: "BioCo Content"
-  authors:
+  authors: 
     - "Poragon"
-  maintainers:
-    - "Poragon"
+  maintainers: 
+    - Poragon
   description: |
     Adds many new bionic centric items, courtesy of BioCo
   category: 'items'
@@ -659,10 +659,10 @@
 - type: direct_download
   ident: "bio_recipes"
   name: "Bionics Systems Recipes"
-  authors:
+  authors: 
     - "Chalne"
-  maintainers:
-    - "Chalne"
+  maintainers: 
+    - Chalne
   description: |
     Adds Autodoc, Autodoc couch to construction menu and Anesthethics to Chem crafting
   category: 'items'
@@ -675,10 +675,10 @@
 - type: direct_download
   ident: "Bionic_Space_Expander"
   name: "Bionic Space Expander"
-  authors:
+  authors: 
     - "Leon"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Introduces four new bionic implants that increase the available space for bionic implementations. They're hard to find and expansive to build.
   category: 'items'
@@ -690,10 +690,10 @@
 - type: direct_download
   ident: "Bootleg_Walkers"
   name: "Bootleg Walkers"
-  authors:
+  authors: 
     - "Feasts Upon Stars/Aggregate"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Allows one to construct shoddy knock-offs of the Northrup ATSV chicken walker.  For more information, consult the README.md file.
   category: 'items'
@@ -706,10 +706,10 @@
 - type: direct_download
   ident: "Bug's life"
   name: "Bug's life"
-  authors:
+  authors: 
     - "SuddenEyePuncture"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Add new types of insects, such as aphids, mantises, etc.
   category: 'creatures'
@@ -722,10 +722,10 @@
 - type: direct_download
   ident: "CBM_Arms"
   name: "CBM Equipment"
-  authors:
+  authors: 
     - "Everyone"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Add various equipment made from CBM.
   category: 'items'
@@ -738,10 +738,10 @@
 - type: direct_download
   ident: "climate_defying_farming"
   name: "Climate Defying Farming"
-  authors:
+  authors: 
     - "unknown"
-  maintainers:
-    - "Maddremor, Jackledead"
+  maintainers: 
+    - Maddremor, Jackledead
   description: |
     Adds different crops that would not grow in New England or are somewhat fantastical. Eggplant, nubamboo, coca and tea are the currenttly the only plants.
   category: 'items'
@@ -754,10 +754,10 @@
 - type: direct_download
   ident: "sierra_madre"
   name: "<color_red>Sierra Madre</color>"
-  authors:
+  authors: 
     - "Stormtrooper"
-  maintainers:
-    - "Stormtrooper"
+  maintainers: 
+    - Stormtrooper
   description: |
     Adds the (in)famous villa and casino of the <color_red>Sierra Madre</color> from Fallout New Vegas: Dead Money.
   category: 'content'
@@ -770,10 +770,10 @@
 - type: direct_download
   ident: "ks_variety_pack"
   name: "CDDA Variety Pack"
-  authors:
+  authors: 
     - "KS"
-  maintainers:
-    - "KS"
+  maintainers: 
+    - KS
   description: |
     Adds vehicle variants (extended cab / bed pickups, for example), and some QoL fixes so you can drink during winter.  
   category: 'misc_additions'
@@ -786,10 +786,10 @@
 - type: direct_download
   ident: "cars_to_wrecks"
   name: "Cars to Wrecks"
-  authors:
+  authors: 
     - "GiMoe"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Changes vehicle spawns to spawn more wrecks and less cars.
   category: 'vehicles'
@@ -801,10 +801,10 @@
 - type: direct_download
   ident: "CerealMod"
   name: "The Glory Of Cereal!"
-  authors:
+  authors: 
     - "KantoJolto"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds cereal in milk as a thing. Also adds 5 types of nuts, the ability to make non-spoil nut milk, and a separate healthier nut milk cereal.
   category: 'items'
@@ -817,10 +817,10 @@
 - type: direct_download
   ident: "craftgp"
   name: "Craftable Gun Pack"
-  authors:
+  authors: 
     - "Zaweri"
-  maintainers:
-    - "Noctifer-de-Mortem"
+  maintainers: 
+    - Noctifer-de-Mortem
   description: |
     Adds more craftable firearms, and gunpowder.  WARNING: Breaks intended balance.
   category: 'items'
@@ -833,10 +833,10 @@
 - type: direct_download
   ident: "crazy_labs"
   name: "Crazy Labs"
-  authors:
+  authors: 
     - "TK90"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     A mod that adds lots of tough monsters to lab monster gen. Now labs are endgame areas! Intended for players who find labs too easy or boring. Inspired by Half-Life and the labs in Resident Evil 2.
   category: 'creatures'
@@ -849,11 +849,11 @@
 - type: direct_download
   ident: "deoxymod"
   name: "Folding Parts pack"
-  authors:
+  authors: 
     - "Deoxy"
     - "Llamageddon"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Makes solar panels and several other parts foldable, and adds foldable quarterboards.
   category: 'vehicles'
@@ -866,10 +866,10 @@
 - type: direct_download
   ident: "diluted_mutagens"
   name: "Diluted Mutagens"
-  authors:
+  authors: 
     - "Olaroll"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds diluting mutagens to create your ideal monster waifu
   category: 'misc_additions'
@@ -882,10 +882,10 @@
 - type: direct_download
   ident: "DracoDogMod"
   name: "Draco's Dog Mod"
-  authors:
+  authors: 
     - "DracoGriffin"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds pet professions and allows training dogs into attack dogs (stat boosts).
   category: 'creatures'
@@ -898,10 +898,10 @@
 - type: direct_download
   ident: "DracoPigMod"
   name: "Draco's Pig Mod"
-  authors:
+  authors: 
     - "DracoGriffin"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Allows pigs to be tamed with cattle fodder.
   category: 'creatures'
@@ -914,10 +914,10 @@
 - type: direct_download
   ident: "dried_fruits"
   name: "Dried Fruits"
-  authors:
+  authors: 
     - "Wayticus"
-  maintainers:
-    - "Wayticus"
+  maintainers: 
+    - Wayticus
   description: |
     Dried fruits, not to be confused with them tatseless dehydrated fruit flakes.
   category: 'items'
@@ -930,10 +930,10 @@
 - type: direct_download
   ident: "EngineeringEssentials"
   name: "Engineering essentials"
-  authors:
+  authors: 
     - "Eila Attwood"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Some advanced (and not so advanced) engineering additions.
   category: 'content'
@@ -946,10 +946,10 @@
 - type: direct_download
   ident: "even_more_mutations"
   name: "Even More Mutations"
-  authors:
+  authors: 
     - "Uvi"
-  maintainers:
-    - "Uvi"
+  maintainers: 
+    - Uvi
   description: |
     Adds three new mutation branches and minor changes to existing ones.
   category: 'misc_additions'
@@ -962,11 +962,11 @@
 - type: direct_download
   ident: "ew_pack"
   name: "Icecoon's Arsenal"
-  authors:
+  authors: 
     - "Icecoon"
     - "community"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     For those gun nuts.  Don't have enough near-future firearms in your life?  Add this mod today!
   category: 'items'
@@ -979,10 +979,10 @@
 - type: direct_download
   ident: "ExArch"
   name: "Expanded Archery"
-  authors:
+  authors: 
     - "darktoes"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Bows, crossbows and pneumatic weapons expanded.
   category: 'items'
@@ -995,10 +995,10 @@
 - type: direct_download
   ident: "fallout"
   name: "Fallout New England"
-  authors:
+  authors: 
     - "Tefnut"
-  maintainers:
-    - "Tefnut"
+  maintainers: 
+    - Tefnut
   description: |
     Brings a little bit of that retro-futuristic class to the Cataclysm. Guns, beasts, and more. Stuff from the Core Region, all the way to the Commonwealth.
   category: 'items'
@@ -1011,11 +1011,11 @@
 - type: direct_download
   ident: "FIC_Weapons"
   name: "DeadLeaves' Fictional Guns"
-  authors:
+  authors: 
     - "DeadLeaves"
     - "BorkBorkGoesTheCode"
-  maintainers:
-    - "BorkBorkGoesTheCode"
+  maintainers: 
+    - BorkBorkGoesTheCode
   description: |
     Adds a bunch of rare, fictional weapons.
   category: 'items'
@@ -1028,10 +1028,10 @@
 - type: direct_download
   ident: "food_irradiator"
   name: "Food Irradiator"
-  authors:
+  authors: 
     - "Unknown"
-  maintainers:
-    - "TheGoatGod"
+  maintainers: 
+    - TheGoatGod
   description: |
     Adds an immobile machine, the 'food irradiator', as a rare spawn in labs along with the recipe for a portable version.
   category: 'misc_additions'
@@ -1044,10 +1044,10 @@
 - type: direct_download
   ident: "futurearmory"
   name: "Ricky's Future Armory"
-  authors:
+  authors: 
     - "RickyVanz"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Experience the future of weaponry with this mod.
   category: 'items'
@@ -1060,10 +1060,10 @@
 - type: direct_download
   ident: "Gourmand'sGraces"
   name: "Gourmand's Graces"
-  authors:
+  authors: 
     - "KantoJolto"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Greatly expands the selection of food you can find in grocery stores and pharmacy fridges. Focuses on items you'd expect to find in bakery and deli departments.
   category: 'items'
@@ -1076,10 +1076,10 @@
 - type: direct_download
   ident: "growable-pots"
   name: "Garden Pots"
-  authors:
+  authors: 
     - "Honcharuk"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Allows you to grow seeds in craftable garden pots that can be carried around as items.  Perfect for the nomadic botanist.
   category: 'items'
@@ -1092,10 +1092,10 @@
 - type: direct_download
   ident: "guncotton"
   name: "Gun Cotton"
-  authors:
+  authors: 
     - "vegarbg"
-  maintainers:
-    - "vegarbg"
+  maintainers: 
+    - vegarbg
   description: |
     Adds craftable gun cotton, gun cotton based explosives, and gunpowder.
   category: 'items'
@@ -1108,10 +1108,10 @@
 - type: direct_download
   ident: "Heavy miners"
   name: "Roadheader and other mining vehicles"
-  authors:
+  authors: 
     - "Ckpyt"
-  maintainers:
-    - "Ckpyt in the forest"
+  maintainers: 
+    - Ckpyt in the forest
   description: |
     Adds a few mining vehicles, requires Vehicle Additions Pack.
   category: 'vehicles'
@@ -1125,10 +1125,10 @@
 - type: direct_download
   ident: "homestead"
   name: "Homestead Instruments Inc."
-  authors:
+  authors: 
     - "Firebrand"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Modder's resource. Adds several buildable tools, portable and stationary
   category: 'items'
@@ -1141,10 +1141,10 @@
 - type: direct_download
   ident: "hydroponics"
   name: "Hydroponics"
-  authors:
+  authors: 
     - "Unknown"
-  maintainers:
-    - "Medecube"
+  maintainers: 
+    - Medecube
   description: |
     Adds hydroponic units, a furniture which can have crops planted in it for increased yields.  Spawn occasionally in labs or basements.  Or build your own.
   category: 'misc_additions'
@@ -1157,10 +1157,10 @@
 - type: direct_download
   ident: "jury_rigged_robots"
   name: "Jury-Rigged Robots"
-  authors:
+  authors: 
     - "Sunshine, TheSalamanderDJ"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Options for salvaging, jury rigging, and reprogramming broken robots.
   category: 'creatures'
@@ -1173,10 +1173,10 @@
 - type: direct_download
   ident: "eps_cbm"
   name: "Large capacity storage CBMs"
-  authors:
+  authors: 
     - "Unknown"
-  maintainers:
-    - "TheGoatGod"
+  maintainers: 
+    - TheGoatGod
   description: |
     Adds a large capacity storage device CBM.
   category: 'items'
@@ -1189,10 +1189,10 @@
 - type: direct_download
   ident: "beamswordmod"
   name: "Rivtech Beam Swords"
-  authors:
+  authors: 
     - "Kettle Swordfang"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds the Rivtech beam sword, a powerful constructible endgame weapon.
   category: 'items'
@@ -1205,10 +1205,10 @@
 - type: direct_download
   ident: "Locked_and_Loaded"
   name: "Locked and Loaded"
-  authors:
+  authors: 
     - "Jninja1"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds more guns and more ammo types for the gun nuts.
   category: 'items'
@@ -1221,10 +1221,10 @@
 - type: direct_download
   ident: "machine"
   name: "machine"
-  authors:
+  authors: 
     - "Everyone"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds a guaranteed lab that spawns a CVD - diamond coating - machine
   category: 'misc_additions'
@@ -1236,10 +1236,10 @@
 - type: direct_download
   ident: "makeshift"
   name: "Makeshift Items Mod"
-  authors:
+  authors: 
     - "Noctifer-de-Mortem"
-  maintainers:
-    - "Noctifer-de-Mortem"
+  maintainers: 
+    - Noctifer-de-Mortem
   description: |
     Adds more improvised item variants and rebalances existing ones.
   category: 'items'
@@ -1252,10 +1252,10 @@
 - type: direct_download
   ident: "Merchant"
   name: "Merchant Mod"
-  authors:
+  authors: 
     - "Undereastern"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds merchants and survivors village.
   category: 'unknown'
@@ -1268,10 +1268,10 @@
 - type: direct_download
   ident: "Mining_Mod"
   name: "Mining Mod"
-  authors:
+  authors: 
     - "DangerNoodle"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds mineral veins randomly found underground, to obtain various natural resources.
   category: 'misc_additions'
@@ -1284,11 +1284,11 @@
 - type: direct_download
   ident: "modern_weapon"
   name: "Modern Weapon Pack Expanded"
-  authors:
+  authors: 
     - "crom"
     - "BorkBorkGoesTheCode"
-  maintainers:
-    - "BorkBorkGoesTheCode"
+  maintainers: 
+    - BorkBorkGoesTheCode
   description: |
     This mod adds more real world firearms to the game. It was derived from Modern Weapons Pack by crom.
   category: 'items'
@@ -1301,10 +1301,10 @@
 - type: direct_download
   ident: "modular_turrets_no_blacklist"
   name: "Modular Turrets with No Blacklist"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Gives turrets swappable firearm modules, which can be reclaimed from broken robots.
   category: 'creatures'
@@ -1318,10 +1318,10 @@
 - type: direct_download
   ident: "more_locations"
   name: "More Locations"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds new Z-level buildings and dungeons.  Still unpolished.  Before generating a world, you can remove subfolders to nix unwanted locations.
   category: 'buildings'
@@ -1334,10 +1334,10 @@
 - type: direct_download
   ident: "More_Military"
   name: "Military Professions Mod"
-  authors:
+  authors: 
     - "Jebi Bones"
-  maintainers:
-    - "Jebi Bones"
+  maintainers: 
+    - Jebi Bones
   description: |
     Adds new military themed professions.
   category: 'rebalance'
@@ -1350,10 +1350,10 @@
 - type: direct_download
   ident: "More_Survivors_Stories"
   name: "More Survivors Stories"
-  authors:
+  authors: 
     - "El-Jekozo"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds 5 new side stories (1 WIP), 1 mission for random NPCs and a story line for Hell's Raiders faction (in early stage of development, fully playable, currently have a decent amount of content).
     How to get to Hell's Raiders story line:
@@ -1370,10 +1370,10 @@
 - type: direct_download
   ident: "more_survivor_notes"
   name: "More Survivor Notes"
-  authors:
+  authors: 
     - "Broken 'Spaghetti' Admin"
-  maintainers:
-    - "Broken 'Spaghetti' Admin"
+  maintainers: 
+    - Broken 'Spaghetti' Admin
   description: |
     Adds more survivor notes for hints for new players.
   category: 'misc_additions'
@@ -1386,10 +1386,10 @@
 - type: direct_download
   ident: "more_survivor_stuff"
   name: "More Survivor Stuff"
-  authors:
+  authors: 
     - "hoovytaurus"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds more variety to survivor equipment, styles, crafts etc.
   category: 'misc_additions'
@@ -1402,10 +1402,10 @@
 - type: direct_download
   ident: "More tea leaf"
   name: "MOD to grow tea leaves"
-  authors:
+  authors: 
     - "unknown"
-  maintainers:
-    - "Grim616"
+  maintainers: 
+    - Grim616
   description: |
     Add tea leaf seeds and raw tea leaves, some tea leaves and tea.
   category: 'items'
@@ -1418,10 +1418,10 @@
 - type: direct_download
   ident: "morlock_village"
   name: "Morlock Village"
-  authors:
+  authors: 
     - "unknown"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds an underground village of mutant NPCs.  Connects to subways.
   category: 'buildings'
@@ -1434,10 +1434,10 @@
 - type: direct_download
   ident: "mutant_animals"
   name: "Mutant Animals"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Normal animals evolve over time into weird or dangerous mutants.
   category: 'creatures'
@@ -1450,10 +1450,10 @@
 - type: direct_download
   ident: "mutant_insects"
   name: "Mutant Insects"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Expands giant insects, eggs, larva.  Adds new types.  Insects evolve into mega-sized insects.  Some larva are tameable.  Eggs can be modified with mutagen.
   category: 'creatures'
@@ -1466,10 +1466,10 @@
 - type: direct_download
   ident: "mutant_npcs_new"
   name: "Mutant NPCs"
-  authors:
+  authors: 
     - "Spencer Michaels"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     NPCs wandering the wasteland will occasionally have mutations --- your foes included.  Beware!
   category: 'misc_additions'
@@ -1482,12 +1482,12 @@
 - type: direct_download
   ident: "Mutation_Changes"
   name: "Mutation Changes"
-  authors:
+  authors: 
     - "Peeved Penguin (Original Author)"
     - "Bl4nk (Fixer)"
     - "Snofielf (Fixer)"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Changes, rebalances and adds some more mutations. This a fixed version for the fixed version to cleanse the mod of even more old bugs and problems. It has some new mutations and additions as well.
   category: 'rebalance'
@@ -1499,10 +1499,10 @@
 - type: direct_download
   ident: "GOV_BANDITS"
   name: "Compatible Add Bandits"
-  authors:
+  authors: 
     - "GovTD/Karl_Keimov"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Modified by Malkeus: (Added some fixes mentioned in the forums. Removed duplicate monstergroup entries, rewrote itemgroups and altered AI of bandits.) Adds bands of hostile humans that patrol the wastelands looking for things to kill. This mod needs balance work.
   category: 'creatures'
@@ -1514,10 +1514,10 @@
 - type: direct_download
   ident: "national_guard_camp_alt"
   name: "Beta National Guard Camp"
-  authors:
+  authors: 
     - "acidia"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Help test the national guard camp before inclusion into the base game.  Provide feedback in the thread under 'The Lab'
   category: 'buildings'
@@ -1530,10 +1530,10 @@
 - type: direct_download
   ident: "Nechronica_Redux"
   name: "Nechronica Redux"
-  authors:
+  authors: 
     - "YukariMindGap"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     MODIFIED by YukariMindGap from Malkeus: Add items, mutations and enemies appearing in Nechronica: the Long Long Sequel.
   category: 'content'
@@ -1546,10 +1546,10 @@
 - type: direct_download
   ident: "necromancy"
   name: "Necromancy"
-  authors:
+  authors: 
     - "dambuk1"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds the ability to revive creatures as minions.
   category: 'magical'
@@ -1562,10 +1562,10 @@
 - type: direct_download
   ident: "NM_wpns"
   name: "Nimian Manufacture Guns"
-  authors:
+  authors: 
     - "anon"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     A new set of guns, light and accurate, as well as some other toys.
   category: 'items'
@@ -1577,11 +1577,11 @@
 - type: direct_download
   ident: "Ninja"
   name: "Ninja_Mod"
-  authors:
+  authors: 
     - "hount of '@'"
-  maintainers:
-    - "Chezzo"
-    - "ZhilkinSerg"
+  maintainers: 
+    - Chezzo
+    - ZhilkinSerg
   description: |
     Malkeus: (Fixes to maps and vehicles) Secret mod only for Ninja
   category: 'misc_additions'
@@ -1594,10 +1594,10 @@
 - type: direct_download
   ident: "nw_pack"
   name: "Mythological Replicas"
-  authors:
+  authors: 
     - "Zaweri"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds recipes for replicas of mythological weapons.
   category: 'items'
@@ -1610,10 +1610,10 @@
 - type: direct_download
   ident: "oa_additional_buildings_mod"
   name: "Oa's Additional Buildings mod"
-  authors:
+  authors: 
     - "Oa"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds more buildings into the game, (for a full list see readme)
   category: 'buildings'
@@ -1626,10 +1626,10 @@
 - type: direct_download
   ident: "oa_early_game_mutations_mod"
   name: "Oa's Early Game Mutations mod"
-  authors:
+  authors: 
     - "Oa"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Makes mutagens available early game. Adds a new building, as well as two start scenarios and a profession for it.
   category: 'buildings'
@@ -1643,10 +1643,10 @@
 - type: direct_download
   ident: "package_bionic_professions"
   name: "Bionic Professions"
-  authors:
+  authors: 
     - "Erk, Everyone"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Numerous bionic starting professions.  Disable for a more real-world experience.
   category: 'content'
@@ -1657,15 +1657,15 @@
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
 
 - type: direct_download
-  ident: "unknown"
-  name: "unknown"
-  authors:
-    - "unknown"
-  maintainers:
-    - "unknown"
+  ident: "PK_REBALANCE"
+  name: "PKs Rebalancing"
+  authors: 
+    - "pisskop, Dissociativity, Goat-God"
+  maintainers: 
+    - unknown
   description: |
-    No description provided.
-  category: 'unknown'
+    Rebalances spawn list, adds new monsters and items, adds new buildings and fortifies old buildings, and strives to create a harsher enviornment to survive in.
+  category: 'content'
   dependencies:
   size: 3119583
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/PKs_Rebalancing.zip"
@@ -1674,11 +1674,11 @@
 - type: direct_download
   ident: "pneumo_fun"
   name: "Pneumatic fun"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan"
     - "Axema Vales"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds lots of obsoleted very fun toys back
   category: 'content'
@@ -1691,10 +1691,10 @@
 - type: direct_download
   ident: "apex"
   name: "Project APEX"
-  authors:
+  authors: 
     - "Firebrand"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Stage 0. High-end, mid-to-late game armor and equipment
   category: 'items'
@@ -1709,10 +1709,10 @@
 - type: direct_download
   ident: "ProjectKawaii"
   name: "ProjectKawaii"
-  authors:
+  authors: 
     - "inoue&Derp"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Includes high-tech transformable melee weapons, a remotely-access store, and of course, cute outfits for maids.
   category: 'unknown'
@@ -1724,10 +1724,10 @@
 - type: direct_download
   ident: "psychiclysm"
   name: "Psychiclysm"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adapts some Magiclysm features for psychic phenomena.  Changes nether monsters fear attacks to an incremental effect.  Gives many monsters psi-attacks.  Adds mesmerism options to NPC dialog.  Psychic Duels with other mentalists.
   category: 'content'
@@ -1742,10 +1742,10 @@
 - type: direct_download
   ident: "realdarkskies"
   name: "<color_light_green>Real Dark Skies</color>"
-  authors:
+  authors: 
     - "Zlorthishen"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     A supplement mod that increments the Cataclysm DDA experience by adding an inscrutable alien-humanoid paramilitary expeditionary force to your typical survival scenario.  Complements to the vanilla adding the vile Xenoids, the murderous Strays, and terrifying [REDACTED], and more!  <color_light_red>Prepare for a challenge.</color>
   category: 'content'
@@ -1758,10 +1758,10 @@
 - type: direct_download
   ident: "realdarkskies_faction_balance"
   name: "Real Dark Skies Above faction rebalance"
-  authors:
+  authors: 
     - "Zlorthishen"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Rebalances mod's factions to be friendly with vanilla zombie factions
   category: 'content'
@@ -1775,10 +1775,10 @@
 - type: direct_download
   ident: "reapermod"
   name: "Shinigami"
-  authors:
+  authors: 
     - "Kettle Swordfang"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds the Shinigami / Grim Reaper Martial Art and Professions, as well as new weapons.
   category: 'rebalance'
@@ -1791,10 +1791,10 @@
 - type: direct_download
   ident: "recruitment_options"
   name: "NPC Recruitment Options"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Gives special recruitment dialog if your character and an NPC have certain traits, stats, effects, or gear.  Post-threshold mutants will always join their own kind.
   category: 'misc_additions'
@@ -1807,10 +1807,10 @@
 - type: direct_download
   ident: "Red's Odd Additions"
   name: "Red's Odd Additions"
-  authors:
+  authors: 
     - "redxlaser15"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds some rather VERY OP items-test-stuff, odd creatures, and such to the game.USE AT YOUR OWN RISK - ONLY IF YOU ENJOY OVERLY OP ITEMS AND WACKINESS/TESTING.
   category: 'misc'
@@ -1823,10 +1823,10 @@
 - type: direct_download
   ident: "rice"
   name: "Add Rice"
-  authors:
+  authors: 
     - "Broken 'Spaghetti' Admin"
-  maintainers:
-    - "Broken 'Spaghetti' Admin"
+  maintainers: 
+    - Broken 'Spaghetti' Admin
   description: |
     Adds rice and rice related foods and items.
   category: 'items'
@@ -1839,10 +1839,10 @@
 - type: direct_download
   ident: "Salvaged_Robots"
   name: "Salvaged Robots"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "Anyone"
+  maintainers: 
+    - Anyone
   description: |
     Expands the types of robots and allows players to jury-rig broken robots into functioning companions.
   category: 'creatures'
@@ -1857,10 +1857,10 @@
 - type: direct_download
   ident: "sarcophagi_access"
   name: "Sarcophagi Access"
-  authors:
+  authors: 
     - "Maddremor"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Enables an alternate method of accessing the sarcophagus.
   category: 'buildings'
@@ -1873,10 +1873,10 @@
 - type: direct_download
   ident: "SD_Magcrafting"
   name: "Craft Ammo Mags & Belt Links"
-  authors:
+  authors: 
     - "ShadowDragon8685"
-  maintainers:
-    - "ShadowDragon8685"
+  maintainers: 
+    - ShadowDragon8685
   description: |
     Adds recipes for ammo mags and belt linkages.
   category: 'items'
@@ -1889,11 +1889,11 @@
 - type: direct_download
   ident: "Ships"
   name: "Ships From Oa Additional Buildings"
-  authors:
+  authors: 
     - "Oa"
     - "Nonesuch"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Just a load of ship here
   category: 'buildings'
@@ -1906,10 +1906,10 @@
 - type: direct_download
   ident: "mxoudpcosmetics"
   name: "Hair and Skin Color Cosmetics, UDP and MXotto+ version p10"
-  authors:
+  authors: 
     - "Fuji"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Hair and skin color related traits for UDP and MXotto+. p10 sprites by xotto
   category: 'misc_additions'
@@ -1922,10 +1922,10 @@
 - type: direct_download
   ident: "sly_beastfix"
   name: "Sly's Beauteous Beastly Bugfix"
-  authors:
+  authors: 
     - "The Sly Somnambulist"
-  maintainers:
-    - "The Sly Somnambulist"
+  maintainers: 
+    - The Sly Somnambulist
   description: |
     God is dead and we have killed him.
   category: 'rebalance'
@@ -1938,10 +1938,10 @@
 - type: direct_download
   ident: "Soy mod"
   name: "Soy mod"
-  authors:
+  authors: 
     - "Hio"
-  maintainers:
-    - "hirmiura"
+  maintainers: 
+    - hirmiura
   description: |
     Add soy and related recipes. If you feel like it, please.
   category: 'items'
@@ -1955,10 +1955,10 @@
 - type: direct_download
   ident: "steampunk_arcanum"
   name: "Steampunk Mod"
-  authors:
+  authors: 
     - "Jolmar7"
-  maintainers:
-    - "Jolmar7"
+  maintainers: 
+    - Jolmar7
   description: |
     Adds a variety of steampunk items, enemies and locations inspired by the Arcanum crpg.
   category: 'content'
@@ -1971,10 +1971,10 @@
 - type: direct_download
   ident: "tekitoumap"
   name: "Tekitou Map Commercial Overhaul"
-  authors:
+  authors: 
     - "Community"
-  maintainers:
-    - "TheGoatGod"
+  maintainers: 
+    - TheGoatGod
   description: |
     Tekitou map Rezone's Commercial Zones?
   category: 'misc_additions'
@@ -1987,10 +1987,10 @@
 - type: direct_download
   ident: "thermal_ups"
   name: "Thermal Electric UPS"
-  authors:
+  authors: 
     - "Nerdnub"
-  maintainers:
-    - "Nerdnub"
+  maintainers: 
+    - Nerdnub
   description: |
     A little mod that adds a UPS-powered variant to the thermal electric suit and outfit. 
   category: 'items'
@@ -2003,10 +2003,10 @@
 - type: direct_download
   ident: "cool_mod"
   name: "The Cool Mod"
-  authors:
+  authors: 
     - "Maddremor"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds a cooler to keep your food cold and fresh.
   category: 'items'
@@ -2019,10 +2019,10 @@
 - type: direct_download
   ident: "Tolerate_This"
   name: "Bens GF recipes"
-  authors:
+  authors: 
     - "TechyBen"
-  maintainers:
-    - "TechyBen"
+  maintainers: 
+    - TechyBen
   description: |
     Some simple gluten free and lactose free alternative recipe options.  NOT EXHAUSTIVE.
   category: 'items'
@@ -2035,10 +2035,10 @@
 - type: direct_download
   ident: "Uekibati_mod"
   name: "Flowerpot (uekibati) mod"
-  authors:
+  authors: 
     - "Fire man - Translated by Chesthole"
-  maintainers:
-    - "TheGoatGod"
+  maintainers: 
+    - TheGoatGod
   description: |
     This mod adds flowerpots for growing plants.
   category: 'items'
@@ -2050,10 +2050,10 @@
 - type: direct_download
   ident: "valchron_mod"
   name: "Valkyria Chronicles Mod"
-  authors:
+  authors: 
     - "Jolmar7"
-  maintainers:
-    - "Jolmar7"
+  maintainers: 
+    - Jolmar7
   description: |
     Adds a variety of steampunk items, enemies and locations inspired by the Valkyria Chronicles video game.
   category: 'content'
@@ -2066,10 +2066,10 @@
 - type: direct_download
   ident: "VermilionMod"
   name: "The Vermilion Mod"
-  authors:
+  authors: 
     - "Vermilion"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds a random assortment of over-the-top weapons, gear and risqué items for the depraved.
   category: 'items'
@@ -2082,10 +2082,10 @@
 - type: direct_download
   ident: "vorpal_weapons"
   name: "vorpal weapons"
-  authors:
+  authors: 
     - "Community"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     sude joui buki tuika
   category: 'items'
@@ -2098,10 +2098,10 @@
 - type: direct_download
   ident: "wandering_masters"
   name: "Wandering Masters"
-  authors:
+  authors: 
     - "El-Jekozo"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Mod adds 'Wandering Masters', NPCs that can 'teach' player martial arts after completing their quest line.
     Check mod folder for more information.
@@ -2115,10 +2115,10 @@
 - type: direct_download
   ident: "water_towers"
   name: "Water Towers"
-  authors:
+  authors: 
     - "Sunshine"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds empty water towers.  Underground tank connects to subway tunnels.
   category: 'buildings'
@@ -2131,10 +2131,10 @@
 - type: direct_download
   ident: "collectablemod"
   name: "Whaleys Collectables"
-  authors:
+  authors: 
     - "Whaley"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds collectible trading cards, stamps, and several new toys including dart guns.
   category: 'content'
@@ -2147,10 +2147,10 @@
 - type: direct_download
   ident: "whaleys_tallbuild"
   name: "Whaleys TALL Buildings"
-  authors:
+  authors: 
     - "Whaley"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds more T A L L Buildings.
   category: 'buildings'
@@ -2163,10 +2163,10 @@
 - type: direct_download
   ident: "WHALEYHAIR_UDP"
   name: "Whaleys Hair Mod (UDP Tweaks)"
-  authors:
+  authors: 
     - "Whaley"
-  maintainers:
-    - "SomeDeadGuy"
+  maintainers: 
+    - SomeDeadGuy
   description: |
     Adds New Hairstyles, Tattoos, Makeup and cosmetic injuries. Updated to be used with new version of UndeadPeople tileset.
   category: 'Other'
@@ -2178,10 +2178,10 @@
 - type: direct_download
   ident: "WildLiving"
   name: "Wild Living"
-  authors:
+  authors: 
     - "LambdaSix"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Bring a little more life and variety to the wilds - https://github.com/LambdaSix/Wild-Living
   category: 'items'
@@ -2194,10 +2194,10 @@
 - type: direct_download
   ident: "XEAS"
   name: "XEAS"
-  authors:
+  authors: 
     - "MrJet"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Add new Xeno-Adapted Stuff. Close to hi-tech content. Includ armor set (slightly better protection than survival armor, less encumbrance), new knife (better butchering, impression damage) and vortex bag (120 L, tiny size, no encumbrance). Craft recipes in vanilla lab journal. High price. Late game content!
   category: 'content'
@@ -2210,10 +2210,10 @@
 - type: direct_download
   ident: "Xeno_SAS4"
   name: "Xeno's SAS4 weapons pack"
-  authors:
+  authors: 
     - "xXenocage"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds all the weapons included inside the game SAS4 Zombie assault, only the base quality is present (aka, no red, no black), please do consider that these weapons are not a property of mine, and as that they belong to NInjaKiwi. all of these weapons are a work of finction, and are not in any way related to real guns, launchers or weapons.
   category: 'items'
@@ -2226,10 +2226,10 @@
 - type: direct_download
   ident: "Youkai_Disco"
   name: "Youkai Enemies"
-  authors:
+  authors: 
     - "Toltetix"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds some monsters based off Japanese folklore.
   category: 'creatures'
@@ -2242,10 +2242,10 @@
 - type: direct_download
   ident: "zets_hair_extensions_undead"
   name: "Zetsukaze's Hair - 0.E EDIT"
-  authors:
+  authors: 
     - "Zetsukaze"
-  maintainers:
-    - "SomeDeadGuy"
+  maintainers: 
+    - SomeDeadGuy
   description: |
     Adds hairs, eyes and skins for UnDeadPeopleTileset. Modified for Undead People tileset compatibility.
   category: 'misc_additions'
@@ -2258,10 +2258,10 @@
 - type: direct_download
   ident: "zets_hair_ext_more_locations"
   name: "Zet's Hair - More Locations"
-  authors:
+  authors: 
     - "Zetsukaze"
-  maintainers:
-    - "Zetsukaze"
+  maintainers: 
+    - Zetsukaze
   description: |
     Adds hairs, eyes and skin for the mod More Locations, used with DeadPeopleTileset
   category: 'misc_additions'
@@ -2275,10 +2275,10 @@
 - type: direct_download
   ident: "zets_hair_ext_pk_rebalance"
   name: "Zet's Hair - PKs Rebalancing"
-  authors:
+  authors: 
     - "Zetsukaze"
-  maintainers:
-    - "Zetsukaze"
+  maintainers: 
+    - Zetsukaze
   description: |
     Adds hairs, eyes and skin for the mod More Locations, used with DeadPeopleTileset
   category: 'misc_additions'
@@ -2292,10 +2292,10 @@
 - type: direct_download
   ident: "ZSFIXED_cddaxp"
   name: "ZSFIXED_C:DDA Extra Professions & Gears"
-  authors:
+  authors: 
     - "Marte"
-  maintainers:
-    - "ZhilkinSerg"
+  maintainers: 
+    - ZhilkinSerg
   description: |
     Adds a new set of professions and relative gears.
   category: 'rebalance'
@@ -2311,10 +2311,10 @@
 - type: direct_download
   ident: "BL9_100monres"
   name: "<color_light_blue>BL9-100%-monster-resilience-version</color>"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     
     <color_yellow>Gigantic sci-fi action adventure expansion mod </color>
@@ -2332,10 +2332,10 @@
 - type: direct_download
   ident: "BL9_140monres"
   name: "<color_light_blue>BL9-140%-monster-resilience-version</color>"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     
     <color_yellow>Gigantic sci-fi action adventure expansion mod </color>
@@ -2353,10 +2353,10 @@
 - type: direct_download
   ident: "BL9_175monres"
   name: "<color_light_blue>BL9-175%-monster-resilience-version</color>"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     
     <color_yellow>Gigantic sci-fi action adventure expansion mod </color>
@@ -2374,10 +2374,10 @@
 - type: direct_download
   ident: "blazeindustries"
   name: "Blaze Industries"
-  authors:
+  authors: 
     - "Blaze-whatdoyoumeanitsalreadytaken"
-  maintainers:
-    - "Soup-de-Loop"
+  maintainers: 
+    - Soup-de-Loop
   description: |
     Introduces the fictional corporation Blaze Industries, bringing advanced vehicle modification to the consumer.
   category: 'content'
@@ -2390,10 +2390,10 @@
 - type: direct_download
   ident: "blazemod"
   name: "Blazemod - Vehicle Additions Pack"
-  authors:
+  authors: 
     - "Blaze-whatdoyoumeanitsalreadytaken"
-  maintainers:
-    - "SouP"
+  maintainers: 
+    - SouP
   description: |
     Please see the included README.txt in the mod folder for how to install this mod correctly, and for any other issues.
   category: 'vehicles'
@@ -2406,11 +2406,11 @@
 - type: direct_download
   ident: "culinary_days_ahead"
   name: "Culinary Days Ahead"
-  authors:
+  authors: 
     - "Eirenex"
     - "fatalmojo"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Surviving the dragon way
   category: 'items'
@@ -2423,10 +2423,10 @@
 - type: direct_download
   ident: "Dino_Mad_Science"
   name: "Dino_Mad_Science"
-  authors:
+  authors: 
     - "Jackledead"
-  maintainers:
-    - "Jackledead"
+  maintainers: 
+    - Jackledead
   description: |
     Total overhaul, replaces most zombies with dinosaurs and zombie dinosaurs.  Rebalances CDDA to focus on the Dinoclysm.  Scientists are responsible for a dino-outbreak and their vaccine against it turned them into zombies, can you survive long enough to piece together their plans and reverse what they started before it is too late?
   category: 'content'
@@ -2440,10 +2440,10 @@
 - type: direct_download
   ident: "sch_easy_containers"
   name: "Easy Containers"
-  authors:
+  authors: 
     - "Saicchi"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Makes containers behave more like 0.E containers.  Single pocket with infinite item length and infinite weight limit.
   category: 'rebalance'
@@ -2456,10 +2456,10 @@
 - type: direct_download
   ident: "sch_easy_proficiency"
   name: "Easy Proficiency"
-  authors:
+  authors: 
     - "Saicchi"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Makes proficiencies in the base game instantaneous to learn.  Proficiency requirements still apply.
   category: 'rebalance'
@@ -2470,16 +2470,17 @@
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
 
 - type: direct_download
-  ident: "unknown"
-  name: "WEARY_RECOVERY_MULT"
-  authors:
-    - "unknown"
-  maintainers:
-    - "unknown"
+  ident: "light_weariness"
+  name: "<color_light_blue>Lighter Weariness</color>"
+  authors: 
+    - "Mrsecretguy1/Kenan"
+  maintainers: 
+    - unknown
   description: |
-    No description provided.
-  category: 'unknown'
+    Makes weariness much less strenuous, making it 8x lighter in general, thanks to Anothersimulacrum's vanilla external_option code additions
+  category: 'misc_additions'
   dependencies:
+    - 'dda'
   size: 810
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Lighter_Weariness.zip"
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
@@ -2487,10 +2488,10 @@
 - type: direct_download
   ident: "magicrevamp"
   name: "Magiclysm Revamp and Additions"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan, Chaosvolt, Aptronym"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Revamps and improves Magiclysm inreasing max level and max stats of spells by 1.5X, attunements - by 8 levels, makes classes and attunements mutually inclusive
   category: 'magical'
@@ -2504,11 +2505,11 @@
 - type: direct_download
   ident: "bow_opness"
   name: "Make bows great again"
-  authors:
+  authors: 
     - "Mrsecretguy1/Kenan"
     - "Axema Vales"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Rebalances vanilla bows and crossbows and makes them strong again like in pre-nerf times.
   category: 'content'
@@ -2521,10 +2522,10 @@
 - type: direct_download
   ident: "demon_spider_a"
   name: "Miscellaneous Magiclysm Expansions"
-  authors:
+  authors: 
     - "Minecrafter: Next Generation"
-  maintainers:
-    - "Minecrafter: Next Generation"
+  maintainers: 
+    - Minecrafter: Next Generation
   description: |
     Major and/or minor expansions to the Magiclysm modification.
   category: 'magical'
@@ -2538,12 +2539,12 @@
 - type: direct_download
   ident: "MMA_Mods_Extension"
   name: "<color_yellow>Mythical Martial Arts - Mods Extension</color>"
-  authors:
+  authors: 
     - "Photoloss"
     - "Psychodata"
     - "Caring-Goat-Deity"
-  maintainers:
-    - "Hymore246"
+  maintainers: 
+    - Hymore246
   description: |
     Adds MMA martial arts support for weapons from various mods <color_light_red>NOTE, you MUST have the mods below enabled, otherwise it will throw a NEGLIGIBLE (ignorable) error</color>
     
@@ -2557,16 +2558,17 @@
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
 
 - type: direct_download
-  ident: "unknown"
-  name: "CBM_SLOTS_ENABLED"
-  authors:
-    - "unknown"
-  maintainers:
-    - "unknown"
+  ident: "no_cbm_slots"
+  name: "No Bionic Slots"
+  authors: 
+    - "Mrsecretguy1/Kenan"
+  maintainers: 
+    - unknown
   description: |
-    No description provided.
-  category: 'unknown'
+    Entirely disables the bionic slots system, which limits the number of CBMs you can install in each bodypart.
+  category: 'rebalance'
   dependencies:
+    - 'dda'
   size: 453
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/no_cbm_slots.zip"
   homepage: 'https://github.com/Kenan2000/CDDA-Structured-Kenan-Modpack'
@@ -2574,10 +2576,10 @@
 - type: direct_download
   ident: "Pix's Shit"
   name: "Pixel's Various Fuckery"
-  authors:
+  authors: 
     - "pixel and Eirenex"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Adds additional unique post-threshold mutations, various recipes for weapons.  Slightly risqué but safe for work, no worse than vibrators and gimp suits!@#
   category: 'items'
@@ -2589,10 +2591,10 @@
 - type: direct_download
   ident: "secronom"
   name: "<color_light_red>Secronom</color>"
-  authors:
+  authors: 
     - "Axema Vales"
-  maintainers:
-    - "Kenan"
+  maintainers: 
+    - Kenan
   description: |
     <color_red>Brings your Cataclysm experience into a hellish nightmare…</color>
     <color_dark_gray>◆ Not recommended for new players ◆</color>
@@ -2610,11 +2612,11 @@
 - type: direct_download
   ident: "secronom_lore_expansion"
   name: "<color_light_red>Secronom+ Lore Expansion</color>"
-  authors:
+  authors: 
     - "Axema Vales"
     - "SzQ"
-  maintainers:
-    - "Kenan"
+  maintainers: 
+    - Kenan
   description: |
     <color_cyan>An expansion mod for secronom. (WIP)</color>
   category: 'content'
@@ -2628,10 +2630,10 @@
 - type: direct_download
   ident: "vamp_stuff"
   name: "Vampiric Stuff"
-  authors:
+  authors: 
     - "Axema Vales"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     
     <color_red>Adds night creatures, new items, monsters and locations.</color>
@@ -2648,11 +2650,11 @@
 - type: direct_download
   ident: "vamp_stuff+arcana"
   name: "Vampiric Stuff + Arcana Mod Extension"
-  authors:
+  authors: 
     - "Axema Vales"
     - "Chaosvolt"
-  maintainers:
-    - "unknown"
+  maintainers: 
+    - unknown
   description: |
     Links Vampiric Stuff and Arcana for various new contents and features.
   category: 'misc_additions'
@@ -2667,10 +2669,10 @@
 - type: direct_download
   ident: "World_on_fire"
   name: "World on Fire"
-  authors:
+  authors: 
     - "Trivega & Community"
-  maintainers:
-    - "Trivega"
+  maintainers: 
+    - Trivega
   description: |
     A monster pack that adds several fire type monsters to the game.
   category: 'creatures'
@@ -3607,7 +3609,7 @@
   ident: "StatsThroughSkills"
   name: "Stats Through Skills"
   authors: 
-    - "Ryan "DeNarr" Saige"
+    - 'Ryan "DeNarr" Saige'
     - "Kevin Granade"
   maintainers: 
     - unknown
