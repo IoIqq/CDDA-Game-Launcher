@@ -78,8 +78,8 @@ Source: "build\archive\*"; DestDir: "{app}"; Flags: ignoreversion recursesubdirs
 
 
 [Icons]
-Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyExecutable}"; IconFilename: "{app}\{#MyIcon}"
-Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyExecutable}"; IconFilename: "{app}\{#MyIcon}"; Tasks: desktopicon
+Name: "{autoprograms}\{#MyAppName}"; Filename: "{app}\{#MyExecutable}"; IconFilename: "{app}\_internal\{#MyIcon}"
+Name: "{autodesktop}\{#MyAppName}"; Filename: "{app}\{#MyExecutable}"; IconFilename: "{app}\_internal\{#MyIcon}"; Tasks: desktopicon
 
 
 [Run]
