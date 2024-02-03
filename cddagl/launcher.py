@@ -10,8 +10,6 @@ import traceback
 from io import StringIO
 from logging.handlers import RotatingFileHandler
 
-import markdown2
-
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import QApplication
 from babel.core import Locale

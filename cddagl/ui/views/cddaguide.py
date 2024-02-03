@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: MIT
 
 import logging
-from PyQt5.QtCore import QSize, Qt, QUrl , QTimer
+from PyQt5.QtCore import QSize, Qt, QUrl
 from PyQt5.QtWidgets import QApplication, QMainWindow, QTabWidget, QVBoxLayout
 from PyQt5.QtWebEngineWidgets import QWebEngineView, QWebEnginePage, QWebEngineSettings
 from PyQt5.QtWebEngineCore import QWebEngineHttpRequest
