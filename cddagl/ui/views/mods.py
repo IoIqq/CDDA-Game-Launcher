@@ -267,32 +267,32 @@ class ModsTab(QTabWidget):
         self.installed_gb.setTitle(_('Installed'))
         self.disable_existing_button.setText(_('Disable'))
         self.delete_existing_button.setText(_('Delete'))
-        suggest_url = cons.NEW_ISSUE_URL + '?' + urlencode({
-            'title': _('Add this new mod to the repository'),
-            'body': _('''## 请求加入模组：模组名[模组支持的游戏版本]
+        suggest_url = 'https://notion.doiiars.com/article/CDDA-Game-Launcher#2817a04097ea42c1a462d1133d0520ec'
+#         suggest_url = cons.NEW_ISSUE_URL + '?' + urlencode({
+#             'title': _('Add this new mod to the repository'),
+#             'body': _('''## 请求加入模组：模组名[模组支持的游戏版本]
 
-```
-- type: direct_download  # 可选项: direct_download, github_release, github_repo, gitlab_repo, custom
-  ident: unique_mod_identifier  # 您的mod的唯一标识符
-  name: Mod Name  # 您的mod的名称
-  authors:  # 作者信息，可以是单个作者或作者列表
-    - Author1
-    - Author2
-  maintainers:  # 可选项：如果有维护者，包括维护者信息
-    - Maintainer1
-    - Maintainer2
-  description: A brief description of your mod.  # 简要描述您的mod
-  category: content  # 您的mod所属的类别，如items, creatures, vehicles, buildings, misc_additions, rebalance, monster_exclude, total_conversion, content等
-  dependencies:  # 可选项：如果您的mod依赖于其他mod，列出这些依赖项
-    - mod_dependency1
-    - mod_dependency2
-  size: 12345  # 您的mod的文件大小，以字节为单位
-  url: https://github.com/your_username/your_mod_repo/archive/master.zip  # 您的mod的下载链接
-  homepage: https://link_to_your_mod_homepage.com  # 您的mod的主页链接
-```''').format(version=version)
-        })
-        self.suggest_new_label.setText(_('<a href="{url}">Suggest a new mod '
-            'on GitHub</a>').format(url=suggest_url))
+# ```
+# - type: direct_download  # 可选项: direct_download, github_release, github_repo, gitlab_repo, custom
+#   ident: unique_mod_identifier  # 您的mod的唯一标识符
+#   name: Mod Name  # 您的mod的名称
+#   authors:  # 作者信息，可以是单个作者或作者列表
+#     - Author1
+#     - Author2
+#   maintainers:  # 可选项：如果有维护者，包括维护者信息
+#     - Maintainer1
+#     - Maintainer2
+#   description: A brief description of your mod.  # 简要描述您的mod
+#   category: content  # 您的mod所属的类别，如items, creatures, vehicles, buildings, misc_additions, rebalance, monster_exclude, total_conversion, content等
+#   dependencies:  # 可选项：如果您的mod依赖于其他mod，列出这些依赖项
+#     - mod_dependency1
+#     - mod_dependency2
+#   size: 12345  # 您的mod的文件大小，以字节为单位
+#   url: https://github.com/your_username/your_mod_repo/archive/master.zip  # 您的mod的下载链接
+#   homepage: https://link_to_your_mod_homepage.com  # 您的mod的主页链接
+# ```''').format(version=version)
+#         })
+        self.suggest_new_label.setText(_('<a href="{url}">贡献模组/提交模组</a>').format(url=suggest_url))
         self.repository_gb.setTitle(_('Repository'))
         self.install_new_button.setText(_('Install this mod'))
         self.details_gb.setTitle(_('Details'))

@@ -74,9 +74,9 @@ class CDDAGuideTab(QTabWidget):
 
         try:
             key_hex = hex(key)  # 将按键的键代码转换为十六进制字符串
-            logger.error(f"Pressed key: {'+'.join(modifier_keys)}+{key_hex}")
+            logger.debug(f"Pressed key: {'+'.join(modifier_keys)}+{key_hex}")
         except Exception as e:
-            logger.error(f"An error occurred while processing key press: {str(e)}")
+            logger.debug(f"An error occurred while processing key press: {str(e)}")
 
         # 检查是否是后退或前进快捷键
         if modifiers == Qt.AltModifier and key == Qt.Key_Left:

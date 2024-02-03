@@ -223,21 +223,21 @@ class SoundpacksTab(QTabWidget):
         self.disable_existing_button.setText(_('Disable'))
         self.delete_existing_button.setText(_('Delete'))
         self.repository_gb.setTitle(_('Repository'))
-        suggest_url = cons.NEW_ISSUE_URL + '?' + urlencode({
-            'title': _('Add this new soundpack to the repository'),
-            'body': _('''请求加入音效包：音效包名
-```
-- type: "direct_download"      # Soundpack的类型，这里是直接下载类型
-  viewname: "Soundpack Name"  # Soundpack的可视名称
-  name: "Soundpack Name"      # Soundpack的内部名称
-  url: "https://example.com/soundpack.zip"  # Soundpack的下载链接
-  homepage: "https://example.com/soundpack-homepage"  # Soundpack的官方主页链接
-```
-''').format(version=version)
-        })
+        suggest_url = 'https://notion.doiiars.com/article/CDDA-Game-Launcher#2817a04097ea42c1a462d1133d0520ec'
+#         suggest_url = cons.NEW_ISSUE_URL + '?' + urlencode({
+#             'title': _('Add this new soundpack to the repository'),
+#             'body': _('''请求加入音效包：音效包名
+# ```
+# - type: "direct_download"      # Soundpack的类型，这里是直接下载类型
+#   viewname: "Soundpack Name"  # Soundpack的可视名称
+#   name: "Soundpack Name"      # Soundpack的内部名称
+#   url: "https://example.com/soundpack.zip"  # Soundpack的下载链接
+#   homepage: "https://example.com/soundpack-homepage"  # Soundpack的官方主页链接
+# ```
+# ''').format(version=version)
+#         })
         self.suggest_new_label.setText(
-            _('<a href="{url}">Suggest a new soundpack '
-            'on GitHub</a>').format(url=suggest_url))
+            _('<a href="{url}">贡献音效包/提交音效包</a>').format(url=suggest_url))
         self.install_new_button.setText(_('Install this soundpack'))
         self.details_gb.setTitle(_('Details'))
         self.viewname_label.setText(_('View name:'))
