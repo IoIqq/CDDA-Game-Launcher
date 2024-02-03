@@ -39,6 +39,7 @@ from cddagl.ui.views.settings import SettingsTab
 from cddagl.ui.views.soundpacks import SoundpacksTab
 from cddagl.ui.views.tilesets import TilesetsTab
 from cddagl.ui.views.statistics import StatisticsTab
+from cddagl.ui.views.cddaguide import CDDAGuideTab
 from cddagl.win32 import SimpleNamedPipe
 
 logger = logging.getLogger('cddagl')
@@ -432,6 +433,7 @@ class CentralWidget(QTabWidget):
         #self.create_fonts_tab()
         self.create_settings_tab()
         self.create_statistics_tab()
+        self.create_cddaguide_tab()
 
     def set_text(self):
         self.setTabText(self.indexOf(self.main_tab), _('Main'))
@@ -442,6 +444,7 @@ class CentralWidget(QTabWidget):
         #self.setTabText(self.indexOf(self.fonts_tab), _('Fonts'))
         self.setTabText(self.indexOf(self.settings_tab), _('Settings'))
         self.setTabText(self.indexOf(self.statistics_tab), _('Statistics'))
+        self.setTabText(self.indexOf(self.cddaguide_tab), _('CDDA Guide'))
 
         self.main_tab.set_text()
         self.backups_tab.set_text()
@@ -451,6 +454,7 @@ class CentralWidget(QTabWidget):
         #self.fonts_tab.set_text()
         self.settings_tab.set_text()
         self.statistics_tab.set_text()
+        self.cddaguide_tab.set_text()
 
     def create_main_tab(self):
         main_tab = MainTab()
@@ -491,6 +495,10 @@ class CentralWidget(QTabWidget):
         statistics_tab = StatisticsTab()
         self.addTab(statistics_tab, _('Statistics'))
         self.statistics_tab = statistics_tab
+    def create_cddaguide_tab(self):
+        cddaguide_tab = CDDAGuideTab()
+        self.addTab(cddaguide_tab, _('CDDA Guide'))
+        self.cddaguide_tab = cddaguide_tab
 
 
 class LauncherUpdateDialog(QDialog):
