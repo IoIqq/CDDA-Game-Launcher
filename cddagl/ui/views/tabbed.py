@@ -255,9 +255,8 @@ class TabbedWindow(QMainWindow):
             return
 
         current_version = LooseVersion(version)
-
+        logger.debug(f"latest_version:{latest_version} version:{version}")
         if latest_version > current_version:
-
             markdown_desc = latest_release['body']
 
             # Replace number signs with issue links
