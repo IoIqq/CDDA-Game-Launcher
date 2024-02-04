@@ -6,10 +6,10 @@ import logging
 
 from PyQt5.QtCore import Qt, QSize, QRect
 from PyQt5.QtGui import QPainter, QColor, QFont
-from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget
 
 logger = logging.getLogger('cddagl')
 
+from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton
 
 class FontsTab(QTabWidget):
     def __init__(self):
@@ -17,13 +17,55 @@ class FontsTab(QTabWidget):
 
         layout = QGridLayout()
 
-        font_window = CataWindow(4, 4, QFont('Consolas'), 18, 9, 18, False)
-        layout.addWidget(font_window, 0, 0)
-        self.font_window = font_window
+        # font_window = CataWindow(4, 4, QFont('Consolas'), 18, 9, 18, False)
+        # layout.addWidget(font_window, 0, 0)
+        # self.font_window = font_window
+
+        # 创建垂直布局和按钮
+        v_layout = QVBoxLayout()
+        set_ui_font_button = QPushButton("设为UI字体")
+        set_map_font_button = QPushButton("设为地图字体")
+        set_large_map_font_button = QPushButton("设为大地图自提")
+        set_all_button = QPushButton("设为全部")
+        reset_all_font_button = QPushButton("重置全部字体")
+
+        # 将按钮添加到垂直布局
+        v_layout.addWidget(set_ui_font_button)
+        v_layout.addWidget(set_map_font_button)
+        v_layout.addWidget(set_large_map_font_button)
+        v_layout.addWidget(set_all_button)
+        v_layout.addWidget(reset_all_font_button)
+
+        # 添加垂直布局到主布局
+        layout.addLayout(v_layout, 0, 1)
 
         self.setLayout(layout)
 
-    def set_text(self):
+        # 绑定事件（预留函数）
+        set_ui_font_button.clicked.connect(self.set_ui_font)
+        set_map_font_button.clicked.connect(self.set_map_font)
+        set_large_map_font_button.clicked.connect(self.set_large_map_font)
+        set_all_button.clicked.connect(self.set_all_font)
+        reset_all_font_button.clicked.connect(self.reset_all_font)
+
+    def set_ui_font(self):
+        # 实现设为UI字体的操作
+        pass
+
+    def set_map_font(self):
+        # 实现设为地图字体的操作
+        pass
+
+    def set_large_map_font(self):
+        # 实现设为大地图自提的操作
+        pass
+
+    def set_all_font(self):
+        # 实现设为全部字体的操作
+        pass
+
+    def reset_all_font(self):
+        # 实现重置全部字体的操作
         pass
 
     def get_main_window(self):
@@ -33,54 +75,55 @@ class FontsTab(QTabWidget):
         return self.parentWidget().parentWidget().main_tab
 
 
-class CataWindow(QWidget):
-    def __init__(self, terminalwidth, terminalheight, font, fontsize, fontwidth,
-            fontheight, fontblending):
-        super(CataWindow, self).__init__()
 
-        self.terminalwidth = terminalwidth
-        self.terminalheight = terminalheight
+# class CataWindow(QWidget):
+#     def __init__(self, terminalwidth, terminalheight, font, fontsize, fontwidth,
+#             fontheight, fontblending):
+#         super(CataWindow, self).__init__()
+# 
+    #     self.terminalwidth = terminalwidth
+    #     self.terminalheight = terminalheight
 
-        self.cfont = font
-        self.fontsize = fontsize
-        self.cfont.setPixelSize(fontsize)
-        self.cfont.setStyle(QFont.StyleNormal)
-        self.fontwidth = fontwidth
-        self.fontheight = fontheight
-        self.fontblending = fontblending
+    #     self.cfont = font
+    #     self.fontsize = fontsize
+    #     self.cfont.setPixelSize(fontsize)
+    #     self.cfont.setStyle(QFont.StyleNormal)
+    #     self.fontwidth = fontwidth
+    #     self.fontheight = fontheight
+    #     self.fontblending = fontblending
 
-        #self.text = '@@@\nBBB\n@@@\nCCC'
-        self.text = '####\n####\n####\n####\n'
+    #     #self.text = '@@@\nBBB\n@@@\nCCC'
+    #     self.text = '####\n####\n####\n####\n'
 
-    def sizeHint(self):
-        return QSize(self.terminalwidth * self.fontwidth,
-            self.terminalheight * self.fontheight)
+    # def sizeHint(self):
+    #     return QSize(self.terminalwidth * self.fontwidth,
+    #         self.terminalheight * self.fontheight)
 
-    def paintEvent(self, event):
-        painter = QPainter(self)
-        painter.fillRect(0, 0, self.width(), self.height(), QColor(0, 0, 0))
-        painter.setPen(QColor(99, 99, 99));
-        painter.setFont(self.cfont)
+    # def paintEvent(self, event):
+    #     painter = QPainter(self)
+    #     painter.fillRect(0, 0, self.width(), self.height(), QColor(0, 0, 0))
+    #     painter.setPen(QColor(99, 99, 99));
+    #     painter.setFont(self.cfont)
 
-        term_x = 0
-        term_y = 0
-        for char in self.text:
-            if char == '\n':
-                term_y += 1
-                term_x = 0
-                continue
-            x = self.fontwidth * term_x
-            y = self.fontheight * term_y
+    #     term_x = 0
+    #     term_y = 0
+    #     for char in self.text:
+    #         if char == '\n':
+    #             term_y += 1
+    #             term_x = 0
+    #             continue
+    #         x = self.fontwidth * term_x
+    #         y = self.fontheight * term_y
 
-            rect = QRect(x, y, self.fontwidth, self.fontheight)
-            painter.drawText(rect, 0, char)
+    #         rect = QRect(x, y, self.fontwidth, self.fontheight)
+    #         painter.drawText(rect, 0, char)
 
-            term_x += 1
+    #         term_x += 1
 
-        x = self.fontwidth * term_x
-        y = self.fontheight * term_y
+    #     x = self.fontwidth * term_x
+    #     y = self.fontheight * term_y
 
-        rect = QRect(x, y, self.fontwidth, self.fontheight)
+    #     rect = QRect(x, y, self.fontwidth, self.fontheight)
 
-        painter.fillRect(rect, Qt.green)
+    #     painter.fillRect(rect, Qt.green)
 
