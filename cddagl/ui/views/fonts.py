@@ -6,7 +6,7 @@ import logging
 
 from PyQt5.QtCore import Qt, QSize, QRect
 from PyQt5.QtGui import QPainter, QColor, QFont
-from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton
+from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox
 
 logger = logging.getLogger('cddagl')
 
@@ -51,10 +51,14 @@ class FontsTab(QTabWidget):
         label_spinbox_layout.addWidget(large_map_font_size_spinbox, 2, 1)
         label_spinbox_layout.addWidget(font_mixture_label, 3, 0)
         label_spinbox_layout.addWidget(font_mixture_radio, 3, 1)
-        label_spinbox_layout.addWidget(save_button, 4, 0, 1, 2)
 
-        # 将标签和SpinBox的布局添加到垂直布局
-        v_layout.addLayout(label_spinbox_layout)
+        # 创建GroupBox并将标签和SpinBox的布局添加到GroupBox内
+        other_settings_groupbox = QGroupBox("其他设置")
+        other_settings_groupbox.setLayout(label_spinbox_layout)
+
+        # 将GroupBox添加到垂直布局
+        v_layout.addWidget(other_settings_groupbox)
+        v_layout.addWidget(save_button)
 
         # 将按钮添加到垂直布局
         v_layout.addWidget(set_ui_font_button)
@@ -76,28 +80,44 @@ class FontsTab(QTabWidget):
         reset_all_font_button.clicked.connect(self.reset_all_font)
         save_button.clicked.connect(self.save_settings)
 
+        # 初始化字体大小和是否启用的变量
+        self.ui_font_size = None
+        self.map_font_size = None
+        self.large_map_font_size = None
+        self.font_mixture_enabled = False
+
     def set_ui_font(self):
+        logger.debug("触发设为UI字体事件")
         # 实现设为UI字体的操作
         pass
 
     def set_map_font(self):
+        logger.debug("触发设为地图字体事件")
         # 实现设为地图字体的操作
         pass
 
     def set_large_map_font(self):
+        logger.debug("触发设为大地图自提事件")
         # 实现设为大地图自提的操作
         pass
 
     def set_all_font(self):
+        logger.debug("触发设为全部字体事件")
         # 实现设为全部字体的操作
         pass
 
     def reset_all_font(self):
+        logger.debug("触发重置全部字体事件")
         # 实现重置全部字体的操作
         pass
 
     def save_settings(self):
-        # 实现保存设置的操作
+        logger.debug("触发保存设置事件")
+        # 将字体大小和是否启用的变量存储在这里
+        self.ui_font_size = ui_font_size_spinbox.value()
+        self.map_font_size = map_font_size_spinbox.value()
+        self.large_map_font_size = large_map_font_size_spinbox.value()
+        self.font_mixture_enabled = font_mixture_radio.isChecked()
         pass
 
     def get_main_window(self):
@@ -105,6 +125,7 @@ class FontsTab(QTabWidget):
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+
 
 
 
