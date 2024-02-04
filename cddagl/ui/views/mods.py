@@ -624,16 +624,9 @@ class ModsTab(QTabWidget):
         if self.downloading_file is not None:
             self.downloading_file.close()
 
+        self.clear_download_ui()
         main_window = self.get_main_window()
-
         status_bar = main_window.statusBar()
-        status_bar.removeWidget(self.downloading_label)
-        status_bar.removeWidget(self.dowloading_speed_label)
-        status_bar.removeWidget(self.downloading_size_label)
-        status_bar.removeWidget(self.downloading_progress_bar)
-
-        status_bar.busy -= 1
-
         if self.download_aborted:
             delete_path(self.download_dir)
 
@@ -760,6 +753,18 @@ class ModsTab(QTabWidget):
                 status_bar.clearMessage()
                 self.downloading_new_mod = False
                 self.extract_new_mod()
+
+    def clear_download_ui(self):
+        if self.downloading_file is not None:
+            self.downloading_file.close()
+
+        main_window = self.get_main_window()
+        status_bar = main_window.statusBar()
+        status_bar.removeWidget(self.downloading_label)
+        status_bar.removeWidget(self.dowloading_speed_label)
+        status_bar.removeWidget(self.downloading_size_label)
+        status_bar.removeWidget(self.downloading_progress_bar)
+        status_bar.busy -= 1
 
     def finish_install_new_mod(self):
         self.installing_new_mod = False
