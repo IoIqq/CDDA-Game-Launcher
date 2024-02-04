@@ -1,12 +1,11 @@
 # SPDX-FileCopyrightText: 2015-2021 Rémy Roy
 #
 # SPDX-License-Identifier: MIT
-
 import logging
 
-from PyQt5.QtCore import Qt, QSize, QRect
-from PyQt5.QtGui import QPainter, QColor, QFont, QFontDatabase
-from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox, QPlainTextEdit, QListView, QFontComboBox
+from PyQt5.QtCore import Qt, QStringListModel
+from PyQt5.QtGui import QFontDatabase
+from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox, QPlainTextEdit, QListView
 
 logger = logging.getLogger('cddagl')
 
@@ -14,44 +13,57 @@ class FontsTab(QTabWidget):
     def __init__(self):
         super(FontsTab, self).__init__()
 
-        layout = QGridLayout()
+        # 创建主布局
+        main_layout = QGridLayout()
 
-        # 创建垂直布局和按钮
-        v_layout = QVBoxLayout()
-
-        # 创建GroupBox并将按钮添加到GroupBox内
+        # 创建QListView来实现字体选择
+        font_list_view = QListView()
+        font_families = self.load_fonts()
+        font_model = QStringListModel(font_families)
+        font_list_view.setModel(font_model)
+        
+        # 创建字体设置的GroupBox并添加按钮
         font_settings_groupbox = QGroupBox("字体设置")
-        buttons_layout = QVBoxLayout()
+        font_buttons_layout = QVBoxLayout()
         set_ui_font_button = QPushButton("设为UI字体")
         set_map_font_button = QPushButton("设为地图字体")
-        set_large_map_font_button = QPushButton("设为大地图自提")
+        set_large_map_font_button = QPushButton("设为大地图字体")
         set_all_button = QPushButton("设为全部")
         reset_all_font_button = QPushButton("重置全部字体")
-        buttons_layout.addWidget(set_ui_font_button)
-        buttons_layout.addWidget(set_map_font_button)
-        buttons_layout.addWidget(set_large_map_font_button)
-        buttons_layout.addWidget(set_all_button)
-        buttons_layout.addWidget(reset_all_font_button)
-        font_settings_groupbox.setLayout(buttons_layout)
+        
+        font_buttons_layout.addWidget(font_list_view)
+        font_buttons_layout.addWidget(set_ui_font_button)
+        font_buttons_layout.addWidget(set_map_font_button)
+        font_buttons_layout.addWidget(set_large_map_font_button)
+        font_buttons_layout.addWidget(set_all_button)
+        font_buttons_layout.addWidget(reset_all_font_button)
+        font_settings_groupbox.setLayout(font_buttons_layout)
 
-        # 创建四个QLabel
+        # 创建四个标签
         ui_font_label = QLabel("UI字体大小:")
         map_font_label = QLabel("地图字体大小:")
         large_map_font_label = QLabel("大地图字体大小:")
         font_mixture_label = QLabel("字体混合:")
 
-        # 创建三个调节字体大小的框
-        ui_font_size_spinbox = QSpinBox()
-        map_font_size_spinbox = QSpinBox()
-        large_map_font_size_spinbox = QSpinBox()
+        # 创建三个调节字体大小的SpinBox
+        self.ui_font_size_spinbox = QSpinBox()
+        self.map_font_size_spinbox = QSpinBox()
+        self.large_map_font_size_spinbox = QSpinBox()
+
+        # 初始化字体大小为14
+        self.ui_font_size_spinbox.setValue(14)
+        self.map_font_size_spinbox.setValue(14)
+        self.large_map_font_size_spinbox.setValue(14)
 
         # 创建RadioButton
-        font_mixture_radio = QRadioButton("启用")
+        self.font_mixture_radio = QRadioButton("启用")
 
         # 创建保存按钮
         save_button = QPushButton("保存")
 
-        # 添加QPlainTextEdit来显示测试文本
+        # 创建预览的GroupBox，并将QPlainTextEdit添加到其中
+        preview_groupbox = QGroupBox("预览")
+        preview_layout = QVBoxLayout()
         test_text_edit = QPlainTextEdit()
         test_text = """这是一些常见的测试文本。
 Hello, World!
@@ -59,49 +71,48 @@ Hello, World!
 !@#$%^&*()_+
 Это пример текста на кириллице."""
         test_text_edit.setPlainText(test_text)
-
-        # 设置QPlainTextEdit为不可编辑
         test_text_edit.setReadOnly(True)
-
-        # 设置背景颜色为黑色 设置文字颜色为白色
         test_text_edit.setStyleSheet("background-color: black; color: white;")
+        preview_layout.addWidget(test_text_edit)
+        preview_groupbox.setLayout(preview_layout)
 
-        # 创建QListView和QFontComboBox
-        font_list_view = QListView()
-        font_combobox = QFontComboBox()
-
-        # 初始化字体列表
-        self.load_fonts(font_combobox)
+        # 创建目前字体和备用字体的GroupBox，并添加QPlainTextEdit
+        current_font_groupbox = QGroupBox("目前字体和备用字体")
+        current_font_layout = QVBoxLayout()
+        current_font_text_edit = QPlainTextEdit()
+        
+        current_font_text = """UI： {} => {}
+地图： {} => {}
+大地图： {} => {}
+"""
+        
+        current_font_text_edit.setPlainText(current_font_text)
+        current_font_text_edit.setReadOnly(True)
+        current_font_layout.addWidget(current_font_text_edit)
+        current_font_groupbox.setLayout(current_font_layout)
 
         # 使用QGridLayout将标签和SpinBox布局在一行
         label_spinbox_layout = QGridLayout()
         label_spinbox_layout.addWidget(ui_font_label, 0, 0)
-        label_spinbox_layout.addWidget(ui_font_size_spinbox, 0, 1)
+        label_spinbox_layout.addWidget(self.ui_font_size_spinbox, 0, 1)
         label_spinbox_layout.addWidget(map_font_label, 1, 0)
-        label_spinbox_layout.addWidget(map_font_size_spinbox, 1, 1)
+        label_spinbox_layout.addWidget(self.map_font_size_spinbox, 1, 1)
         label_spinbox_layout.addWidget(large_map_font_label, 2, 0)
-        label_spinbox_layout.addWidget(large_map_font_size_spinbox, 2, 1)
+        label_spinbox_layout.addWidget(self.large_map_font_size_spinbox, 2, 1)
         label_spinbox_layout.addWidget(font_mixture_label, 3, 0)
-        label_spinbox_layout.addWidget(font_mixture_radio, 3, 1)
+        label_spinbox_layout.addWidget(self.font_mixture_radio, 3, 1)
 
-        # 创建GroupBox并将标签和SpinBox的布局添加到GroupBox内
+        # 创建其他设置的GroupBox并添加标签和SpinBox的布局
         other_settings_groupbox = QGroupBox("其他设置")
         other_settings_groupbox.setLayout(label_spinbox_layout)
 
-        # 将GroupBox添加到垂直布局
-        v_layout.addWidget(other_settings_groupbox)
-        v_layout.addWidget(test_text_edit)
-        v_layout.addWidget(font_combobox)  # 添加字体选择框
-        v_layout.addWidget(font_list_view)  # 添加字体列表
-        v_layout.addWidget(save_button)
+        # 将字体设置的GroupBox添加到主布局
+        main_layout.addWidget(font_settings_groupbox, 0, 0)  # 字体设置
+        main_layout.addWidget(preview_groupbox, 0, 1)  # 预览
+        main_layout.addWidget(other_settings_groupbox, 1, 1)  # 其他设置
+        main_layout.addWidget(current_font_groupbox, 1, 0)  # 目前字体和备用字体
 
-        # 将按钮GroupBox添加到垂直布局
-        v_layout.addWidget(font_settings_groupbox)
-
-        # 添加垂直布局到主布局
-        layout.addLayout(v_layout, 0, 1)
-
-        self.setLayout(layout)
+        self.setLayout(main_layout)
 
         # 绑定事件（预留函数）
         set_ui_font_button.clicked.connect(self.set_ui_font)
@@ -110,42 +121,61 @@ Hello, World!
         set_all_button.clicked.connect(self.set_all_font)
         reset_all_font_button.clicked.connect(self.reset_all_font)
         save_button.clicked.connect(self.save_settings)
-
-        # 绑定字体选择框的信号
-        font_combobox.currentFontChanged.connect(self.font_selected)
+        font_list_view.clicked.connect(self.font_selected)
 
         # 初始化字体大小和是否启用的变量
         self.ui_font_size = None
         self.map_font_size = None
         self.large_map_font_size = None
         self.font_mixture_enabled = False
+        self.selected_font = None
+        self.fontjson_default = \
+                {
+        "//1": "If more than one font is specified for a typeface the list is treated as a fallback order.",
+        "//2": "unifont will always be used as a 'last resort' fallback even if not listed here.",
+        "typeface": [
+            "data/font/Terminus.ttf",
+            "data/font/unifont.ttf"
+        ],
+        "map_typeface": [
+            "data/font/Terminus.ttf",
+            "data/font/unifont.ttf"
+        ],
+        "overmap_typeface": [
+            "data/font/Terminus.ttf",
+            "data/font/unifont.ttf"
+        ]
+        }
 
-    def load_fonts(self, font_combobox):
-        # 加载可用字体并更新字体列表
+    def load_fonts(self):
+        # 加载可用字体并返回字体列表
         font_database = QFontDatabase()
         font_families = font_database.families(QFontDatabase.Latin)
-        font_combobox.clear()
-        font_combobox.addItems(font_families)
+        return font_families
 
     def set_ui_font(self):
-        logger.info("触发设为UI字体事件")
-        # 实现设为UI字体的操作
-        pass
+        logger.debug("触发设为UI字体事件")
+        if self.selected_font is not None:
+            # 在这里使用 self.selected_font 来设置 UI 字体
+            pass
 
     def set_map_font(self):
         logger.debug("触发设为地图字体事件")
-        # 实现设为地图字体的操作
-        pass
+        if self.selected_font is not None:
+            # 在这里使用 self.selected_font 来设置地图字体
+            pass
 
     def set_large_map_font(self):
-        logger.debug("触发设为大地图自提事件")
-        # 实现设为大地图自提的操作
-        pass
+        logger.debug("触发设为大地图字体事件")
+        if self.selected_font is not None:
+            # 在这里使用 self.selected_font 来设置大地图字体
+            pass
 
     def set_all_font(self):
         logger.debug("触发设为全部字体事件")
-        # 实现设为全部字体的操作
-        pass
+        if self.selected_font is not None:
+            # 在这里使用 self.selected_font 来设置所有字体
+            pass
 
     def reset_all_font(self):
         logger.debug("触发重置全部字体事件")
@@ -155,15 +185,15 @@ Hello, World!
     def save_settings(self):
         logger.debug("触发保存设置事件")
         # 将字体大小和是否启用的变量存储在这里
-        self.ui_font_size = ui_font_size_spinbox.value()
-        self.map_font_size = map_font_size_spinbox.value()
-        self.large_map_font_size = large_map_font_size_spinbox.value()
-        self.font_mixture_enabled = font_mixture_radio.isChecked()
-        pass
+        self.ui_font_size = self.ui_font_size_spinbox.value()
+        self.map_font_size = self.map_font_size_spinbox.value()
+        self.large_map_font_size = self.large_map_font_size_spinbox.value()
+        self.font_mixture_enabled = self.font_mixture_radio.isChecked()
 
-    def font_selected(self, font):
+    def font_selected(self, index):
         # 处理字体选择变化事件
-        logger.debug(f"选择了字体：{font.family()}")
+        self.selected_font = index.data()
+        logger.debug(f"选择了字体：{self.selected_font}")
         # 在这里处理选择的字体
         pass
 
@@ -172,6 +202,7 @@ Hello, World!
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+
 
 
 
