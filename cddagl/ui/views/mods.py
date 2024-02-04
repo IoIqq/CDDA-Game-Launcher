@@ -1094,78 +1094,87 @@ class ModsTab(QTabWidget):
 
     def repository_clicked(self):
         selection_model = self.repository_lv.selectionModel()
-        if selection_model is not None and selection_model.hasSelection():
-            selected = selection_model.currentIndex()
-            selected_info = self.repo_mods[selected.row()]
+        if not (selection_model and selection_model.hasSelection()):
+            return
 
-            self.name_le.setText(selected_info.get('name', ''))
-            mod_idents = selected_info.get('ident', '')
-            if isinstance(mod_idents, list):
-                mod_idents = ', '.join(mod_idents)
-            self.ident_le.setText(mod_idents)
-            self.author_le.setText(selected_info.get('author', ''))
-            if not selected_info.get('author', ''):
-                authors = selected_info.get('authors', [])
-                try:
-                    iterable = iter(authors)
-                except TypeError:
-                    pass
-                else:
-                    authors = ', '.join(authors)
-                    self.author_le.setText(authors)
-            self.description_le.setPlainText(selected_info.get('description', ''))
-            self.description_le.moveCursor(QTextCursor.Start)
-            self.description_le.setToolTip(selected_info.get('description', ''))
-            
-            self.category_le.setText(selected_info.get('category', ''))
-            self.version_le.setText(selected_info.get('version', _('Unknown')))
+        selected_info = self.repo_mods[selection_model.currentIndex().row()]
+        self.update_ui_with_selected_info(selected_info)
+        
+        self.update_install_buttons_state()
+        self.clear_installed_selection()
 
-            if selected_info['type'] == 'direct_download':
-                self.path_label.setText(_('Url:'))
-                self.path_le.setText(selected_info['url'])
-                self.homepage_tb.setText('<a href="{url}">{url}</a>'.format(
-                    url=html.escape(selected_info['homepage'])))
-                if 'size' not in selected_info:
-                    if not (self.current_repo_info is not None
-                        and self.http_reply is not None
-                        and self.http_reply.isRunning()
-                        and self.current_repo_info is selected_info):
-                        if (self.http_reply is not None
-                            and self.http_reply.isRunning()):
-                            self.http_reply_aborted = True
-                            self.http_reply.abort()
+    def update_ui_with_selected_info(self, selected_info):
+        self.name_le.setText(selected_info.get('name', ''))
+        self.ident_le.setText(self.format_idents(selected_info.get('ident', '')))
+        self.author_le.setText(self.format_authors(selected_info))
+        self.description_le.setPlainText(selected_info.get('description', ''))
+        self.description_le.moveCursor(QTextCursor.Start)
+        self.description_le.setToolTip(selected_info.get('description', ''))
+        self.category_le.setText(selected_info.get('category', ''))
+        self.version_le.setText(selected_info.get('version', _('Unknown')))
 
-                        self.http_reply_aborted = False
-                        self.size_le.setText(_('Getting remote size'))
-                        self.current_repo_info = selected_info
+        self.update_path_and_homepage(selected_info)
+        self.update_size_le(selected_info)
 
-                        request = QNetworkRequest(QUrl(selected_info['url']))
-                        request.setRawHeader(b'User-Agent', cons.FAKE_USER_AGENT)
+    def format_idents(self, idents):
+        if isinstance(idents, list):
+            return ', '.join(str(ident) for ident in idents)
+        return str(idents) if idents else ''
 
-                        self.http_reply = self.qnam.head(request)
-                        self.http_reply.finished.connect(
-                            self.size_query_finished)
-                else:
-                    self.size_le.setText(sizeof_fmt(selected_info['size']))
-            elif selected_info['type'] == 'browser_download':
-                self.path_label.setText(_('Url:'))
-                self.path_le.setText(selected_info['url'])
-                self.homepage_tb.setText('<a href="{url}">{url}</a>'.format(
-                    url=html.escape(selected_info['homepage'])))
-                if 'size' in selected_info:
-                    self.size_le.setText(sizeof_fmt(selected_info['size']))
-                else:
-                    self.size_le.setText(_('Unknown'))
+    def format_authors(self, selected_info):
+        authors = selected_info.get('authors', selected_info.get('author', ''))
+        if isinstance(authors, list):
+            return ', '.join(str(author) for author in authors)
+        return str(authors) if authors else ''
 
-        if (self.mods_dir is not None
-            and os.path.isdir(self.mods_dir)
-            and not self.tab_disabled):
+
+    def update_path_and_homepage(self, selected_info):
+        self.path_label.setText(_('Url:'))
+        self.path_le.setText(selected_info['url'])
+        homepage_url = html.escape(selected_info['homepage'])
+        self.homepage_tb.setText(f'<a href="{homepage_url}">{homepage_url}</a>')
+
+    def update_size_le(self, selected_info):
+        if 'size' in selected_info:
+            self.size_le.setText(sizeof_fmt(selected_info['size']))
+        elif selected_info['type'] == 'direct_download':
+            self.handle_direct_download(selected_info)
+        else:
+            self.size_le.setText(_('Unknown'))
+
+    def handle_direct_download(self, selected_info):
+        self.size_le.setText(_('Getting remote size'))
+        if not self.is_size_query_needed(selected_info):
+            return
+
+        self.abort_existing_http_reply()
+        self.http_reply_aborted = False
+        self.current_repo_info = selected_info
+
+        request = QNetworkRequest(QUrl(selected_info['url']))
+        request.setRawHeader(b'User-Agent', cons.FAKE_USER_AGENT)
+
+        self.http_reply = self.qnam.head(request)
+        self.http_reply.finished.connect(self.size_query_finished)
+
+    def is_size_query_needed(self, selected_info):
+        return not (self.current_repo_info == selected_info and 
+                    self.http_reply and self.http_reply.isRunning())
+
+    def abort_existing_http_reply(self):
+        if self.http_reply and self.http_reply.isRunning():
+            self.http_reply_aborted = True
+            self.http_reply.abort()
+
+    def update_install_buttons_state(self):
+        if self.mods_dir and os.path.isdir(self.mods_dir) and not self.tab_disabled:
             self.install_new_button.setEnabled(True)
         self.disable_existing_button.setEnabled(False)
         self.delete_existing_button.setEnabled(False)
 
+    def clear_installed_selection(self):
         installed_selection = self.installed_lv.selectionModel()
-        if installed_selection is not None:
+        if installed_selection:
             installed_selection.clearSelection()
 
     def size_query_finished(self):
