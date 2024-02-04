@@ -5,8 +5,8 @@
 import logging
 
 from PyQt5.QtCore import Qt, QSize, QRect
-from PyQt5.QtGui import QPainter, QColor, QFont
-from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox, QPlainTextEdit
+from PyQt5.QtGui import QPainter, QColor, QFont, QFontDatabase
+from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox, QPlainTextEdit, QListView, QFontComboBox
 
 logger = logging.getLogger('cddagl')
 
@@ -66,6 +66,12 @@ Hello, World!
         # 设置背景颜色为黑色 设置文字颜色为白色
         test_text_edit.setStyleSheet("background-color: black; color: white;")
 
+        # 创建QListView和QFontComboBox
+        font_list_view = QListView()
+        font_combobox = QFontComboBox()
+
+        # 初始化字体列表
+        self.load_fonts(font_combobox)
 
         # 使用QGridLayout将标签和SpinBox布局在一行
         label_spinbox_layout = QGridLayout()
@@ -85,6 +91,8 @@ Hello, World!
         # 将GroupBox添加到垂直布局
         v_layout.addWidget(other_settings_groupbox)
         v_layout.addWidget(test_text_edit)
+        v_layout.addWidget(font_combobox)  # 添加字体选择框
+        v_layout.addWidget(font_list_view)  # 添加字体列表
         v_layout.addWidget(save_button)
 
         # 将按钮GroupBox添加到垂直布局
@@ -103,11 +111,21 @@ Hello, World!
         reset_all_font_button.clicked.connect(self.reset_all_font)
         save_button.clicked.connect(self.save_settings)
 
+        # 绑定字体选择框的信号
+        font_combobox.currentFontChanged.connect(self.font_selected)
+
         # 初始化字体大小和是否启用的变量
         self.ui_font_size = None
         self.map_font_size = None
         self.large_map_font_size = None
         self.font_mixture_enabled = False
+
+    def load_fonts(self, font_combobox):
+        # 加载可用字体并更新字体列表
+        font_database = QFontDatabase()
+        font_families = font_database.families(QFontDatabase.Latin)
+        font_combobox.clear()
+        font_combobox.addItems(font_families)
 
     def set_ui_font(self):
         logger.info("触发设为UI字体事件")
@@ -116,7 +134,6 @@ Hello, World!
 
     def set_map_font(self):
         logger.debug("触发设为地图字体事件")
-        logger.info("触发设为地图字体事件")
         # 实现设为地图字体的操作
         pass
 
@@ -144,11 +161,18 @@ Hello, World!
         self.font_mixture_enabled = font_mixture_radio.isChecked()
         pass
 
+    def font_selected(self, font):
+        # 处理字体选择变化事件
+        logger.debug(f"选择了字体：{font.family()}")
+        # 在这里处理选择的字体
+        pass
+
     def get_main_window(self):
         return self.parentWidget().parentWidget().parentWidget()
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+
 
 
 
