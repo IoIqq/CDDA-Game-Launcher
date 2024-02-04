@@ -1298,118 +1298,61 @@ class ModsTab(QTabWidget):
     def game_dir_changed(self, new_dir):
         self.game_dir = new_dir
         self.mods = []
-
-        self.disable_existing_button.setEnabled(False)
-        self.delete_existing_button.setEnabled(False)
-
-        self.mods_model = QStringListModel()
-        self.installed_lv.setModel(self.mods_model)
-        self.installed_lv.selectionModel().currentChanged.connect(
-            self.installed_selection)
-
-        repository_selection = self.repository_lv.selectionModel()
-        if repository_selection is not None:
-            repository_selection.clearSelection()
-        self.install_new_button.setEnabled(False)
-
-        self.clear_details()
+        self.update_ui_elements()
 
         mods_dir = os.path.join(new_dir, 'data', 'mods')
         user_mods_dir = os.path.join(new_dir, 'mods')
 
         if os.path.isdir(mods_dir):
             self.mods_dir = mods_dir
-
-            dir_scan = scandir(mods_dir)
-
-            while True:
-                try:
-                    entry = next(dir_scan)
-                    if entry.is_dir():
-                        mod_path = entry.path
-                        config_file = os.path.join(mod_path,
-                            'modinfo.json')
-                        if os.path.isfile(config_file):
-                            info = self.config_info(config_file)
-                            if 'ident' in info:
-                                mod_info = {
-                                    'path': mod_path,
-                                    'enabled': True
-                                }
-                                mod_info.update(info)
-
-                                self.mods.append(mod_info)
-                                mod_info['size'] = (
-                                    self.scan_size(mod_info))
-                                continue
-                        disabled_config_file = os.path.join(mod_path,
-                            'modinfo.json.disabled')
-                        if os.path.isfile(disabled_config_file):
-                            info = self.config_info(disabled_config_file)
-                            if 'ident' in info:
-                                mod_info = {
-                                    'path': mod_path,
-                                    'enabled': False
-                                }
-                                mod_info.update(info)
-
-                                self.mods.append(mod_info)
-                                mod_info['size'] = (
-                                    self.scan_size(mod_info))
-
-                except StopIteration:
-                    break
-
-        else:
-            self.mods_dir = None
+            self.scan_directory_for_mods(mods_dir)
 
         if os.path.isdir(user_mods_dir):
             self.user_mods_dir = user_mods_dir
-
-            dir_scan = scandir(user_mods_dir)
-
-            while True:
-                try:
-                    entry = next(dir_scan)
-                    if entry.is_dir():
-                        mod_path = entry.path
-                        config_file = os.path.join(mod_path,
-                            'modinfo.json')
-                        if os.path.isfile(config_file):
-                            info = self.config_info(config_file)
-                            if 'ident' in info:
-                                mod_info = {
-                                    'path': mod_path,
-                                    'enabled': True
-                                }
-                                mod_info.update(info)
-
-                                self.mods.append(mod_info)
-                                mod_info['size'] = (
-                                    self.scan_size(mod_info))
-                                continue
-                        disabled_config_file = os.path.join(mod_path,
-                            'modinfo.json.disabled')
-                        if os.path.isfile(disabled_config_file):
-                            info = self.config_info(disabled_config_file)
-                            if 'ident' in info:
-                                mod_info = {
-                                    'path': mod_path,
-                                    'enabled': False
-                                }
-                                mod_info.update(info)
-
-                                self.mods.append(mod_info)
-                                mod_info['size'] = (
-                                    self.scan_size(mod_info))
-
-                except StopIteration:
-                    break
-
-        else:
-            self.user_mods_dir = None
+            self.scan_directory_for_mods(user_mods_dir)
 
         # Sort installed mods
         self.mods.sort(key=lambda x: x['name'])
+        self.update_mod_list()
+
+    def update_ui_elements(self):
+        self.disable_existing_button.setEnabled(False)
+        self.delete_existing_button.setEnabled(False)
+        self.install_new_button.setEnabled(False)
+        self.clear_details()
+        self.mods_model = QStringListModel()
+        self.installed_lv.setModel(self.mods_model)
+        self.installed_lv.selectionModel().currentChanged.connect(self.installed_selection)
+        repository_selection = self.repository_lv.selectionModel()
+        if repository_selection:
+            repository_selection.clearSelection()
+
+    def scan_directory_for_mods(self, directory):
+        with os.scandir(directory) as dir_scan:
+            for entry in dir_scan:
+                if entry.is_dir():
+                    self.process_mod_directory(entry.path)
+
+    def process_mod_directory(self, mod_path):
+        config_file = os.path.join(mod_path, 'modinfo.json')
+        disabled_config_file = os.path.join(mod_path, 'modinfo.json.disabled')
+
+        if os.path.isfile(config_file):
+            self.process_mod_config_file(config_file, mod_path, enabled=True)
+        elif os.path.isfile(disabled_config_file):
+            self.process_mod_config_file(disabled_config_file, mod_path, enabled=False)
+
+    def process_mod_config_file(self, config_file, mod_path, enabled):
+        info = self.config_info(config_file)
+        if 'ident' in info:
+            mod_info = {
+                'path': mod_path,
+                'enabled': enabled
+            }
+            mod_info.update(info)
+            mod_info['size'] = self.scan_size(mod_info)
+            self.mods.append(mod_info)
+
+    def update_mod_list(self):
         for mod_info in self.mods:
             self.add_mod(mod_info)
