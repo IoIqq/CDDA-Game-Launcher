@@ -18,11 +18,21 @@ class FontsTab(QTabWidget):
 
         # 创建垂直布局和按钮
         v_layout = QVBoxLayout()
+
+        # 创建GroupBox并将按钮添加到GroupBox内
+        font_settings_groupbox = QGroupBox("字体设置")
+        buttons_layout = QVBoxLayout()
         set_ui_font_button = QPushButton("设为UI字体")
         set_map_font_button = QPushButton("设为地图字体")
         set_large_map_font_button = QPushButton("设为大地图自提")
         set_all_button = QPushButton("设为全部")
         reset_all_font_button = QPushButton("重置全部字体")
+        buttons_layout.addWidget(set_ui_font_button)
+        buttons_layout.addWidget(set_map_font_button)
+        buttons_layout.addWidget(set_large_map_font_button)
+        buttons_layout.addWidget(set_all_button)
+        buttons_layout.addWidget(reset_all_font_button)
+        font_settings_groupbox.setLayout(buttons_layout)
 
         # 创建四个QLabel
         ui_font_label = QLabel("UI字体大小:")
@@ -60,12 +70,8 @@ class FontsTab(QTabWidget):
         v_layout.addWidget(other_settings_groupbox)
         v_layout.addWidget(save_button)
 
-        # 将按钮添加到垂直布局
-        v_layout.addWidget(set_ui_font_button)
-        v_layout.addWidget(set_map_font_button)
-        v_layout.addWidget(set_large_map_font_button)
-        v_layout.addWidget(set_all_button)
-        v_layout.addWidget(reset_all_font_button)
+        # 将按钮GroupBox添加到垂直布局
+        v_layout.addWidget(font_settings_groupbox)
 
         # 添加垂直布局到主布局
         layout.addLayout(v_layout, 0, 1)
@@ -87,12 +93,13 @@ class FontsTab(QTabWidget):
         self.font_mixture_enabled = False
 
     def set_ui_font(self):
-        logger.debug("触发设为UI字体事件")
+        logger.info("触发设为UI字体事件")
         # 实现设为UI字体的操作
         pass
 
     def set_map_font(self):
         logger.debug("触发设为地图字体事件")
+        logger.info("触发设为地图字体事件")
         # 实现设为地图字体的操作
         pass
 
@@ -125,6 +132,7 @@ class FontsTab(QTabWidget):
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+
 
 
 
