@@ -13,27 +13,6 @@ class FontsTab(QTabWidget):
     def __init__(self):
         super(FontsTab, self).__init__()
 
-        self.fontjson_default = \
-                {
-        "//1": "If more than one font is specified for a typeface the list is treated as a fallback order.",
-        "//2": "unifont will always be used as a 'last resort' fallback even if not listed here.",
-        "typeface": [
-            "data/font/Terminus.ttf",
-            "data/font/unifont.ttf"
-        ],
-        "map_typeface": [
-            "data/font/Terminus.ttf",
-            "data/font/unifont.ttf"
-        ],
-        "overmap_typeface": [
-            "data/font/Terminus.ttf",
-            "data/font/unifont.ttf"
-        ]
-        }
-        typeface = self.fontjson_default.get("typeface", [])
-        map_typeface = self.fontjson_default.get("map_typeface", [])
-        overmap_typeface = self.fontjson_default.get("overmap_typeface", [])
-        print(typeface)
         # 创建主布局
         main_layout = QGridLayout()
 
@@ -102,16 +81,10 @@ Hello, World!
         current_font_layout = QVBoxLayout()
         current_font_text_edit = QPlainTextEdit()
         
-        # 创建目前字体和备用字体的文本
-        current_font_text = f"""UI： {typeface[0]} => {typeface[1] if len(typeface) > 1 else ''}
-地图： {map_typeface[0]} => {map_typeface[1] if len(map_typeface) > 1 else ''}
-大地图： {overmap_typeface[0]} => {overmap_typeface[1] if len(overmap_typeface) > 1 else ''}
-"""
-        
-        current_font_text_edit.setPlainText(current_font_text)
         current_font_text_edit.setReadOnly(True)
         current_font_layout.addWidget(current_font_text_edit)
         current_font_groupbox.setLayout(current_font_layout)
+        self.current_font_text_edit = current_font_text_edit
 
         # 使用QGridLayout将标签和SpinBox布局在一行
         label_spinbox_layout = QGridLayout()
@@ -152,7 +125,30 @@ Hello, World!
         self.font_mixture_enabled = False
         self.selected_font = None
         
+        self.load_font_settings()
 
+    def load_font_settings(self):
+        # 从fontjson中加载字体设置
+        self.fontjson = {
+            "typeface": ["data/font/Terminus.ttf", "data/font/unifont.ttf"],
+            "map_typeface": ["data/font/Terminus.ttf", "data/font/unifont.ttf"],
+            "over_map_typeface": ["data/font/Terminus.ttf", "data/font/unifont.ttf"]
+        }
+
+        # 更新current_font_text_edit的文本
+        self.update_current_font_text_edit()
+
+    def update_current_font_text_edit(self):
+        typeface = self.fontjson.get("typeface", [])
+        map_typeface = self.fontjson.get("map_typeface", [])
+        over_map_typeface = self.fontjson.get("over_map_typeface", [])
+
+        current_font_text = f"""UI： {typeface[0]} => {typeface[1] if len(typeface) > 1 else ''}
+地图： {map_typeface[0]} => {map_typeface[1] if len(map_typeface) > 1 else ''}
+大地图： {over_map_typeface[0]} => {over_map_typeface[1] if len(over_map_typeface) > 1 else ''}
+"""
+        self.current_font_text_edit.setPlainText(current_font_text)
+        
     def load_fonts(self):
         # 加载可用字体并返回字体列表
         font_database = QFontDatabase()
@@ -162,31 +158,41 @@ Hello, World!
     def set_ui_font(self):
         logger.debug("触发设为UI字体事件")
         if self.selected_font is not None:
-            # 在这里使用 self.selected_font 来设置 UI 字体
-            pass
+            # 更新fontjson的UI字体部分
+            self.fontjson["typeface"][0] = self.selected_font
+            self.update_current_font_text_edit()
 
     def set_map_font(self):
         logger.debug("触发设为地图字体事件")
         if self.selected_font is not None:
-            # 在这里使用 self.selected_font 来设置地图字体
-            pass
+            # 更新fontjson的地图字体部分
+            self.fontjson["map_typeface"][0] = self.selected_font
+            self.update_current_font_text_edit()
 
     def set_large_map_font(self):
         logger.debug("触发设为大地图字体事件")
         if self.selected_font is not None:
-            # 在这里使用 self.selected_font 来设置大地图字体
-            pass
+            # 更新fontjson的大地图字体部分
+            self.fontjson["over_map_typeface"][0] = self.selected_font
+            self.update_current_font_text_edit()
 
     def set_all_font(self):
         logger.debug("触发设为全部字体事件")
         if self.selected_font is not None:
-            # 在这里使用 self.selected_font 来设置所有字体
-            pass
+            selected_font = self.selected_font
+
+            # 更新字体设置字典中的所有字体
+            self.fontjson["typeface"] = [selected_font, selected_font]
+            self.fontjson["map_typeface"] = [selected_font, selected_font]
+            self.fontjson["over_map_typeface"] = [selected_font, selected_font]
+
+            # 更新UI界面
+            self.update_current_font_text_edit()
 
     def reset_all_font(self):
         logger.debug("触发重置全部字体事件")
         # 实现重置全部字体的操作
-        pass
+        self.load_font_settings()
 
     def save_settings(self):
         logger.debug("触发保存设置事件")
