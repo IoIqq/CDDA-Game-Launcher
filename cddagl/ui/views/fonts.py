@@ -6,7 +6,7 @@ import logging
 
 from PyQt5.QtCore import Qt, QSize, QRect
 from PyQt5.QtGui import QPainter, QColor, QFont
-from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox
+from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox, QPlainTextEdit
 
 logger = logging.getLogger('cddagl')
 
@@ -51,6 +51,22 @@ class FontsTab(QTabWidget):
         # 创建保存按钮
         save_button = QPushButton("保存")
 
+        # 添加QPlainTextEdit来显示测试文本
+        test_text_edit = QPlainTextEdit()
+        test_text = """这是一些常见的测试文本。
+Hello, World!
+1234567890
+!@#$%^&*()_+
+Это пример текста на кириллице."""
+        test_text_edit.setPlainText(test_text)
+
+        # 设置QPlainTextEdit为不可编辑
+        test_text_edit.setReadOnly(True)
+
+        # 设置背景颜色为黑色 设置文字颜色为白色
+        test_text_edit.setStyleSheet("background-color: black; color: white;")
+
+
         # 使用QGridLayout将标签和SpinBox布局在一行
         label_spinbox_layout = QGridLayout()
         label_spinbox_layout.addWidget(ui_font_label, 0, 0)
@@ -68,6 +84,7 @@ class FontsTab(QTabWidget):
 
         # 将GroupBox添加到垂直布局
         v_layout.addWidget(other_settings_groupbox)
+        v_layout.addWidget(test_text_edit)
         v_layout.addWidget(save_button)
 
         # 将按钮GroupBox添加到垂直布局
@@ -132,6 +149,8 @@ class FontsTab(QTabWidget):
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+
+
 
 
 
