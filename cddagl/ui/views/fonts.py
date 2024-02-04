@@ -4,7 +4,7 @@
 import logging
 
 from PyQt5.QtCore import Qt, QStringListModel
-from PyQt5.QtGui import QFontDatabase
+from PyQt5.QtGui import QFontDatabase, QFont
 from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton, QGroupBox, QPlainTextEdit, QListView
 
 logger = logging.getLogger('cddagl')
@@ -18,6 +18,7 @@ class FontsTab(QTabWidget):
 
         # 创建QListView来实现字体选择
         font_list_view = QListView()
+        font_list_view.setEditTriggers(QListView.NoEditTriggers)
         font_families = self.load_fonts()
         font_model = QStringListModel(font_families)
         font_list_view.setModel(font_model)
@@ -73,6 +74,7 @@ Hello, World!
         test_text_edit.setPlainText(test_text)
         test_text_edit.setReadOnly(True)
         test_text_edit.setStyleSheet("background-color: black; color: white;")
+        self.test_text_edit = test_text_edit
         preview_layout.addWidget(test_text_edit)
         preview_groupbox.setLayout(preview_layout)
 
@@ -116,7 +118,8 @@ Hello, World!
         set_all_button.clicked.connect(self.set_all_font)
         reset_all_font_button.clicked.connect(self.reset_all_font)
         save_button.clicked.connect(self.save_settings)
-        font_list_view.clicked.connect(self.font_selected)
+        font_list_view.selectionModel().currentChanged.connect(self.font_selected)
+
 
         # 初始化字体大小和是否启用的变量
         self.ui_font_size = None
@@ -206,7 +209,12 @@ Hello, World!
         # 处理字体选择变化事件
         self.selected_font = index.data()
         logger.debug(f"选择了字体：{self.selected_font}")
-        # 在这里处理选择的字体
+
+        # 设置test_text_edit的字体
+        font = QFont(self.selected_font, 14)
+        font_style = f'font-family: "{self.selected_font}"; font-size: 14px;background-color: black; color: white;'
+        self.test_text_edit.setStyleSheet(font_style)
+        self.test_text_edit.setFont(font)
         pass
 
     def get_main_window(self):

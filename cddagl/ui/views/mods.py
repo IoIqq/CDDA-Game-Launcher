@@ -616,7 +616,7 @@ class ModsTab(QTabWidget):
                 if os.path.isdir(self.extract_dir):
                     delete_path(self.extract_dir)
 
-            status_bar.showMessage(_('Soundpack installation cancelled'))
+            status_bar.showMessage(_('Mod installation cancelled'))
 
             self.finish_install_new_mod()
 
