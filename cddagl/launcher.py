@@ -153,7 +153,7 @@ def start_ui(locale, single_instance):
         QLineEdit, QTextEdit {
             background-color: #ecf0f1;
             border: 1px solid #bdc3c7;
-            border-radius: 4px;
+            border-radius: 10px;
             padding: 5px;
             min-height: 21px;
             font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
@@ -163,7 +163,7 @@ def start_ui(locale, single_instance):
         QPlainTextEdit {
             background-color: #ecf0f1;
             border: 1px solid #bdc3c7;
-            border-radius: 4px;
+            border-radius: 10px;
             padding: 5px;
             min-height: 21px;
             font-size: 20px;
@@ -173,7 +173,7 @@ def start_ui(locale, single_instance):
         QProgressBar {
             background-color: #ecf0f1;
             border: 1px solid #bdc3c7;
-            border-radius: 4px;
+            border-radius: 10px;
             padding: 5px;
             min-height: 14px;
             font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
@@ -188,7 +188,7 @@ def start_ui(locale, single_instance):
             height: 20px;
             font-family: "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
             vertical-align: middle; /* 将文字垂直居中 */
-            border-radius: 5px;
+            border-radius: 8px;
             padding: 10px 20px;
             margin: 0px 10px;
             outline: none;
@@ -264,7 +264,7 @@ def start_ui(locale, single_instance):
 
         QComboBox {
             border: 1px solid #bdc3c7;
-            border-radius: 4px;
+            border-radius: 10px;
             padding: 5px 10px;
             min-height: 21px;
             background-color: #ecf0f1;
