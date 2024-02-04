@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: MIT
 import logging
+import os
+import json
 
 from PyQt5.QtCore import Qt, QStringListModel
 from PyQt5.QtGui import QFontDatabase, QFont
@@ -127,24 +129,24 @@ Hello, World!
         self.large_map_font_size = None
         self.font_mixture_enabled = False
         self.selected_font = None
-        
+        self.game_dir = None
         self.load_font_settings()
 
     def load_font_settings(self):
-        # 从fontjson中加载字体设置
-        self.fontjson = {
-            "typeface": ["data/font/Terminus.ttf", "data/font/unifont.ttf"],
-            "map_typeface": ["data/font/Terminus.ttf", "data/font/unifont.ttf"],
-            "over_map_typeface": ["data/font/Terminus.ttf", "data/font/unifont.ttf"]
+        # 从fontsjson中加载字体设置
+        self.fontsjson = {
+            "typeface": ["userdata/font/Terminus.ttf", "userdata/font/unifont.ttf"],
+            "map_typeface": ["userdata/font/Terminus.ttf", "userdata/font/unifont.ttf"],
+            "over_map_typeface": ["userdata/font/Terminus.ttf", "userdata/font/unifont.ttf"]
         }
 
         # 更新current_font_text_edit的文本
         self.update_current_font_text_edit()
 
     def update_current_font_text_edit(self):
-        typeface = self.fontjson.get("typeface", [])
-        map_typeface = self.fontjson.get("map_typeface", [])
-        over_map_typeface = self.fontjson.get("over_map_typeface", [])
+        typeface = self.fontsjson.get("typeface", [])
+        map_typeface = self.fontsjson.get("map_typeface", [])
+        over_map_typeface = self.fontsjson.get("over_map_typeface", [])
 
         current_font_text = f"""UI： {typeface[0]} => {typeface[1] if len(typeface) > 1 else ''}
 地图： {map_typeface[0]} => {map_typeface[1] if len(map_typeface) > 1 else ''}
@@ -160,23 +162,30 @@ Hello, World!
 
     def set_ui_font(self):
         logger.debug("触发设为UI字体事件")
+        print(self.game_dir)
         if self.selected_font is not None:
-            # 更新fontjson的UI字体部分
-            self.fontjson["typeface"][0] = self.selected_font
+            # 更新fontsjson的UI字体部分
+            self.fontsjson["typeface"][0] = self.selected_font
+            write_fontsjson_to_path(self.fontsjson)
+            copy_font_to_directory_by_name(self.selected_font)
             self.update_current_font_text_edit()
 
     def set_map_font(self):
         logger.debug("触发设为地图字体事件")
         if self.selected_font is not None:
-            # 更新fontjson的地图字体部分
-            self.fontjson["map_typeface"][0] = self.selected_font
+            # 更新fontsjson的地图字体部分
+            self.fontsjson["map_typeface"][0] = self.selected_font
+            write_fontsjson_to_path(self.fontsjson)
+            copy_font_to_directory_by_name(self.selected_font)
             self.update_current_font_text_edit()
 
     def set_large_map_font(self):
         logger.debug("触发设为大地图字体事件")
         if self.selected_font is not None:
-            # 更新fontjson的大地图字体部分
-            self.fontjson["over_map_typeface"][0] = self.selected_font
+            # 更新fontsjson的大地图字体部分
+            self.fontsjson["over_map_typeface"][0] = self.selected_font
+            write_fontsjson_to_path(self.fontsjson)
+            copy_font_to_directory_by_name(self.selected_font)
             self.update_current_font_text_edit()
 
     def set_all_font(self):
@@ -185,10 +194,11 @@ Hello, World!
             selected_font = self.selected_font
 
             # 更新字体设置字典中的所有字体
-            self.fontjson["typeface"] = [selected_font, selected_font]
-            self.fontjson["map_typeface"] = [selected_font, selected_font]
-            self.fontjson["over_map_typeface"] = [selected_font, selected_font]
-
+            self.fontsjson["typeface"] = [selected_font, selected_font]
+            self.fontsjson["map_typeface"] = [selected_font, selected_font]
+            self.fontsjson["over_map_typeface"] = [selected_font, selected_font]
+            write_fontsjson_to_path(self.fontsjson)
+            copy_font_to_directory_by_name(self.selected_font)
             # 更新UI界面
             self.update_current_font_text_edit()
 
@@ -217,19 +227,86 @@ Hello, World!
         self.test_text_edit.setFont(font)
         pass
 
+    def game_dir_changed(self, new_dir):
+        # todo
+        # 设置游戏目录为新的目录
+        self.game_dir = new_dir
+        # 清空现有的模组列表
+
+        # 构建游戏的模组目录和用户模组目录的路径
+        fonts_dir = os.path.join(new_dir, 'data', 'font')
+        user_fonts_dir = os.path.join(new_dir, 'font')
+
+        self.load_fonts()
+        
     def get_main_window(self):
         return self.parentWidget().parentWidget().parentWidget()
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+    
 
 
 
+def write_fontsjson_to_path(data, subpath='userdata\config'):
+    try:
+        # 检查路径是否存在，如果不存在则创建它
+        if not os.path.exists(subpath):
+            os.makedirs(subpath)
 
+        # 构建JSON文件的完整路径
+        json_path = os.path.join(os.getcwd(), subpath, 'fonts.json')
 
+        # 写入JSON数据到文件
+        with open(json_path, 'w') as json_file:
+            json.dump(data, json_file, indent=4)
 
+        print(f"JSON数据已成功写入到路径: {json_path}")
+    except Exception as e:
+        print(f"写入JSON数据时出错: {str(e)}")
 
+def copy_font_to_directory_by_name(font_name, subpath='data/fonts', font_size=14):
+    target_directory = os.path.join(os.getcwd(), subpath)
+    
+    # 使用 QFontDatabase 来获取字体文件路径
+    font_database = QFontDatabase()
+    font_id = font_database.addApplicationFont(QFont(font_name, font_size).toString())
+    
+    if font_id == -1:
+        print(f"无法找到字体文件: {font_name}")
+        return
 
+    font_file_paths = font_database.applicationFontPaths(font_id)
+    font_file_name = os.path.basename(font_file_paths[0])
+
+    # 检查目标目录是否存在字体文件
+    target_font_path = os.path.join(target_directory, font_file_name)
+    if os.path.exists(target_font_path):
+        print(f"字体 '{font_name}' 已存在于目标目录中.")
+        return
+
+    try:
+        # 复制字体文件到目标目录
+        shutil.copy(font_file_paths[0], target_directory)
+        print(f"字体 '{font_name}' 已成功复制到目标目录.")
+    except Exception as e:
+        print(f"复制字体 '{font_name}' 到目标目录时发生错误: {str(e)}")
+
+def get_windows_fonts_directory():
+    # 获取系统文件夹路径
+    windir = os.environ.get('WINDIR', 'C:\\Windows')
+
+    # 检查系统位数（32位或64位）
+    is_64bit = ctypes.windll.kernel32.IsWow64Process()
+
+    if is_64bit:
+        # 64位系统
+        fonts_directory = os.path.join(windir, 'SysNative', 'fonts')
+    else:
+        # 32位系统
+        fonts_directory = os.path.join(windir, 'fonts')
+
+    return fonts_directory
 
 
 

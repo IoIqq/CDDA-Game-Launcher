@@ -423,13 +423,15 @@ class GameDirGroupBox(QGroupBox):
         params = get_config_value('command.params', '').strip()
         if params != '':
             params = ' ' + params
-
+        userdatadir = os.path.join(os.getcwd(),'userdata')
+        params += f' --userdir "{userdatadir}"'
         cmd = '"{exe_path}"{params}'.format(exe_path=self.exe_path,
             params=params)
 
         try:
             game_process = subprocess.Popen(cmd, cwd=exe_dir,
                 creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)
+            logger.debug(f"cmd:{cmd}")
         except OSError as e:
             main_window = self.get_main_window()
             status_bar = main_window.statusBar()
@@ -582,6 +584,14 @@ antivirus whitelist or select the action to trust this binary when detected.</p>
 
         directory = self.dir_combo.currentText()
         mods_tab.game_dir_changed(directory)
+        
+    # def update_fonts(self):
+    #     main_window = self.get_main_window()
+    #     central_widget = main_window.central_widget
+    #     fonts_tab = central_widget.fonts_tab
+
+    #     directory = self.dir_combo.currentText()
+    #     fonts_tab.game_dir_changed(directory)
 
     def update_backups(self):
         main_window = self.get_main_window()
@@ -695,6 +705,7 @@ antivirus whitelist or select the action to trust this binary when detected.</p>
                     self.update_version()
                     self.update_saves()
                     self.update_soundpacks()
+                    # self.update_fonts()
                     self.update_mods()
                     self.update_backups()
 
@@ -2869,6 +2880,7 @@ class UpdateGroupBox(QGroupBox):
 
         game_dir_group_box.update_soundpacks()
         game_dir_group_box.update_mods()
+        # game_dir_group_box.update_fonts()
         game_dir_group_box.update_backups()
 
         soundpacks_tab = main_tab.get_soundpacks_tab()

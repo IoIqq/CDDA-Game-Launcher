@@ -40,7 +40,7 @@ logger = logging.getLogger('cddagl')
 rarfile.UNRAR_TOOL = get_cddagl_path('UnRAR.exe')
 
 
-class ModsTab(QTabWidget):
+class ModsTab(QWidget):
     def __init__(self):
         super(ModsTab, self).__init__()
 
@@ -826,6 +826,7 @@ class ModsTab(QTabWidget):
             self.download_last_read = datetime.utcnow()
 
     def extract_new_mod(self):
+        logger.debug(f'extract_new_mod:{self.game_dir}')
         self.extracting_new_mod = True
 
         if self.downloaded_file.lower().endswith('.7z'):
@@ -844,7 +845,10 @@ class ModsTab(QTabWidget):
 
             self.extracting_infolist = z.infolist()
 
-        self.extract_dir = os.path.join(self.game_dir, 'newmod')
+        modname = os.path.basename(self.downloaded_file)
+        modname, temp = os.path.splitext(modname)
+
+        self.extract_dir = os.path.join(self.game_dir, modname)
         while os.path.exists(self.extract_dir):
             self.extract_dir = os.path.join(self.game_dir,
                 'newmod-{0}'.format('%08x' % random.randrange(16**8)))
@@ -1295,9 +1299,12 @@ class ModsTab(QTabWidget):
 
     def game_dir_changed(self, new_dir):
         self.game_dir = new_dir
+        # 清空现有的模组列表
         self.mods = []
+        # 更新用户界面元素
         self.update_ui_elements()
 
+        # 构建游戏的模组目录和用户模组目录的路径
         mods_dir = os.path.join(new_dir, 'data', 'mods')
         user_mods_dir = os.path.join(new_dir, 'mods')
 
@@ -1342,7 +1349,7 @@ class ModsTab(QTabWidget):
 
     def process_mod_config_file(self, config_file, mod_path, enabled):
         info = self.config_info(config_file)
-        if 'ident' in info:
+        if ('ident' in info) or ('id' in info):
             mod_info = {
                 'path': mod_path,
                 'enabled': enabled

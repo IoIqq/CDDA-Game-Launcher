@@ -36,7 +36,46 @@ from cddagl.ui.views.dialogs import ExceptionWindow
 from cddagl.ui.views.tabbed import TabbedWindow
 from cddagl.win32 import get_ui_locale, SingleInstance, write_named_pipe
 
+import logging
+import os
+import time
+from glob import glob
+
+# 创建日志器
 logger = logging.getLogger('cddagl')
+logger.setLevel(logging.DEBUG)  # 设置日志级别
+
+# 确保 /log 文件夹存在
+log_dir = os.path.join(os.getcwd(),'log')
+if not os.path.exists(log_dir):
+    os.makedirs(log_dir)
+
+# 删除旧的日志文件，如果超过三个
+log_files = sorted(glob(os.path.join(log_dir, '*.log')))
+while len(log_files) > 3:
+    os.remove(log_files.pop(0))
+
+# 使用当前时间创建日志文件名
+log_filename = time.strftime("%Y%m%d%H%M%S") + '.log'
+log_filepath = os.path.join(log_dir, log_filename)
+
+# 创建文件处理器
+file_handler = logging.FileHandler(log_filepath, encoding='utf-8')
+file_handler.setLevel(logging.DEBUG)  # 设置文件日志级别
+
+# 创建控制台处理器
+console_handler = logging.StreamHandler()
+console_handler.setLevel(logging.DEBUG)  # 设置控制台日志级别
+
+# 创建日志格式
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+
+# 添加处理器到日志器
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
+
 
 
 def init_single_instance():
