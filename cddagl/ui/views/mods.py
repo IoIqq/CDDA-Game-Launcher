@@ -410,29 +410,7 @@ class ModsTab(QTabWidget):
                 mod_idents = set((mod_idents, ))
 
             # Is it already installed?
-            for mod in self.mods:
-                if mod['ident'] in mod_idents:
-                    confirm_msgbox = QMessageBox()
-                    confirm_msgbox.setWindowTitle(_('Mod already present'))
-                    confirm_msgbox.setText(_('It seems this mod is '
-                        'already installed. The launcher will not overwrite '
-                        'the mod if it has the same directory name. You '
-                        'might want to delete the mod first if you want '
-                        'to update it. Also, there can only be a single '
-                        'mod with the same ident value available in the '
-                        'game.'))
-                    confirm_msgbox.setInformativeText(_('Are you sure you want '
-                        'to install the {name} mod?').format(
-                            name=selected_info['name']))
-                    confirm_msgbox.addButton(_('Install the mod'),
-                        QMessageBox.YesRole)
-                    confirm_msgbox.addButton(_('Do not install again'),
-                        QMessageBox.NoRole)
-                    confirm_msgbox.setIcon(QMessageBox.Warning)
-
-                    if confirm_msgbox.exec() == 1:
-                        return
-                    break
+            check_and_confirm_mod_installation(self, mod_idents, selected_info)
 
             self.install_type = selected_info['type']
 
@@ -619,7 +597,32 @@ class ModsTab(QTabWidget):
             status_bar.showMessage(_('Mod installation cancelled'))
 
             self.finish_install_new_mod()
+            
+    def check_and_confirm_mod_installation(self, mod_idents, selected_info):
+        for mod in self.mods:
+            if mod['ident'] in mod_idents:
+                confirm_msgbox = QMessageBox()
+                confirm_msgbox.setWindowTitle(_('Mod already present'))
+                confirm_msgbox.setText(_('It seems this mod is '
+                    'already installed. The launcher will not overwrite '
+                    'the mod if it has the same directory name. You '
+                    'might want to delete the mod first if you want '
+                    'to update it. Also, there can only be a single '
+                    'mod with the same ident value available in the '
+                    'game.'))
+                confirm_msgbox.setInformativeText(_('Are you sure you want '
+                    'to install the {name} mod?').format(
+                        name=selected_info['name']))
+                confirm_msgbox.addButton(_('Install the mod'),
+                    QMessageBox.YesRole)
+                confirm_msgbox.addButton(_('Do not install again'),
+                    QMessageBox.NoRole)
+                confirm_msgbox.setIcon(QMessageBox.Warning)
 
+                if confirm_msgbox.exec() == 1:
+                    return
+                break
+            
     def download_http_finished(self):
         if self.downloading_file is not None:
             self.downloading_file.close()
