@@ -917,73 +917,56 @@ class ModsTab(QTabWidget):
         timer.start(0)
 
     def move_new_mod(self):
-        # Find the mod(s) in the self.extract_dir
-        # Move the mod(s) from that location into self.mods_dir
-
         self.moving_new_mod = True
 
         main_window = self.get_main_window()
         status_bar = main_window.statusBar()
-
         status_bar.showMessage(_('Finding the mod(s)'))
 
-        next_scans = deque()
-        current_scan = scandir(self.extract_dir)
+        mod_dirs = self.find_mods_in_directory(self.extract_dir)
 
-        mod_dirs = set()
+        if not mod_dirs:
+            status_bar.showMessage(_('Mod installation cancelled - No mod found in the downloaded archive'))
+            self.clean_up_after_install()
+            return
 
-        while True:
-            try:
-                entry = next(current_scan)
-                dirname, basename = os.path.split(entry.path)
-
-                # Don't include submod dir/files in mod dir search
-                if dirname in mod_dirs:
-                    continue
-
-                if entry.is_dir():
-                    next_scans.append(entry.path)
-                elif entry.is_file():
-                    if basename.lower() == 'modinfo.json':
-                        mod_dirs.add(dirname)
-            except StopIteration:
-                if len(next_scans) > 0:
-                    current_scan = scandir(next_scans.popleft())
-                else:
-                    break
-
-        for item in current_scan:
-            pass
-
-        if len(mod_dirs) == 0:
-            status_bar.showMessage(_('Mod installation cancelled - There '
-                'is no mod in the downloaded archive'))
-            delete_path(self.extract_dir)
-            self.moving_new_mod = False
-
-            self.finish_install_new_mod()
+        if self.move_mods_to_mods_dir(mod_dirs):
+            status_bar.showMessage(_('Mod installation completed'))
         else:
-            all_moved = True
-            for mod_dir in mod_dirs:
-                mod_dir_name = os.path.basename(mod_dir)
-                target_dir = os.path.join(self.mods_dir, mod_dir_name)
-                if os.path.exists(target_dir):
-                    status_bar.showMessage(_('Mod installation cancelled - '
-                        'There is already a {basename} directory in '
-                        '{mods_dir}').format(basename=mod_dir_name,
-                            mods_dir=self.mods_dir))
-                    all_moved = False
-                    break
-                else:
-                    shutil.move(mod_dir, self.mods_dir)
-            if all_moved:
-                status_bar.showMessage(_('Mod installation completed'))
+            status_bar.showMessage(_('Mod installation cancelled - Conflict with existing mod directories'))
 
-            delete_path(self.extract_dir)
-            self.moving_new_mod = False
+        self.clean_up_after_install()
 
-            self.game_dir_changed(self.game_dir)
-            self.finish_install_new_mod()
+    def find_mods_in_directory(self, directory):
+        mod_dirs = set()
+        next_scans = deque([directory])
+
+        while next_scans:
+            with os.scandir(next_scans.popleft()) as current_scan:
+                for entry in current_scan:
+                    if entry.is_dir():
+                        next_scans.append(entry.path)
+                    elif entry.is_file() and os.path.basename(entry.path).lower() == 'modinfo.json':
+                        mod_dirs.add(os.path.dirname(entry.path))
+
+        return mod_dirs
+
+    def move_mods_to_mods_dir(self, mod_dirs):
+        all_moved = True
+        for mod_dir in mod_dirs:
+            mod_dir_name = os.path.basename(mod_dir)
+            target_dir = os.path.join(self.mods_dir, mod_dir_name)
+            if os.path.exists(target_dir):
+                all_moved = False
+                break
+            shutil.move(mod_dir, self.mods_dir)
+        return all_moved
+
+    def clean_up_after_install(self):
+        delete_path(self.extract_dir)
+        self.moving_new_mod = False
+        self.game_dir_changed(self.game_dir)
+        self.finish_install_new_mod()
 
     def disable_existing(self):
         selection_model = self.installed_lv.selectionModel()
