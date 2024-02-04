@@ -13,6 +13,27 @@ class FontsTab(QTabWidget):
     def __init__(self):
         super(FontsTab, self).__init__()
 
+        self.fontjson_default = \
+                {
+        "//1": "If more than one font is specified for a typeface the list is treated as a fallback order.",
+        "//2": "unifont will always be used as a 'last resort' fallback even if not listed here.",
+        "typeface": [
+            "data/font/Terminus.ttf",
+            "data/font/unifont.ttf"
+        ],
+        "map_typeface": [
+            "data/font/Terminus.ttf",
+            "data/font/unifont.ttf"
+        ],
+        "overmap_typeface": [
+            "data/font/Terminus.ttf",
+            "data/font/unifont.ttf"
+        ]
+        }
+        typeface = self.fontjson_default.get("typeface", [])
+        map_typeface = self.fontjson_default.get("map_typeface", [])
+        overmap_typeface = self.fontjson_default.get("overmap_typeface", [])
+        print(typeface)
         # 创建主布局
         main_layout = QGridLayout()
 
@@ -81,9 +102,10 @@ Hello, World!
         current_font_layout = QVBoxLayout()
         current_font_text_edit = QPlainTextEdit()
         
-        current_font_text = """UI： {} => {}
-地图： {} => {}
-大地图： {} => {}
+        # 创建目前字体和备用字体的文本
+        current_font_text = f"""UI： {typeface[0]} => {typeface[1] if len(typeface) > 1 else ''}
+地图： {map_typeface[0]} => {map_typeface[1] if len(map_typeface) > 1 else ''}
+大地图： {overmap_typeface[0]} => {overmap_typeface[1] if len(overmap_typeface) > 1 else ''}
 """
         
         current_font_text_edit.setPlainText(current_font_text)
@@ -129,23 +151,7 @@ Hello, World!
         self.large_map_font_size = None
         self.font_mixture_enabled = False
         self.selected_font = None
-        self.fontjson_default = \
-                {
-        "//1": "If more than one font is specified for a typeface the list is treated as a fallback order.",
-        "//2": "unifont will always be used as a 'last resort' fallback even if not listed here.",
-        "typeface": [
-            "data/font/Terminus.ttf",
-            "data/font/unifont.ttf"
-        ],
-        "map_typeface": [
-            "data/font/Terminus.ttf",
-            "data/font/unifont.ttf"
-        ],
-        "overmap_typeface": [
-            "data/font/Terminus.ttf",
-            "data/font/unifont.ttf"
-        ]
-        }
+        
 
     def load_fonts(self):
         # 加载可用字体并返回字体列表
