@@ -410,8 +410,12 @@ class ModsTab(QTabWidget):
                 mod_idents = set((mod_idents, ))
 
             # Is it already installed?
-            check_and_confirm_mod_installation(self, mod_idents, selected_info)
+            self.check_and_confirm_mod_installation(mod_idents, selected_info)
 
+            
+            main_window = self.get_main_window()
+            status_bar = main_window.statusBar()
+                
             self.install_type = selected_info['type']
 
             if selected_info['type'] == 'direct_download':
@@ -435,9 +439,7 @@ class ModsTab(QTabWidget):
                 self.download_first_ready = True
                 self.downloading_file = None
 
-                main_window = self.get_main_window()
-
-                status_bar = main_window.statusBar()
+                
                 status_bar.clearMessage()
 
                 status_bar.busy += 1
@@ -477,15 +479,9 @@ class ModsTab(QTabWidget):
                     self.download_http_ready_read)
                 self.download_http_reply.downloadProgress.connect(
                     self.download_dl_progress)
+                
+                self.cancel_installation()
 
-                self.install_new_button.setText(_('Cancel mod installation'))
-                self.installed_lv.setEnabled(False)
-                self.repository_lv.setEnabled(False)
-
-                self.get_main_tab().disable_tab()
-                self.get_soundpacks_tab().disable_tab()
-                self.get_settings_tab().disable_tab()
-                self.get_backups_tab().disable_tab()
             elif selected_info['type'] == 'browser_download':
                 bd_dialog = BrowserDownloadDialog('mod',
                     selected_info['url'], selected_info.get('expected_filename',
@@ -494,8 +490,6 @@ class ModsTab(QTabWidget):
 
                 if bd_dialog.downloaded_path is not None:
 
-                    main_window = self.get_main_window()
-                    status_bar = main_window.statusBar()
 
                     if not os.path.isfile(bd_dialog.downloaded_path):
                         status_bar.showMessage(_('Could not find downloaded '
@@ -504,16 +498,8 @@ class ModsTab(QTabWidget):
                         self.installing_new_mod = True
                         self.downloaded_file = bd_dialog.downloaded_path
 
-                        self.install_new_button.setText(_('Cancel mod '
-                            'installation'))
-                        self.installed_lv.setEnabled(False)
-                        self.repository_lv.setEnabled(False)
-
-                        self.get_main_tab().disable_tab()
-                        self.get_soundpacks_tab().disable_tab()
-                        self.get_settings_tab().disable_tab()
-                        self.get_backups_tab().disable_tab()
-
+                        self.cancel_installation()
+                        
                         # Test downloaded file
                         status_bar.showMessage(_('Testing downloaded file '
                             'archive'))
@@ -597,7 +583,18 @@ class ModsTab(QTabWidget):
             status_bar.showMessage(_('Mod installation cancelled'))
 
             self.finish_install_new_mod()
-            
+    
+    
+    def cancel_installation(self):
+        self.install_new_button.setText(_('Cancel mod installation'))
+        self.installed_lv.setEnabled(False)
+        self.repository_lv.setEnabled(False)
+
+        self.get_main_tab().disable_tab()
+        self.get_soundpacks_tab().disable_tab()
+        self.get_settings_tab().disable_tab()
+        self.get_backups_tab().disable_tab()
+     
     def check_and_confirm_mod_installation(self, mod_idents, selected_info):
         for mod in self.mods:
             if mod['ident'] in mod_idents:
