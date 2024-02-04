@@ -635,21 +635,7 @@ class ModsTab(QTabWidget):
             redirect = self.download_http_reply.attribute(
                 QNetworkRequest.RedirectionTargetAttribute)
             if redirect is not None:
-                delete_path(self.download_dir)
-                os.makedirs(self.download_dir)
-
-                status_bar.busy += 1
-
-                redirected_url = urljoin(
-                    self.download_http_reply.request().url().toString(),
-                    redirect.toString())
-
-                downloading_label = QLabel()
-                downloading_label.setText(_('Downloading: {0}').format(
-                    redirected_url))
-                status_bar.addWidget(downloading_label, 100)
-                self.downloading_label = downloading_label
-
+                self.handle_redirection(redirect)
                 dowloading_speed_label = QLabel()
                 status_bar.addWidget(dowloading_speed_label)
                 self.dowloading_speed_label = dowloading_speed_label
@@ -753,6 +739,21 @@ class ModsTab(QTabWidget):
                 status_bar.clearMessage()
                 self.downloading_new_mod = False
                 self.extract_new_mod()
+    def handle_redirection(self, redirect):
+        delete_path(self.download_dir)
+        os.makedirs(self.download_dir)
+
+        status_bar.busy += 1
+
+        redirected_url = urljoin(
+            self.download_http_reply.request().url().toString(),
+            redirect.toString())
+
+        downloading_label = QLabel()
+        downloading_label.setText(_('Downloading: {0}').format(
+            redirected_url))
+        status_bar.addWidget(downloading_label, 100)
+        self.downloading_label = downloading_label
 
     def clear_download_ui(self):
         if self.downloading_file is not None:
