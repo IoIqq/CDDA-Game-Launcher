@@ -6,20 +6,15 @@ import logging
 
 from PyQt5.QtCore import Qt, QSize, QRect
 from PyQt5.QtGui import QPainter, QColor, QFont
+from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton, QLabel, QSpinBox, QRadioButton
 
 logger = logging.getLogger('cddagl')
-
-from PyQt5.QtWidgets import QWidget, QGridLayout, QTabWidget, QVBoxLayout, QPushButton
 
 class FontsTab(QTabWidget):
     def __init__(self):
         super(FontsTab, self).__init__()
 
         layout = QGridLayout()
-
-        # font_window = CataWindow(4, 4, QFont('Consolas'), 18, 9, 18, False)
-        # layout.addWidget(font_window, 0, 0)
-        # self.font_window = font_window
 
         # 创建垂直布局和按钮
         v_layout = QVBoxLayout()
@@ -28,6 +23,38 @@ class FontsTab(QTabWidget):
         set_large_map_font_button = QPushButton("设为大地图自提")
         set_all_button = QPushButton("设为全部")
         reset_all_font_button = QPushButton("重置全部字体")
+
+        # 创建四个QLabel
+        ui_font_label = QLabel("UI字体大小:")
+        map_font_label = QLabel("地图字体大小:")
+        large_map_font_label = QLabel("大地图字体大小:")
+        font_mixture_label = QLabel("字体混合:")
+
+        # 创建三个调节字体大小的框
+        ui_font_size_spinbox = QSpinBox()
+        map_font_size_spinbox = QSpinBox()
+        large_map_font_size_spinbox = QSpinBox()
+
+        # 创建RadioButton
+        font_mixture_radio = QRadioButton("启用")
+
+        # 创建保存按钮
+        save_button = QPushButton("保存")
+
+        # 使用QGridLayout将标签和SpinBox布局在一行
+        label_spinbox_layout = QGridLayout()
+        label_spinbox_layout.addWidget(ui_font_label, 0, 0)
+        label_spinbox_layout.addWidget(ui_font_size_spinbox, 0, 1)
+        label_spinbox_layout.addWidget(map_font_label, 1, 0)
+        label_spinbox_layout.addWidget(map_font_size_spinbox, 1, 1)
+        label_spinbox_layout.addWidget(large_map_font_label, 2, 0)
+        label_spinbox_layout.addWidget(large_map_font_size_spinbox, 2, 1)
+        label_spinbox_layout.addWidget(font_mixture_label, 3, 0)
+        label_spinbox_layout.addWidget(font_mixture_radio, 3, 1)
+        label_spinbox_layout.addWidget(save_button, 4, 0, 1, 2)
+
+        # 将标签和SpinBox的布局添加到垂直布局
+        v_layout.addLayout(label_spinbox_layout)
 
         # 将按钮添加到垂直布局
         v_layout.addWidget(set_ui_font_button)
@@ -47,6 +74,7 @@ class FontsTab(QTabWidget):
         set_large_map_font_button.clicked.connect(self.set_large_map_font)
         set_all_button.clicked.connect(self.set_all_font)
         reset_all_font_button.clicked.connect(self.reset_all_font)
+        save_button.clicked.connect(self.save_settings)
 
     def set_ui_font(self):
         # 实现设为UI字体的操作
@@ -68,11 +96,17 @@ class FontsTab(QTabWidget):
         # 实现重置全部字体的操作
         pass
 
+    def save_settings(self):
+        # 实现保存设置的操作
+        pass
+
     def get_main_window(self):
         return self.parentWidget().parentWidget().parentWidget()
 
     def get_main_tab(self):
         return self.parentWidget().parentWidget().main_tab
+
+
 
 
 
