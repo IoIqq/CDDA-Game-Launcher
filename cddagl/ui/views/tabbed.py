@@ -32,7 +32,7 @@ from cddagl.i18n import proxy_gettext as _
 from cddagl.sql.functions import get_config_value, set_config_value, config_true
 from cddagl.ui.views.backups import BackupsTab
 from cddagl.ui.views.dialogs import AboutDialog, FaqDialog
-# from cddagl.ui.views.fonts import FontsTab
+from cddagl.ui.views.fonts import FontsTab
 from cddagl.ui.views.main import MainTab
 from cddagl.ui.views.mods import ModsTab
 from cddagl.ui.views.settings import SettingsTab
@@ -429,7 +429,7 @@ class CentralWidget(QTabWidget):
         self.create_mods_tab()
         #self.create_tilesets_tab()
         self.create_soundpacks_tab()
-        # self.create_fonts_tab()
+        self.create_fonts_tab()
         self.create_settings_tab()
         self.create_statistics_tab()
         self.create_cddaguide_tab()
@@ -440,7 +440,7 @@ class CentralWidget(QTabWidget):
         self.setTabText(self.indexOf(self.mods_tab), _('Mods'))
         #self.setTabText(self.indexOf(self.tilesets_tab), _('Tilesets'))
         self.setTabText(self.indexOf(self.soundpacks_tab), _('Soundpacks'))
-        # self.setTabText(self.indexOf(self.fonts_tab), _('Fonts'))
+        self.setTabText(self.indexOf(self.fonts_tab), _('Fonts'))
         self.setTabText(self.indexOf(self.settings_tab), _('Settings'))
         self.setTabText(self.indexOf(self.statistics_tab), _('Statistics'))
         self.setTabText(self.indexOf(self.cddaguide_tab), _('CDDA Guide'))
@@ -450,7 +450,7 @@ class CentralWidget(QTabWidget):
         self.mods_tab.set_text()
         #self.tilesets_tab.set_text()
         self.soundpacks_tab.set_text()
-        # self.fonts_tab.set_text()
+        self.fonts_tab.set_text()
         self.settings_tab.set_text()
         self.statistics_tab.set_text()
         self.cddaguide_tab.set_text()
@@ -480,10 +480,10 @@ class CentralWidget(QTabWidget):
         self.addTab(soundpacks_tab, _('Soundpacks'))
         self.soundpacks_tab = soundpacks_tab
 
-    # def create_fonts_tab(self):
-    #     fonts_tab = FontsTab()
-    #     self.addTab(fonts_tab, _('Fonts'))
-    #     self.fonts_tab = fonts_tab
+    def create_fonts_tab(self):
+        fonts_tab = FontsTab()
+        self.addTab(fonts_tab, _('Fonts'))
+        self.fonts_tab = fonts_tab
 
     def create_settings_tab(self):
         settings_tab = SettingsTab()
