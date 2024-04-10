@@ -424,7 +424,7 @@ class GameDirGroupBox(QGroupBox):
         if params != '':
             params = ' ' + params
         userdatadir = os.path.join(os.getcwd(),'userdata')
-        params += f' --userdir "{userdatadir}"'
+        #params += f' --userdir "{userdatadir}"'
         cmd = '"{exe_path}"{params}'.format(exe_path=self.exe_path,
             params=params)
 
