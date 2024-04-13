@@ -700,3 +700,580 @@
   size: 7024
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/飞行堡垒.zip"
   homepage: 'https://tieba.baidu.com/p/8884699124'
+
+
+
+##########################################################
+###                    Doiiars的交流群维护              ###
+##########################################################
+
+- type: direct_download
+  ident: "Arcana"
+  name: "<color_cyan>奥术与魔法物品</color>"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    添加了大量可制作的魔法物品和法术，以使用奥术技能为中心，研究和利用异界怪物和异常现象。
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 3649963
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Arcana.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "BL9_100monres"
+  name: "<color_light_blue>BL9-100%-怪物耐性版</color>"
+  authors: 
+    - "Mrsecretguy1/Kenan, Axema Vales, Goat-God"
+  maintainers: 
+    - unknown
+  description: |
+    <color_yellow>大型科幻动作冒险扩展模组</color> <color_light_cyan>巨大的异域特色地点 - 腐化的中世纪城堡、巨大的废弃工业设施、秘密组织的军事化岛屿、茂盛和布防的生物群落、外星移动基地（15个定制结构，除了大，只有更大！）</color>，<color_red>可憎可怕的变异危险怪物、变种人、外星人、高级外星人</color><color_light_blue>全新定制的现代高科技武器（还有弹道武器！）以及不同等级的盔甲。不同等级的神器（很多！）强化技能、属性。深层背景系统以分散的情报、期刊形式呈现</color> <color_light_blue>添加了地点、物品和怪物，其背景受Capcom制作的标志性的生化危机系列以及半衰期系列</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 4005341
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BL9-100%_monster_resilience_version.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "blazemod"
+  name: "载具增强包"
+  authors: 
+    - "Blaze-whatdoyoumeanitsalreadytaken"
+  maintainers: 
+    - SouP
+  description: |
+    （此mod与“blaze 载具工业”冲突）请查看mod文件夹中的README.txt文件，了解如何正确安装此mod以及其他任何问题。
+  category: 'vehicles'
+  dependencies:
+    - 'dda'
+  size: 1119503
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/blazemod.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Touhou"
+  name: "东方职业模组"
+  authors: 
+    - "Original by Taberone, editions by RedMisao"
+  maintainers: 
+    - unknown
+  description: |
+    增加东方Project中的人物作为职业。不保证平衡性。
+    需要在“场景”里选择东方职业
+    建议使用 Chibi_Ultica 或 MSXotto+ 贴图包以显示头发（当前仅支持秦心、妹红、咲夜、铃仙和妖梦）
+  category: 'touhou'
+  dependencies:
+    - 'dda'
+  size: 1223027
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Cataclysm-DDA-Touhou-Mod.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "culinary_days_ahead"
+  name: "烹饪余生"
+  authors: 
+    - "Eirenex"
+    - "fatalmojo"
+  maintainers: 
+    - unknown
+  description: |
+    像龙一样生存
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 18808
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CulinaryDaysAhead.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Arcana_aftershock_Patch"
+  name: "<color_cyan>奥术</color>/余波未尽 兼容补丁"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    可选补丁包，使奥术与余波未尽兼容。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+    - 'Arcana'
+    - 'aftershock'
+  size: 9343
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Aftershock_Patch.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Arcana_Cata++_Patch"
+  name: "<color_cyan>奥术</color>/<color_light_green>Cata++</color> 兼容补丁"
+  authors: 
+    - "Chaosvolt"
+    - "Noctifer"
+  maintainers: 
+    - unknown
+  description: |
+    可选补丁包，使奥术与cata++兼容。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+    - 'Arcana'
+    - 'Cata++'
+  size: 40305
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Cata++_Patch.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Arcana_Dinomod_Patch"
+  name: "<color_cyan>奥术</color>/恐龙世界 兼容补丁"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    可选补丁包，使奥术与恐龙世界兼容。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+    - 'Arcana'
+    - 'DinoMod'
+  size: 28018
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Dinomod_Patch.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Arcana_Magiclysm_Patch"
+  name: "<color_cyan>奥术</color>/大魔法 兼容补丁"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    可选补丁包，使奥术与大魔法兼容。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+    - 'Arcana'
+    - 'magiclysm'
+  size: 49189
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Magiclysm_Patch.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Dino_Mad_Science"
+  name: "疯狂恐龙世界"
+  authors: 
+    - "Jackledead"
+  maintainers: 
+    - Jackledead
+  description: |
+    全面大修，用恐龙和丧尸恐龙取代大部分丧尸。重新平衡CDDA，使游戏的主题聚焦在恐龙大灾变上。科学家是恐龙爆发的罪魁祸首，他们为阻止恐龙爆发而开发出的疫苗却把恐龙变成了丧尸。你能活得足够久，在为时已晚之前重拾他们的计划，将一切扭转吗？
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'aftershock'
+    - 'DinoMod'
+  size: 388839
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dino_Mad_Science.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Dorf_Life"
+  name: "地下世界"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    增加了隐藏在地下的多层洞穴，增添了地铁之外的各种奇异地点以供探索。
+  category: 'buildings'
+  dependencies:
+    - 'dda'
+  size: 355334
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dorf_Life.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "light_weariness"
+  name: "<color_light_blue>减轻疲惫程度</color>"
+  authors: 
+    - "Mrsecretguy1/Kenan"
+  maintainers: 
+    - unknown
+  description: |
+    修改数值使疲惫程度相比原版强度减少至约八分之一。这要感谢@Simularum，该MOD基于 Vanilla external_option 上的代码。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 841
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Lighter_Weariness.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "magicrevamp"
+  name: "大魔法数值翻倍"
+  authors: 
+    - "Mrsecretguy1/Kenan, Chaosvolt, Aptronym"
+  maintainers: 
+    - unknown
+  description: |
+    调整大魔法的法术最高等级和属性至1.5倍，调谐法术提高8级，使各种职业和调谐不再冲突。
+  category: 'magical'
+  dependencies:
+    - 'dda'
+    - 'magiclysm'
+  size: 318411
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MagicRevampAdditions.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Medieval_Mod_Reborn"
+  name: "中世纪扩展 重生"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    正式替换和扩展中世纪和历史内容的模组，DDA版本。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 94305
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Medieval_Mod_Reborn.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Mining_Mod"
+  name: "矿物勘探"
+  authors: 
+    - "DangerNoodle"
+  maintainers: 
+    - unknown
+  description: |
+    随机增加了一些地底金属矿脉，使玩家得以获得多种天然资源。
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 90959
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mining_Mod.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "MMA_Mods_Extension"
+  name: "<color_yellow>神话武术扩展</color>"
+  authors: 
+    - "Photoloss"
+    - "Psychodata"
+    - "Caring-Goat-Deity"
+  maintainers: 
+    - Hymore246
+  description: |
+    （建议将此mod放在“模组载入顺序”列表的最底部）添加神话武术对各种mod武器的支持
+    <color_light_red>注意，你必须启用下面的mods，否则会抛出一个可忽略的错误</color>
+    
+    <color_light_green>当前支持的mods：大魔法，余波未尽，BL9，Cata++，萌化计划</color>
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+    - 'MMA'
+  size: 30082
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MMA_Mods_Extension.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "MST_Extra"
+  name: "更多幸存者工具补充包"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    CDDA老版更多幸存者工具mod的补充包，增加了额外用于荒野求生的内容。
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 214761
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MST_Extra.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Cata++"
+  name: "<color_light_green>Cataclysm++</color>"
+  authors: 
+    - "Noctifer"
+  maintainers: 
+    - unknown
+  description: |
+    《大灾变：劫后余生》的非官方扩展模组。
+    
+    无趣的模组介绍：为游戏添加了大量内容：新物品、建筑、场景、怪物等。它还对从配方到场景的许多内容进行了重做和添加替代方案。它还给这些内容增加了一个伪故事和传说。
+    
+    生物武器、超级士兵、征用者、奴隶战士和旧世准备者NPC派系加入世界。
+    
+    探寻生物武器，寻找战利品，击倒新怪物，并升级新的制造物品的技能。
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 4011092
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/nocts_cata_mod_DDA.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Nonperishable_Overhaul"
+  name: "耐贮品检修"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - Chaosvolt
+  description: |
+    对于耐贮食品，减少腐烂系统的滥用。
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 29952
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Nonperishable_Overhaul.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "no_cbm_slots"
+  name: "移除生化槽位"
+  authors: 
+    - "Mrsecretguy1/Kenan"
+  maintainers: 
+    - unknown
+  description: |
+    完全禁用CBM插槽系统，该系统为每个身体部位的设置槽位以限制CBM的数量。
+  category: 'rebalance'
+  dependencies:
+    - 'dda'
+  size: 466
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/no_cbm_slots.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "No_Fungi"
+  name: "移除真菌类怪物"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    移除游戏中的真菌类怪物和地区。
+  category: 'monster_exclude'
+  dependencies:
+    - 'dda'
+  size: 11803
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_Fungi.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "NPC_kiritan"
+  name: "<color_pink>召唤 - ボイロNPC</color>"
+  authors: 
+    - "hage"
+  maintainers: 
+    - unknown
+  description: |
+    添加NPC好感度系统与可以召唤独特的ボイロNPC的物品。
+  category: 'content'
+  dependencies:
+    - 'VOICEROID_mod'
+  size: 700015
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/NPC_VOICEROIDs.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Pix's Shit"
+  name: "皮克索的各种操蛋玩意"
+  authors: 
+    - "pixel and Eirenex"
+  maintainers: 
+    - unknown
+  description: |
+    增加了额外独特的阈后突变，各种武器配方。有点污但上班时间也可以浏览，而且不比震动器和拘束衣差！@#
+  category: 'items'
+  dependencies:
+    - 'dda'
+  size: 21502
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/pixels_fuckery.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "pm_world"
+  name: "月计世界"
+  authors: 
+    - "Alpha//"
+  maintainers: 
+    - Sliperr34
+  description: |
+    增加来自月亮计划宇宙的各种物品
+    （月亮计划，Project Moon，《脑叶公司》《废墟图书馆》与《边狱巴士》的制作商）
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 1137673
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/PM_World.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "ProjectKawaii"
+  name: "萌化计划"
+  authors: 
+    - "inoue&Derp"
+  maintainers: 
+    - 滑稽sama
+  description: |
+    “试着让大灾变更‘萌’一点？”包含了可变形的高科技近战武器，一个远程访问的商店系统，当然，还有可爱的女仆制服~
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 632118
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Project_Kawaii.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "secronom"
+  name: "<color_light_red>Secronom</color>"
+  authors: 
+    - "Axema Vales"
+  maintainers: 
+    - Kenan
+  description: |
+    <color_red>将你的劫后余生的破碎世界带入地狱般的梦魇之地…</color> 
+     <color_dark_gray>◆不建议初入末世者窥探◆</color> 
+    
+     <color_light_cyan>注意，这个MOD目前处于<color_light_green>稳定</color>状态。如果您不幸碰上了bug，可随意在 GitHub项目 中创建 issues 或加入 Discord频道 发送私信来告知维护者。</color> 
+    
+     <color_light_cyan>使用配套的 <color_yellow>Secronom+</color> 模组以添加相关扩展内容（仍在制作中）。</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 6266128
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/secronom.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "secronom_lore_expansion"
+  name: "<color_light_red>Secronom+ 传说扩展包</color>"
+  authors: 
+    - "Axema Vales"
+    - "SzQ"
+  maintainers: 
+    - Kenan
+  description: |
+    <color_cyan>一个secronom的扩展包。（制作中）</color>
+  category: 'content'
+  dependencies:
+    - 'dda'
+    - 'secronom'
+  size: 1471398
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/secronom_lore_expansion.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "Tankmod_Revived"
+  name: "坦克扩展 重生"
+  authors: 
+    - "Chaosvolt"
+  maintainers: 
+    - Chaosvolt
+  description: |
+    我的旧的，过时的坦克和其他车辆的预期继任者。
+  category: 'vehicles'
+  dependencies:
+    - 'dda'
+  size: 407716
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Tankmod_Revived.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "vamp_stuff"
+  name: "吸血鬼"
+  authors: 
+    - "Axema Vales"
+  maintainers: 
+    - unknown
+  description: |
+    
+    <color_red>增加夜间生物，新物品，新的怪物和地点。</color>
+    <color_light_red>更多可互动NPC和任务，提供微妙的RPG游戏风格。</color>
+    
+    <color_light_cyan>请注意，该模块目前处于<color_light_green>稳定状态</color>，bug很少出现，但是如果您遇到一个bug或者最近的CDDA更新导致了错误，请随时通过在其GitHub仓库中创建一个Issue，或者在 Discord 上私聊通知作者。</color>
+  category: 'misc_additions'
+  dependencies:
+    - 'dda'
+  size: 841877
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/vamp_stuff.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "vamp_stuff+arcana"
+  name: "吸血鬼+奥术扩展"
+  authors: 
+    - "Axema Vales"
+    - "Chaosvolt"
+  maintainers: 
+    - unknown
+  description: |
+    连接吸血鬼mod和奥术mod，产生各种新的内容和特性。
+  category: 'misc_additions'
+  dependencies:
+    - 'vamp_stuff'
+    - 'Arcana'
+    - 'dda'
+  size: 165375
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/vamp_stuff_arcana.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "VOICEROID_mod"
+  name: "<color_pink>追加 - ボイロ</color>"
+  authors: 
+    - "shaba"
+  maintainers: 
+    - unknown
+  description: |
+    （仅在贴图包为undead people、MSXotto+或Chibi_Ultica时有贴图）
+    可以将角色外观变成VOICEROID、音街ウナTalk_Ex、CeVIO、ガイノイドTalk、ギャラ子Talk中的角色形象。
+  category: 'content'
+  dependencies:
+    - 'dda'
+  size: 922499
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/VOICEROID+Ex_mod.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "WHALEYHAIR1"
+  name: "威利的发型和纹身美化"
+  authors: 
+    - "Whaley"
+  maintainers: 
+    - Neon
+  description: |
+    纯美化模组，新增发型、纹身、美妆和伤痕妆，适用于MSXotto+及其衍生贴图。贴图均由Whaley（威利）创作，现由Neon进行维护。已适配G版本。
+  category: 'graphical'
+  dependencies:
+  size: 51939
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/whaleys-hair-and-tattoo.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
+- type: direct_download
+  ident: "World_on_fire"
+  name: "烈焰世界"
+  authors: 
+    - "Trivega & Community"
+  maintainers: 
+    - Trivega
+  description: |
+    一个怪物扩展包，在游戏中加入几个拥有火焰类型的怪物和相关的装备。
+  category: 'creatures'
+  dependencies:
+    - 'dda'
+  size: 95300
+  url: "https://alist.doiiars.com/d/Public/Cataclysmdda/World_On_Fire.zip"
+  homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
+
