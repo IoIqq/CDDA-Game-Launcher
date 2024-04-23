@@ -719,6 +719,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 3649963
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Arcana.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -735,6 +736,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 4005341
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/BL9-100%_monster_resilience_version.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -751,6 +753,7 @@
   category: 'vehicles'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 1119503
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/blazemod.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -769,6 +772,7 @@
   category: 'touhou'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 1223027
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Cataclysm-DDA-Touhou-Mod.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -786,6 +790,7 @@
   category: 'items'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 18808
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/CulinaryDaysAhead.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -804,6 +809,7 @@
     - 'dda'
     - 'Arcana'
     - 'aftershock'
+  version: "2024-04-22-1537"
   size: 9343
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Aftershock_Patch.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -823,6 +829,7 @@
     - 'dda'
     - 'Arcana'
     - 'Cata++'
+  version: "2024-04-22-1537"
   size: 40305
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Cata++_Patch.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -841,6 +848,7 @@
     - 'dda'
     - 'Arcana'
     - 'DinoMod'
+  version: "2024-04-22-1537"
   size: 28018
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Dinomod_Patch.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -859,6 +867,7 @@
     - 'dda'
     - 'Arcana'
     - 'magiclysm'
+  version: "2024-04-22-1537"
   size: 49189
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/DDA_Arcana_Magiclysm_Patch.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -877,6 +886,7 @@
     - 'dda'
     - 'aftershock'
     - 'DinoMod'
+  version: "2024-04-22-1537"
   size: 388839
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dino_Mad_Science.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -893,6 +903,7 @@
   category: 'buildings'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 355334
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Dorf_Life.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -909,6 +920,7 @@
   category: 'misc_additions'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 841
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Lighter_Weariness.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -926,6 +938,7 @@
   dependencies:
     - 'dda'
     - 'magiclysm'
+  version: "2024-04-22-1537"
   size: 318411
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MagicRevampAdditions.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -942,6 +955,7 @@
   category: 'items'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 94305
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Medieval_Mod_Reborn.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -958,6 +972,7 @@
   category: 'misc_additions'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 90959
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Mining_Mod.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -980,6 +995,7 @@
   dependencies:
     - 'dda'
     - 'MMA'
+  version: "2024-04-22-1537"
   size: 30082
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MMA_Mods_Extension.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -996,6 +1012,7 @@
   category: 'items'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 214761
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/MST_Extra.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1018,6 +1035,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 4011092
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/nocts_cata_mod_DDA.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1034,6 +1052,7 @@
   category: 'rebalance'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 29952
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Nonperishable_Overhaul.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1050,6 +1069,7 @@
   category: 'rebalance'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 466
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/no_cbm_slots.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1066,6 +1086,7 @@
   category: 'monster_exclude'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 11803
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/No_Fungi.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1082,6 +1103,7 @@
   category: 'content'
   dependencies:
     - 'VOICEROID_mod'
+  version: "2024-04-22-1537"
   size: 700015
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/NPC_VOICEROIDs.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1098,6 +1120,7 @@
   category: 'items'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 21502
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/pixels_fuckery.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1115,6 +1138,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 1137673
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/PM_World.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1131,6 +1155,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 632118
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Project_Kawaii.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1152,6 +1177,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 6266128
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/secronom.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1170,6 +1196,7 @@
   dependencies:
     - 'dda'
     - 'secronom'
+  version: "2024-04-22-1537"
   size: 1471398
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/secronom_lore_expansion.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1186,6 +1213,7 @@
   category: 'vehicles'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 407716
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/Tankmod_Revived.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1206,6 +1234,7 @@
   category: 'misc_additions'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 841877
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/vamp_stuff.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1242,6 +1271,7 @@
   category: 'content'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 922499
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/VOICEROID+Ex_mod.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1257,6 +1287,7 @@
     纯美化模组，新增发型、纹身、美妆和伤痕妆，适用于MSXotto+及其衍生贴图。贴图均由Whaley（威利）创作，现由Neon进行维护。已适配G版本。
   category: 'graphical'
   dependencies:
+  version: "2024-04-22-1537"
   size: 51939
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/whaleys-hair-and-tattoo.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
@@ -1273,6 +1304,7 @@
   category: 'creatures'
   dependencies:
     - 'dda'
+  version: "2024-04-22-1537"
   size: 95300
   url: "https://alist.doiiars.com/d/Public/Cataclysmdda/World_On_Fire.zip"
   homepage: 'http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=D2JHTP7mHCYUIR9vlgGyfjFb9CfE6_rY&authKey=WjLT%2FMKeRMclrEPiTBiyJ7eRoA2YEM%2F%2B%2FwRGs9r3fabN6sWg9uRfmBQrc3WL1z8K&noverify=0&group_code=491708665'
