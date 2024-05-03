@@ -7,7 +7,7 @@
 # homepage: "https://example.com/soundpack-homepage"  # Soundpack的官方主页链接
 
 
-- type: direct_downloadjson
+- type: direct_download
   viewname: ChestHole
   name: ChestHole
   url: http://chezzo.com/cdda/ChestHoleSoundSet.zip

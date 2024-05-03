@@ -425,9 +425,9 @@ class GameDirGroupBox(QGroupBox):
             params = ' ' + params
         # userdatadir = os.path.join(os.getcwd(),'userdata')
         # params += f' --userdir "{userdatadir}"'
-        cmd = '"{exe_path}"{params}'.format(exe_path=self.exe_path,
+        cmd = '"{exe_path}" {params}'.format(exe_path=self.exe_path,
             params=params)
-
+        
         try:
             game_process = subprocess.Popen(cmd, cwd=exe_dir,
                 creationflags=subprocess.CREATE_NEW_PROCESS_GROUP)

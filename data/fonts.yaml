@@ -1,0 +1,26 @@
+# fonts.yaml 模板
+#
+# - type: "direct_download"      # Font的类型，这里是直接下载类型
+#   viewname: "Font Name"  # Font的可视名称
+#   name: "Font Name"      # Font的内部名称
+#   url: "https://example.com/Font.zip"  # Font的下载链接
+# homepage: "https://example.com/Font-homepage"  # Font的官方主页链接
+
+
+- type: direct_download
+  viewname: 九点字体1
+  name: ninepoint1
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/Fonts/%E4%B9%9D%E7%82%B9%E5%AD%97%E4%BD%93/03.ttf
+  homepage: https://alist.doiiars.com/Public/Cataclysmdda/Fonts/%E4%B9%9D%E7%82%B9%E5%AD%97%E4%BD%93
+
+- type: direct_download
+  viewname: 九点字体2
+  name: ninepoint2
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/Fonts/%E4%B9%9D%E7%82%B9%E5%AD%97%E4%BD%93/02.ttf
+  homepage: https://alist.doiiars.com/Public/Cataclysmdda/Fonts/%E4%B9%9D%E7%82%B9%E5%AD%97%E4%BD%93
+
+- type: direct_download
+  viewname: 九点字体3
+  name: ninepoint3
+  url: https://alist.doiiars.com/d/Public/Cataclysmdda/Fonts/%E4%B9%9D%E7%82%B9%E5%AD%97%E4%BD%93/02-1.ttf
+  homepage: https://alist.doiiars.com/Public/Cataclysmdda/Fonts/%E4%B9%9D%E7%82%B9%E5%AD%97%E4%BD%93

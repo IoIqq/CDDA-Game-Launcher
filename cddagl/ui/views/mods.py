@@ -364,35 +364,40 @@ class ModsTab(QWidget):
         self.install_new_button.setEnabled(repository_selected)
 
     def load_repository(self):
+        """加载存储库。"""
         self.repo_mods = []
 
-        self.install_new_button.setEnabled(False)
+        self.install_new_button.setEnabled(False)  # 禁用“安装新模组”按钮
 
         self.repo_mods_model = QStringListModel()
         self.repository_lv.setModel(self.repo_mods_model)
+        # 连接列表视图选择变更事件到repository_selection方法
         self.repository_lv.selectionModel().currentChanged.connect(
             self.repository_selection)
 
-        yaml_file = get_data_path('mods.yaml')  # 修改为YAML文件
+        yaml_file = get_data_path('mods.yaml')  # 获取mods.yaml文件的路径
 
-        if os.path.isfile(yaml_file):
-            with open(yaml_file, 'r', encoding='utf8') as f:  # 修改为打开YAML文件
+        if os.path.isfile(yaml_file):  # 检查文件是否存在
+            with open(yaml_file, 'r', encoding='utf8') as f:  # 打开YAML文件
                 try:
-                    values = yaml.safe_load(f)  # 使用PyYAML解析YAML文件
-                    if isinstance(values, list):
+                    values = yaml.safe_load(f)  # 解析YAML文件
+                    if isinstance(values, list):  # 检查values是否为列表
+                        # 按模组名称排序
                         values.sort(key=lambda x: x['name'])
                         self.repo_mods = values
 
+                        # 在列表模型中插入行
                         self.repo_mods_model.insertRows(
                             self.repo_mods_model.rowCount(),
                             len(self.repo_mods))
-                        for index, mod_info in enumerate(
-                            self.repo_mods):
+                        for index, mod_info in enumerate(self.repo_mods):
+                            # 设置列表模型数据
                             self.repo_mods_model.setData(
                                 self.repo_mods_model.index(index),
                                 mod_info['name'])
-                except yaml.YAMLError:
+                except yaml.YAMLError:  # 处理YAML解析错误
                     pass
+
 
     def install_new(self):
         if not self.installing_new_mod:
