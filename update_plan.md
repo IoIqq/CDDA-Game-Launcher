@@ -1,3 +1,10 @@
+<!--
+SPDX-FileCopyrightText: 2024 Doiiars
+
+SPDX-License-Identifier: MIT
+-->
+
+
 # CDDA启动器更新计划
 
 ## Hight
