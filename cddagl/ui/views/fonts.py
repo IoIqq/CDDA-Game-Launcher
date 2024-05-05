@@ -151,7 +151,7 @@ World, Hello!
         label_spinbox_layout.addWidget(self.font_mixture_radio, 3, 1)
 
         # 创建其他设置的GroupBox并添加标签和SpinBox的布局
-        other_settings_groupbox = QGroupBox("其他设置")
+        other_settings_groupbox = QGroupBox("其他设置（未实装）")
         other_settings_groupbox.setLayout(label_spinbox_layout)
 
         # 将字体设置的GroupBox添加到主布局
@@ -236,6 +236,9 @@ World, Hello!
             CUSTOM_FONT_DIRECTORY = os.path.normpath(os.path.join(self.game_dir, "data", "font"))
             font_filenames_custom = load_font_filenames(CUSTOM_FONT_DIRECTORY)
             logger.debug(f'CUSTOM_FONT_DIRECTORY: {CUSTOM_FONT_DIRECTORY}')
+        else:
+            logger.debug("游戏目录未设置")
+        
         # 获取系统字体目录
         system_fonts_directory = get_windows_fonts_directory()
         font_filenames_system = load_font_filenames(system_fonts_directory)
@@ -244,7 +247,13 @@ World, Hello!
         display_names = []  # 创建一个新的列表来存储用于显示的字体名称
         for filename in font_filenames_custom + font_filenames_system:
             font_id = QFontDatabase.addApplicationFont(filename)
-            font_name = QFontDatabase.applicationFontFamilies(font_id)[0]
+            font_families = QFontDatabase.applicationFontFamilies(font_id)
+            if font_families:
+                font_name = font_families[0]
+            else:
+                logger.error(f"无法获取字体名称： {font_families}")
+                continue
+            
             # 检查文件名是否来自 font_filenames_custom 列表
             display_name = font_name  # 储存原始的字体名称用于显示
             if filename in font_filenames_custom:

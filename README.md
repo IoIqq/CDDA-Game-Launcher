@@ -15,6 +15,8 @@ SPDX-License-Identifier: MIT
 
 带有额外功能的 [Cataclysm: Dark Days Ahead](https://cataclysmdda.org/) 游戏启动器。
 
+关注[Doiiars](https://space.bilibili.com/1036711705)的[Bilibili 账号](https://space.bilibili.com/1036711705)，后续可能在Bilibili上更新视频教程。
+
 ![GitHub 工作流状态（master 分支）](https://img.shields.io/github/actions/workflow/status/DoiiarX/CDDA-Game-Launcher/build.yml?branch=master)
 ![GitHub 工作流状态（develop 分支）](https://img.shields.io/github/actions/workflow/status/DoiiarX/CDDA-Game-Launcher/build.yml?branch=develop)
 
