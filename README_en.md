@@ -1,12 +1,14 @@
-<!--
+s<!--
 SPDX-FileCopyrightText: 2015-2021 Rémy Roy
 
 SPDX-License-Identifier: MIT
 -->
+
 <div align="center">
 
 # CDDA Game Launcher
-[ English | [简体中文](README_zh.md) ]
+
+[ English | [简体中文](README.md) ]
 
 </div>
 
@@ -46,7 +48,6 @@ Now, Chinese Edition is maintained by Doiiars.
 ## ~~Planned features~~
 
 * ~~Tileset manager~~
-
 
 No planed features, only maintenance and bugfixes in the short term. Although having a Tileset manager would indeed be nice, it may be a scope far too ambitious for a project just resurrected from beyond the grave. We shall see.
 

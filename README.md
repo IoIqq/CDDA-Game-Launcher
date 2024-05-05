@@ -35,6 +35,9 @@ SPDX-License-Identifier: MIT
 
 目前，中文版由Doiiars提供维护。
 
+## 更新计划
+[查看更新计划](update_plan.md)
+
 ## 已实现的功能
 
 * 启动游戏

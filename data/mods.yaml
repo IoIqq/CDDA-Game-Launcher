@@ -18,6 +18,25 @@
 #   url: https://github.com/your_username/your_mod_repo/archive/master.zip  # 您的mod的下载链接
 #   homepage: https://link_to_your_mod_homepage.com  # 您的mod的主页链接
 
+
+- type: direct_download
+  ident: CDDA-Kenan-Modpack-Chinese
+  name: CDDA-Kenan-Mod合集汉化版
+  authors:
+    - Kenan2000
+    - linonetwo
+    - waveyl
+  maintainers:
+    - linonetwo
+    - waveyl
+    - Kenan2000
+  description: CDDA-Kenan-Mod合集汉化版。（未经测试，请报告测试结果。）
+  category: content
+  dependencies:
+    - dda
+  url: https://github.com/linonetwo/CDDA-Kenan-Modpack-Chinese/releases/download/2024-04-23-0519/Kenan-Modpack-Mod.zip
+  homepage: https://github.com/linonetwo/CDDA-Kenan-Modpack-Chinese
+
 - type: direct_download
   ident: Agriculture_Expand
   name: 农业拓展A6b(0.F-3)
