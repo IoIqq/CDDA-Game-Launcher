@@ -35,6 +35,7 @@ from PyQt5.QtWidgets import (
     QComboBox, QTextBrowser, QMessageBox, QStyle, QHBoxLayout, QSizePolicy
 )
 from PyQt5.QtGui import QRegularExpressionValidator
+from PyQt5.QtGui import QFontDatabase
 from babel.dates import format_datetime
 from pywintypes import error as PyWinError
 
@@ -324,6 +325,8 @@ class GameDirGroupBox(QGroupBox):
         update_group_box.disable_controls(True)
 
         self.restored_previous = False
+        
+        QFontDatabase.removeAllApplicationFonts()
 
         try:
             game_dir = self.dir_combo.currentText()
@@ -1925,6 +1928,8 @@ class UpdateGroupBox(QGroupBox):
             len(dir_list) == 1 and dir_list[0] == 'previous_version'):
             return None
 
+        QFontDatabase.removeAllApplicationFonts()
+        
         temp_move_dir = tempfile.mkdtemp(prefix=cons.TEMP_PREFIX)
 
         excluded_entries = set(['previous_version'])
@@ -1950,6 +1955,8 @@ class UpdateGroupBox(QGroupBox):
         previous_version_dir = os.path.join(game_dir, 'previous_version')
         if not os.path.exists(previous_version_dir):
             os.makedirs(previous_version_dir)
+        
+        QFontDatabase.removeAllApplicationFonts()
 
         for entry in os.listdir(path):
             entry_path = os.path.join(path, entry)
@@ -1958,7 +1965,9 @@ class UpdateGroupBox(QGroupBox):
     def restore_backup(self):
         game_dir = self.game_dir
         previous_version_dir = os.path.join(game_dir, 'previous_version')
-
+        
+        QFontDatabase.removeAllApplicationFonts()
+        
         if os.path.isdir(previous_version_dir) and os.path.isdir(game_dir):
 
             for entry in os.listdir(previous_version_dir):
@@ -2245,6 +2254,8 @@ class UpdateGroupBox(QGroupBox):
         if (config_true(get_config_value('prevent_save_move', 'False'))
             and 'save' in dir_list):
             dir_list.remove('save')
+        
+        QFontDatabase.removeAllApplicationFonts()
 
         launcher_exe = os.path.abspath(sys.executable)
         launcher_dir = os.path.dirname(launcher_exe)
@@ -2360,6 +2371,8 @@ class UpdateGroupBox(QGroupBox):
         self.extracting_timer = timer
 
         progress_bar.setRange(0, len(self.extracting_infolist))
+        
+        QFontDatabase.removeAllApplicationFonts()
 
         def timeout():
             self.extracting_progress_bar.setValue(self.extracting_index)
@@ -2728,6 +2741,8 @@ class UpdateGroupBox(QGroupBox):
         mods_dir = os.path.join(self.game_dir, 'data', 'mods')
         previous_mods_dir = os.path.join(self.game_dir, 'previous_version',
             'data', 'mods')
+        
+        QFontDatabase.removeAllApplicationFonts()
 
         if (os.path.isdir(mods_dir) and os.path.isdir(previous_mods_dir) and
             self.in_post_extraction):
