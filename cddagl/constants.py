@@ -21,6 +21,9 @@ CDDA_RELEASES = '/repos/CleverRaven/Cataclysm-DDA/releases'
 CDDA_RELEASE_BY_TAG = lambda tag: f'/repos/CleverRaven/Cataclysm-DDA/releases/tags/{tag}'
 CDDAGL_LATEST_RELEASE = '/repos/DoiiarX/CDDA-Game-Launcher/releases/latest'
 
+REMOTE_MODS_URL = '/DoiiarX/CDDA-Game-Launcher/master/data/mods.yaml'
+REMOTE_SOUNDPACKS_URL = '/DoiiarX/CDDA-Game-Launcher/master/data/soundpacks.yaml'
+
 CHANGELOG_URL = 'https://api.github.com/search/issues?q=repo%3Acleverraven/Cataclysm-DDA+is%3Apr+is%3Amerged&per_page='
 
 NEW_ISSUE_URL = 'https://github.com/DoiiarX/CDDA-Game-Launcher/issues/new'

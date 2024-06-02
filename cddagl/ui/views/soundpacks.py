@@ -302,6 +302,18 @@ class SoundpacksTab(QTabWidget):
             repository_selected = repository_selection.hasSelection()
 
         self.install_new_button.setEnabled(repository_selected)
+        
+    def get_soundpacks_yaml_file(self):
+        """尝试从远程获取 mods.yaml 文件，失败则使用本地文件"""
+        try:
+            response = requests.get(cons.GITHUB_REST_API_URL + cons.REMOTE_SOUNDPACKS_URL)
+            response.raise_for_status()
+            with open(get_data_path('soundpacks.yaml'), 'wb') as f:
+                f.write(response.content)
+            return get_data_path('soundpacks.yaml')
+        except requests.RequestException:
+            logger.warning("无法从远程获取 soundpacks.yaml 文件，使用本地文件")
+            return get_data_path('soundpacks.yaml')
 
     def load_repository(self):
         self.repo_soundpacks = []
@@ -313,7 +325,7 @@ class SoundpacksTab(QTabWidget):
         self.repository_lv.selectionModel().currentChanged.connect(
             self.repository_selection)
 
-        yaml_file = get_data_path('soundpacks.yaml')
+        yaml_file = self.get_soundpacks_yaml_file()
 
         if os.path.isfile(yaml_file):
             with open(yaml_file, 'r', encoding='utf8') as f:
