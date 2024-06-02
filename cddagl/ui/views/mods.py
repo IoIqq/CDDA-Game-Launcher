@@ -362,6 +362,18 @@ class ModsTab(QWidget):
             repository_selected = repository_selection.hasSelection()
 
         self.install_new_button.setEnabled(repository_selected)
+    
+    def get_mods_yaml_file(self):
+        """尝试从远程获取 mods.yaml 文件，失败则使用本地文件"""
+        try:
+            response = requests.get(cons.GITHUB_REST_API_URL + cons.REMOTE_MODS_URL)
+            response.raise_for_status()
+            with open(get_data_path('mods.yaml'), 'wb') as f:
+                f.write(response.content)
+            return get_data_path('mods.yaml')
+        except requests.RequestException:
+            logger.warning("无法从远程获取 mods.yaml 文件，使用本地文件")
+            return get_data_path('mods.yaml')
 
     def load_repository(self):
         """加载存储库。"""
@@ -375,7 +387,7 @@ class ModsTab(QWidget):
         self.repository_lv.selectionModel().currentChanged.connect(
             self.repository_selection)
 
-        yaml_file = get_data_path('mods.yaml')  # 获取mods.yaml文件的路径
+        yaml_file = self.get_mods_yaml_file()  # 获取mods.yaml文件的路径
 
         if os.path.isfile(yaml_file):  # 检查文件是否存在
             with open(yaml_file, 'r', encoding='utf8') as f:  # 打开YAML文件
