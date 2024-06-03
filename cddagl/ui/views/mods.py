@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: MIT
 
+import request
 import html
 import json
 import yaml
