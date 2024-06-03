@@ -3,7 +3,6 @@
 # SPDX-License-Identifier: MIT
 # -*- coding: utf-8 -*-
 
-import request
 import logging
 import os
 import sys
